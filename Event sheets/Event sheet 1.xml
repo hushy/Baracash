@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="252413573179065">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="7380869180975039" type="Touch">
+                    <param id="0" name="Object">ScratchZone</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="20" name="Clear Circle" sid="7100472810566317" type="ScratchZone">
+                    <param id="0" name="x">Touch.X - ScratchZone.X</param>
+                    <param id="1" name="y">Touch.Y - ScratchZone.Y</param>
+                    <param id="2" name="radius">20</param>
+                    <param id="3" name="color">&quot;black&quot;</param>
+                    <param id="4" name="line_width">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6598059989043812">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="2939055263326685" type="Sprite" />
+                <condition id="-9" name="Is visible" sid="1345791341584002" type="Sprite2" />
+                <condition id="-9" name="Is visible" sid="7776574805041767" type="Sprite3" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="144965481522644" type="Text2">
+                    <param id="0" name="Text">&quot;Vous avez gagné&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5495119612660684">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="1116987693865927" type="Touch">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="6780318005846507" type="Sprite">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3536710188910046">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="3295908341326674" type="Touch">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="4601766925219593" type="Sprite2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5221075015697859">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="9622247375851913" type="Touch">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="3717453262957174" type="Sprite3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
