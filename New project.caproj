@@ -45,6 +45,10 @@
     <object-folder>
         <object-type name="ScratchZone" sid="5334967479662794">
             <plugin id="c2canvas" />
+            <instance-variables>
+                <instance-variable name="IsWinningTicket" sid="5556637883218976" type="boolean" />
+                <instance-variable name="WinningProba" sid="2320184090987095" type="number" />
+            </instance-variables>
             <texture />
         </object-type>
         <object-type name="Touch" sid="7538855580201067">
@@ -64,29 +68,16 @@
         <object-type name="Sprite" sid="3997137695233146">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1984837412463079" speed="5">
+                <animation framecount="1" loop="0" name="Win" pingpong="0" repeatcount="1" repeatto="0" sid="1984837412463079" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3313835896648145" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="Text2" sid="9418067474717387">
             <plugin id="Text" />
-        </object-type>
-        <object-type name="Sprite2" sid="6423102020405622">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7927152762296431" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite3" sid="8088737336933029">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7557759576613922" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
         </object-type>
     </object-folder>
     <families />
