@@ -135,7 +135,7 @@
                     </properties>
                     <instance-variables>
                         <IsWinningTicket>false</IsWinningTicket>
-                        <WinningProba>0.5</WinningProba>
+                        <WinningProba>0.25</WinningProba>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
