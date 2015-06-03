@@ -23,11 +23,31 @@
             <conditions>
                 <condition id="-9" name="Is visible" sid="2939055263326685" type="Sprite" />
             </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="144965481522644" type="Text2">
-                    <param id="0" name="Text">&quot;Vous avez gagné&quot;</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="6673726025766177">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="2390187097143138" type="ScratchZone">
+                            <param id="0" name="Instance variable">IsWinningTicket</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="144965481522644" type="Text2">
+                            <param id="0" name="Text">&quot;Vous avez gagné&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="50066637330215">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6699012458291401" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="811817028822756" type="Text2">
+                            <param id="0" name="Text">&quot;Vous avez perdu&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="5495119612660684">
             <conditions>
