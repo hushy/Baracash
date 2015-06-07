@@ -11,6 +11,7 @@
     <saved-with-version>20600</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="R0J0hound" id="c2canvas" version="2">Canvas</plugin>
@@ -127,6 +128,9 @@
                 <type>TextBox</type>
                 <type>result</type>
             </container>
+        </object-type>
+        <object-type name="Text" sid="3065632316772462">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
