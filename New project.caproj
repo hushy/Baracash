@@ -72,6 +72,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="IsLosing" sid="1584063996079342" type="boolean" />
+                <instance-variable name="IsOnTop" sid="8552729175195099" type="boolean" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Win" pingpong="0" repeatcount="1" repeatto="0" sid="1984837412463079" speed="5">

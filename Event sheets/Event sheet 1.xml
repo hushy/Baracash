@@ -162,44 +162,27 @@
                 <event-block sid="634306654922466">
                     <conditions>
                         <condition id="-9" name="Is visible" sid="4116245189271022" type="Sprite" />
-                        <condition id="0" name="Is alpha less than" sid="6718464204383552" type="ScratchZone">
-                            <param id="0" name="x">Sprite.X</param>
-                            <param id="1" name="y">Sprite.Y</param>
-                            <param id="2" name="alpha">0.1</param>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="8935691435822954" type="Sprite">
+                            <param id="0" name="Instance variable">IsOnTop</param>
                         </condition>
-                        <condition id="-7" name="Compare instance variable" sid="8049818650809691" type="ScratchZone">
-                            <param id="0" name="Instance variable">nbItem</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">Sprite.PickedCount</param>
+                        <condition id="-11" name="For Each" sid="9091237225711468" type="System">
+                            <param id="0" name="Object">Sprite</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="Fade" id="1" name="Start fade" sid="5068149370657547" type="result" />
-                        <action id="-15" name="Set visible" sid="7237007983272313" type="result">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <event-block sid="9544511971108671">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="4806561162641673" type="ScratchZone">
-                                    <param id="0" name="Instance variable">IsWinningTicket</param>
+                                <condition id="0" name="Is alpha less than" sid="6718464204383552" type="ScratchZone">
+                                    <param id="0" name="x">Sprite.X</param>
+                                    <param id="1" name="y">Sprite.Y</param>
+                                    <param id="2" name="alpha">0.1</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="3" name="Set visible" sid="452652954053157" type="TextBox">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="7" name="Set CSS style" sid="2165623278992467" type="TextBox">
-                                    <param id="0" name="Property name">&quot;background-color&quot;</param>
-                                    <param id="1" name="Value">&quot;rgba(0,0,0,0)&quot;</param>
-                                </action>
-                                <action id="4" name="Set enabled" sid="3554564171384764" type="TextBox">
-                                    <param id="0" name="Mode">1</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="2598343434748076" type="result">
-                                    <param id="0" name="Animation">&quot;Win&quot;</param>
-                                    <param id="1" name="From">1</param>
+                                <action id="-13" name="Set boolean" sid="138446690054135" type="Sprite">
+                                    <param id="0" name="Instance variable">IsOnTop</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -207,17 +190,48 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="9598473911456604">
+        <event-block sid="1082746071745186">
             <conditions>
-                <condition id="-8" name="Is boolean instance variable set" sid="1084171981380258" type="ScratchZone">
-                    <param id="0" name="Instance variable">IsWinningTicket</param>
+                <condition id="-8" name="Is boolean instance variable set" sid="2720108840218678" type="Sprite">
+                    <param id="0" name="Instance variable">IsOnTop</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="2530083091026178" type="System">
+                    <param id="0" name="First value">Sprite.PickedCount</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">ScratchZone.nbItem</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="9017558437375482" type="Text">
-                    <param id="0" name="Text">&quot;win&quot;</param>
+                <action behavior="Fade" id="1" name="Start fade" sid="5068149370657547" type="result" />
+                <action id="-15" name="Set visible" sid="7237007983272313" type="result">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="1757955654433285">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="4806561162641673" type="ScratchZone">
+                            <param id="0" name="Instance variable">IsWinningTicket</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set visible" sid="452652954053157" type="TextBox">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="2165623278992467" type="TextBox">
+                            <param id="0" name="Property name">&quot;background-color&quot;</param>
+                            <param id="1" name="Value">&quot;rgba(0,0,0,0)&quot;</param>
+                        </action>
+                        <action id="4" name="Set enabled" sid="3554564171384764" type="TextBox">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="2598343434748076" type="result">
+                            <param id="0" name="Animation">&quot;Win&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
