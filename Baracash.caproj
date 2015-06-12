@@ -53,6 +53,7 @@
                 <instance-variable name="WinningProba" sid="2320184090987095" type="number" />
                 <instance-variable name="winningSimilarItem" sid="9935996548202578" type="number" />
                 <instance-variable name="WinningItemsSet" sid="6839250807041944" type="number" />
+                <instance-variable name="IsTouched" sid="4348011117875877" type="boolean" />
             </instance-variables>
             <container>
                 <type>ScratchZone</type>

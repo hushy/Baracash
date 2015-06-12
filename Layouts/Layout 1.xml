@@ -43,7 +43,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>25.909145355</x>
+                        <x>31.040721893</x>
                         <y>67.363609314</y>
                         <z>0</z>
                         <width>18.363769531</width>
@@ -66,11 +66,12 @@
                         <WinningProba>0.5</WinningProba>
                         <winningSimilarItem>2</winningSimilarItem>
                         <WinningItemsSet>0</WinningItemsSet>
+                        <IsTouched>false</IsTouched>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>8.635707855</x>
+                        <x>13.767284393</x>
                         <y>51.726615906</y>
                         <z>0</z>
                         <width>35.908920288</width>
@@ -119,6 +120,7 @@
                         <WinningProba>0.5</WinningProba>
                         <winningSimilarItem>2</winningSimilarItem>
                         <WinningItemsSet>0</WinningItemsSet>
+                        <IsTouched>false</IsTouched>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -149,8 +151,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>70.454879761</x>
-                        <y>67.363609314</y>
+                        <x>73.720481873</x>
+                        <y>146.203201294</y>
                         <z>0</z>
                         <width>18.363769531</width>
                         <height>15.454620361</height>
@@ -172,12 +174,13 @@
                         <WinningProba>0.5</WinningProba>
                         <winningSimilarItem>2</winningSimilarItem>
                         <WinningItemsSet>0</WinningItemsSet>
+                        <IsTouched>false</IsTouched>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>53.181442261</x>
-                        <y>51.726615906</y>
+                        <x>56.447044373</x>
+                        <y>130.566207886</y>
                         <z>0</z>
                         <width>35.908920288</width>
                         <height>33.908218384</height>
@@ -202,8 +205,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>172.411437988</x>
-                        <y>67.323745728</y>
+                        <x>169.145843506</x>
+                        <y>146.163314819</y>
                         <z>0</z>
                         <width>18.363769531</width>
                         <height>15.454620361</height>
@@ -225,12 +228,13 @@
                         <WinningProba>0.5</WinningProba>
                         <winningSimilarItem>2</winningSimilarItem>
                         <WinningItemsSet>0</WinningItemsSet>
+                        <IsTouched>false</IsTouched>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>155.138000488</x>
-                        <y>51.686752319</y>
+                        <x>151.872406006</x>
+                        <y>130.526321411</y>
                         <z>0</z>
                         <width>35.908920288</width>
                         <height>33.908218384</height>
@@ -274,8 +278,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>219.328704834</x>
-                        <y>67.074401855</y>
+                        <x>214.663665771</x>
+                        <y>66.141677856</y>
                         <z>0</z>
                         <width>18.363769531</width>
                         <height>15.454620361</height>
@@ -316,12 +320,13 @@
                         <WinningProba>0.5</WinningProba>
                         <winningSimilarItem>2</winningSimilarItem>
                         <WinningItemsSet>0</WinningItemsSet>
+                        <IsTouched>false</IsTouched>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>202.055267334</x>
-                        <y>51.437408447</y>
+                        <x>197.390228271</x>
+                        <y>50.504684448</y>
                         <z>0</z>
                         <width>35.908920288</width>
                         <height>33.908218384</height>
@@ -345,11 +350,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>419.545288086</x>
-                        <y>99.045776367</y>
+                        <x>124.712638855</x>
+                        <y>124.937057495</y>
                         <z>0</z>
-                        <width>248</width>
-                        <height>248</height>
+                        <width>249.865600586</width>
+                        <height>251.265533447</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -378,8 +383,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>146.064971924</x>
-                        <y>138.971725464</y>
+                        <x>132.069519043</x>
+                        <y>124.510055542</y>
                         <z>0</z>
                         <width>373.091094971</width>
                         <height>142.501754761</height>
@@ -406,8 +411,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>51.363761902</x>
-                        <y>129.090682983</y>
+                        <x>50.43069458</x>
+                        <y>104.832077026</y>
                         <z>0</z>
                         <width>150</width>
                         <height>22</height>
