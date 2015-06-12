@@ -28,7 +28,220 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="Sprite" uid="6">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <IsLosing>true</IsLosing>
+                        <IsOnTop>false</IsOnTop>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>25.909145355</x>
+                        <y>67.363609314</y>
+                        <z>0</z>
+                        <width>18.363769531</width>
+                        <height>15.454620361</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ScratchZone" uid="7">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <effect>(none)</effect>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <instance-variables>
+                        <IsWinningTicket>false</IsWinningTicket>
+                        <WinningProba>0.5</WinningProba>
+                        <winningSimilarItem>2</winningSimilarItem>
+                        <WinningItemsSet>0</WinningItemsSet>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>8.635707855</x>
+                        <y>51.726615906</y>
+                        <z>0</z>
+                        <width>35.908920288</width>
+                        <height>33.908218384</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite" uid="8">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <IsLosing>true</IsLosing>
+                        <IsOnTop>false</IsOnTop>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>121.542289734</x>
+                        <y>67.283996582</y>
+                        <z>0</z>
+                        <width>18.363769531</width>
+                        <height>15.454620361</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ScratchZone" uid="9">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <effect>(none)</effect>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <instance-variables>
+                        <IsWinningTicket>false</IsWinningTicket>
+                        <WinningProba>0.5</WinningProba>
+                        <winningSimilarItem>2</winningSimilarItem>
+                        <WinningItemsSet>0</WinningItemsSet>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>104.268852234</x>
+                        <y>51.647003174</y>
+                        <z>0</z>
+                        <width>35.908920288</width>
+                        <height>33.908218384</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite" uid="10">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <IsLosing>true</IsLosing>
+                        <IsOnTop>false</IsOnTop>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>70.454879761</x>
+                        <y>67.363609314</y>
+                        <z>0</z>
+                        <width>18.363769531</width>
+                        <height>15.454620361</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ScratchZone" uid="11">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <effect>(none)</effect>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <instance-variables>
+                        <IsWinningTicket>false</IsWinningTicket>
+                        <WinningProba>0.5</WinningProba>
+                        <winningSimilarItem>2</winningSimilarItem>
+                        <WinningItemsSet>0</WinningItemsSet>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>53.181442261</x>
+                        <y>51.726615906</y>
+                        <z>0</z>
+                        <width>35.908920288</width>
+                        <height>33.908218384</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite" uid="12">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <IsLosing>true</IsLosing>
+                        <IsOnTop>false</IsOnTop>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>172.411437988</x>
+                        <y>67.323745728</y>
+                        <z>0</z>
+                        <width>18.363769531</width>
+                        <height>15.454620361</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ScratchZone" uid="13">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <effect>(none)</effect>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <instance-variables>
+                        <IsWinningTicket>false</IsWinningTicket>
+                        <WinningProba>0.5</WinningProba>
+                        <winningSimilarItem>2</winningSimilarItem>
+                        <WinningItemsSet>0</WinningItemsSet>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>155.138000488</x>
+                        <y>51.686752319</y>
+                        <z>0</z>
+                        <width>35.908920288</width>
+                        <height>33.908218384</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
         <layer name="item" sid="3492310608189468">
@@ -61,8 +274,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>215.273010254</x>
-                        <y>175.54536438</y>
+                        <x>219.328704834</x>
+                        <y>67.074401855</y>
                         <z>0</z>
                         <width>18.363769531</width>
                         <height>15.454620361</height>
@@ -101,18 +314,17 @@
                     <instance-variables>
                         <IsWinningTicket>false</IsWinningTicket>
                         <WinningProba>0.5</WinningProba>
-                        <nbItem>5</nbItem>
                         <winningSimilarItem>2</winningSimilarItem>
                         <WinningItemsSet>0</WinningItemsSet>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>8</x>
-                        <y>9</y>
+                        <x>202.055267334</x>
+                        <y>51.437408447</y>
                         <z>0</z>
-                        <width>235</width>
-                        <height>233</height>
+                        <width>35.908920288</width>
+                        <height>33.908218384</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -133,8 +345,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>125</x>
-                        <y>124.5</y>
+                        <x>419.545288086</x>
+                        <y>99.045776367</y>
                         <z>0</z>
                         <width>248</width>
                         <height>248</height>
@@ -166,8 +378,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>127.727287292</x>
-                        <y>116.364097595</y>
+                        <x>146.064971924</x>
+                        <y>138.971725464</y>
                         <z>0</z>
                         <width>373.091094971</width>
                         <height>142.501754761</height>
@@ -202,33 +414,6 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="Text" uid="6">
-                    <properties>
-                        <text>Lose</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>70.454605103</x>
-                        <y>203.636413574</y>
-                        <z>0</z>
-                        <width>200</width>
-                        <height>30</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>

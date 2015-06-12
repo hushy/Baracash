@@ -51,10 +51,13 @@
             <instance-variables>
                 <instance-variable name="IsWinningTicket" sid="5556637883218976" type="boolean" />
                 <instance-variable name="WinningProba" sid="2320184090987095" type="number" />
-                <instance-variable name="nbItem" sid="7555174601754083" type="number" />
                 <instance-variable name="winningSimilarItem" sid="9935996548202578" type="number" />
                 <instance-variable name="WinningItemsSet" sid="6839250807041944" type="number" />
             </instance-variables>
+            <container>
+                <type>ScratchZone</type>
+                <type>Sprite</type>
+            </container>
             <texture />
         </object-type>
         <object-type name="Touch" sid="7538855580201067">
@@ -74,6 +77,10 @@
                 <instance-variable name="IsLosing" sid="1584063996079342" type="boolean" />
                 <instance-variable name="IsOnTop" sid="8552729175195099" type="boolean" />
             </instance-variables>
+            <container>
+                <type>ScratchZone</type>
+                <type>Sprite</type>
+            </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Win" pingpong="0" repeatcount="1" repeatto="0" sid="1984837412463079" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
