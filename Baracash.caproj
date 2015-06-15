@@ -119,8 +119,9 @@
                 </behavior-type>
             </behaviors>
             <container>
-                <type>TextBox</type>
                 <type>result</type>
+                <type>TextBox</type>
+                <type>BRI</type>
             </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Lose" pingpong="0" repeatcount="1" repeatto="0" sid="8799132369838851" speed="5">
@@ -134,12 +135,21 @@
         <object-type name="TextBox" sid="216507672055013">
             <plugin id="TextBox" />
             <container>
-                <type>TextBox</type>
                 <type>result</type>
+                <type>TextBox</type>
+                <type>BRI</type>
             </container>
         </object-type>
         <object-type name="Text" sid="3065632316772462">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="BRI" sid="6820045315212185">
+            <plugin id="TextBox" />
+            <container>
+                <type>result</type>
+                <type>TextBox</type>
+                <type>BRI</type>
+            </container>
         </object-type>
     </object-folder>
     <families />
@@ -167,5 +177,6 @@
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
         </file-folder>
+        <file name="BRI.txt" />
     </files-folder>
 </c2project>

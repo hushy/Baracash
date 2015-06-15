@@ -411,10 +411,36 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>50.43069458</x>
-                        <y>104.832077026</y>
+                        <x>88.21786499</x>
+                        <y>143.551956177</y>
                         <z>0</z>
                         <width>150</width>
+                        <height>22</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="BRI" uid="14">
+                    <properties>
+                        <text>BRI</text>
+                        <placeholder></placeholder>
+                        <tooltip></tooltip>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <read-only>Yes</read-only>
+                        <spell-check>No</spell-check>
+                        <type>Text</type>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>88.379257202</x>
+                        <y>109.353775024</y>
+                        <z>0</z>
+                        <width>69.294250488</width>
                         <height>22</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
