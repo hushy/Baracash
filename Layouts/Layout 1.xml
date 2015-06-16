@@ -67,6 +67,7 @@
                         <winningSimilarItem>2</winningSimilarItem>
                         <WinningItemsSet>0</WinningItemsSet>
                         <IsTouched>false</IsTouched>
+                        <isGameOver>false</isGameOver>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -121,6 +122,7 @@
                         <winningSimilarItem>2</winningSimilarItem>
                         <WinningItemsSet>0</WinningItemsSet>
                         <IsTouched>false</IsTouched>
+                        <isGameOver>false</isGameOver>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -175,6 +177,7 @@
                         <winningSimilarItem>2</winningSimilarItem>
                         <WinningItemsSet>0</WinningItemsSet>
                         <IsTouched>false</IsTouched>
+                        <isGameOver>false</isGameOver>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -229,6 +232,7 @@
                         <winningSimilarItem>2</winningSimilarItem>
                         <WinningItemsSet>0</WinningItemsSet>
                         <IsTouched>false</IsTouched>
+                        <isGameOver>false</isGameOver>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -321,6 +325,7 @@
                         <winningSimilarItem>2</winningSimilarItem>
                         <WinningItemsSet>0</WinningItemsSet>
                         <IsTouched>false</IsTouched>
+                        <isGameOver>false</isGameOver>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -342,7 +347,7 @@
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <collisions>Disabled</collisions>
                     </properties>
                     <instance-variables>
                         <Loaded>false</Loaded>
@@ -350,11 +355,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>124.712638855</x>
-                        <y>124.937057495</y>
+                        <x>125.179267883</x>
+                        <y>124.703704834</y>
                         <z>0</z>
-                        <width>249.865600586</width>
-                        <height>251.265533447</height>
+                        <width>249.865753174</width>
+                        <height>249.865478516</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -383,8 +388,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>132.069519043</x>
-                        <y>124.510055542</y>
+                        <x>127.404846191</x>
+                        <y>119.378295898</y>
                         <z>0</z>
                         <width>373.091094971</width>
                         <height>142.501754761</height>

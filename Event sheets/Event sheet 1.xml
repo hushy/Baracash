@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="debug" sid="7675934384463019" static="0" type="number">0</variable>
+        <variable constant="0" name="LastGameTimerInSecond" sid="1843762542549096" static="0" type="number">300</variable>
         <variable constant="0" name="scratchSize" sid="9052999839548576" static="0" type="number">10</variable>
         <variable constant="0" name="Y" sid="6213800150554527" static="0" type="number">-1</variable>
         <variable constant="0" name="X" sid="677297388789187" static="0" type="number">-1</variable>
@@ -29,55 +31,107 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="1211866829365002" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="11" name="Get elapsed time" sid="189522954682573" type="TimeAwayL">
+                            <param id="0" name="Key">&quot;LastGame&quot;</param>
+                        </action>
+                        <action id="2" name="Stop" sid="5013793760948326" type="loading" />
+                    </actions>
+                </event-block>
+                <event-block sid="142584016331733">
+                    <conditions>
+                        <condition id="11" name="On elapsed time get" sid="5039435178098349" type="TimeAwayL">
+                            <param id="0" name="Key">&quot;LastGame&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3166672457108102" type="System">
+                            <param id="0" name="Variable">debug</param>
+                            <param id="1" name="Value">TimeAwayL.ElapsedTime</param>
+                        </action>
+                    </actions>
                     <sub-events>
-                        <event-block sid="8517728180955664">
+                        <event-block any="1" sid="3191833225386032">
                             <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="461002228167987" type="ScratchZone">
-                                    <param id="0" name="Instance variable">IsWinningTicket</param>
+                                <condition id="-8" name="Compare two values" sid="6476843977643427" type="System">
+                                    <param id="0" name="First value">TimeAwayL.ElapsedTime</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">LastGameTimerInSecond</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="5804916229509248" type="System">
+                                    <param id="0" name="First value">TimeAwayL.ElapsedTime</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Second value">0</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="9600447670630281">
+                                <event-block sid="8517728180955664">
                                     <conditions>
-                                        <condition id="-10" name="For" sid="2428992849128049" type="System">
-                                            <param id="0" name="Name">&quot;&quot;</param>
-                                            <param id="1" name="Start index">1</param>
-                                            <param id="2" name="End index">ScratchZone.winningSimilarItem</param>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="461002228167987" type="ScratchZone">
+                                            <param id="0" name="Instance variable">IsWinningTicket</param>
                                         </condition>
-                                        <condition id="-34" name="Pick by evaluate" sid="2334781701941883" type="System">
-                                            <param id="0" name="Object">Sprite</param>
-                                            <param id="1" name="Expression">Sprite.IsLosing</param>
-                                        </condition>
-                                        <condition id="-16" name="Pick random instance" sid="6982352604773782" type="System">
+                                    </conditions>
+                                    <actions>
+                                        <action id="3" name="Start" sid="8788156770234062" type="loading">
+                                            <param id="0" name="From">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="9600447670630281">
+                                            <conditions>
+                                                <condition id="-10" name="For" sid="2428992849128049" type="System">
+                                                    <param id="0" name="Name">&quot;&quot;</param>
+                                                    <param id="1" name="Start index">1</param>
+                                                    <param id="2" name="End index">ScratchZone.winningSimilarItem</param>
+                                                </condition>
+                                                <condition id="-34" name="Pick by evaluate" sid="2334781701941883" type="System">
+                                                    <param id="0" name="Object">Sprite</param>
+                                                    <param id="1" name="Expression">Sprite.IsLosing</param>
+                                                </condition>
+                                                <condition id="-16" name="Pick random instance" sid="6982352604773782" type="System">
+                                                    <param id="0" name="Object">Sprite</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="4586976665247292" type="Sprite">
+                                                    <param id="0" name="Animation">&quot;Win&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-13" name="Set boolean" sid="3686482017090143" type="Sprite">
+                                                    <param id="0" name="Instance variable">IsLosing</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="7623362852607235">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="3001127758991625" type="System" />
+                                        <condition id="-16" name="Pick random instance" sid="448205857288493" type="System">
                                             <param id="0" name="Object">Sprite</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" sid="4586976665247292" type="Sprite">
+                                        <action id="4" name="Set animation" sid="1416112877125829" type="Sprite">
                                             <param id="0" name="Animation">&quot;Win&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
-                                        <action id="-13" name="Set boolean" sid="3686482017090143" type="Sprite">
-                                            <param id="0" name="Instance variable">IsLosing</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="3" name="Start" sid="1413194635418813" type="loading">
+                                            <param id="0" name="From">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="7623362852607235">
+                        <event-block sid="3839896679655702">
                             <conditions>
-                                <condition id="-22" name="Else" sid="3001127758991625" type="System" />
-                                <condition id="-16" name="Pick random instance" sid="448205857288493" type="System">
-                                    <param id="0" name="Object">Sprite</param>
-                                </condition>
+                                <condition id="-22" name="Else" sid="8281128913031716" type="System" />
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="1416112877125829" type="Sprite">
-                                    <param id="0" name="Animation">&quot;Win&quot;</param>
-                                    <param id="1" name="From">1</param>
+                                <action id="-2" name="Go to layout" sid="3732861654638515" type="System">
+                                    <param id="0" name="Layout">Layout 2</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -256,6 +310,22 @@
                                 <action id="4" name="Set animation" sid="2598343434748076" type="result">
                                     <param id="0" name="Animation">&quot;Win&quot;</param>
                                     <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7266615986256487">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7285072192849833" type="ScratchZone">
+                                    <param id="0" name="Instance variable">isGameOver</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="7562963406159172" type="ScratchZone">
+                                    <param id="0" name="Instance variable">isGameOver</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="1" name="Start timer" sid="5272088249559289" type="TimeAwayL">
+                                    <param id="0" name="Key">&quot;LastGame&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

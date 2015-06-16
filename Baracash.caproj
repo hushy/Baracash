@@ -10,11 +10,15 @@
     <unique-id>3t8fqcjm7dvrh</unique-id>
     <saved-with-version>20600</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_TimeAwayL" version="0.100000001">Time away L</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="R0J0hound" id="c2canvas" version="2">Canvas</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
@@ -29,6 +33,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Layout 1</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -54,6 +59,7 @@
                 <instance-variable name="winningSimilarItem" sid="9935996548202578" type="number" />
                 <instance-variable name="WinningItemsSet" sid="6839250807041944" type="number" />
                 <instance-variable name="IsTouched" sid="4348011117875877" type="boolean" />
+                <instance-variable name="isGameOver" sid="2500240124551757" type="boolean" />
             </instance-variables>
             <container>
                 <type>ScratchZone</type>
@@ -151,13 +157,38 @@
                 <type>BRI</type>
             </container>
         </object-type>
+        <object-type name="LocalStorage" sid="4949617433012997">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="Browser" sid="7962304995655881">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="TimeAwayL" sid="2570945835548508">
+            <plugin id="Rex_TimeAwayL" />
+        </object-type>
+        <object-type name="Sprite2" sid="2175532174858335">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5936645367758125" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressBar" sid="1164689577870269">
+            <plugin id="progressbar" />
+        </object-type>
+        <object-type name="Text2" sid="3066525046705744">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="1">
@@ -165,6 +196,9 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="LocalStorage" uid="15" />
+        <global-instance type="Browser" uid="16" />
+        <global-instance type="TimeAwayL" uid="18" />
     </global-instances>
     <sounds-folder />
     <music-folder />
