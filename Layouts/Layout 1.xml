@@ -456,6 +456,8 @@
             <effects />
         </layer>
     </layers>
-    <nonworld-instances />
+    <nonworld-instances>
+        <instance type="Date" uid="20" />
+    </nonworld-instances>
     <effects />
 </c2layout>

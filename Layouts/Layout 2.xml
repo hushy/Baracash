@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Layout 2</name>
-    <sid>8509040490573866</sid>
+    <sid>8294854767206343</sid>
     <event-sheet>Event sheet 2</event-sheet>
     <size>
         <width>1708</width>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="265513217745057">
+        <layer name="Layer 0" sid="8280099718614367">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,29 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite2" uid="17">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>126</x>
-                        <y>126</y>
-                        <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="ProgressBar" uid="19">
+                <instance type="ProgressBar" uid="17">
                     <properties>
                         <value>0</value>
                         <maximum>100</maximum>
@@ -62,8 +40,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>27</x>
-                        <y>146</y>
+                        <x>31</x>
+                        <y>113</y>
                         <z>0</z>
                         <width>200</width>
                         <height>25</height>
@@ -72,9 +50,9 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="Text2" uid="20">
+                <instance type="Timer" uid="19">
                     <properties>
-                        <text>Rejouez dans</text>
+                        <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
@@ -87,10 +65,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>27</x>
-                        <y>114</y>
+                        <x>90</x>
+                        <y>71</y>
                         <z>0</z>
-                        <width>200</width>
+                        <width>82</width>
                         <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>

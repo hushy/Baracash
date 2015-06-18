@@ -2,5 +2,48 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 2</name>
-    <events />
+    <events>
+        <event-block sid="7889887655932702">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8448238279020194" type="System" />
+            </conditions>
+            <actions>
+                <action id="11" name="Get elapsed time" sid="8721806986263172" type="TimeAwayL">
+                    <param id="0" name="Key">&quot;LastGame&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4592693072425734">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="38358784383646" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="11" name="Get elapsed time" sid="4661975086362311" type="TimeAwayL">
+                    <param id="0" name="Key">&quot;LastGame&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <variable constant="0" name="remainingTime" sid="3482504439336996" static="0" type="number">0</variable>
+        <event-block sid="4730608328085435">
+            <conditions>
+                <condition id="11" name="On elapsed time get" sid="2511236602638574" type="TimeAwayL">
+                    <param id="0" name="Key">&quot;LastGame&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3150957605098214" type="System">
+                    <param id="0" name="Variable">remainingTime</param>
+                    <param id="1" name="Value">LastGameTimerInSecond-TimeAwayL.ElapsedTime</param>
+                </action>
+                <action id="3" name="Set progress" sid="4609997204139141" type="ProgressBar">
+                    <param id="0" name="Value">TimeAwayL.ElapsedTime/LastGameTimerInSecond*ProgressBar.Maximum</param>
+                </action>
+                <action id="0" name="Set text" sid="8056913778419256" type="Timer">
+                    <param id="0" name="Text">Date.GetDateString(remainingTime)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
