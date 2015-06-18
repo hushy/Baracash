@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="debug2" sid="2580652108009084" static="0" type="number">0</variable>
         <variable constant="0" name="debug" sid="7675934384463019" static="0" type="number">0</variable>
         <variable constant="0" name="LastGameTimerInSecond" sid="1843762542549096" static="0" type="number">300</variable>
         <variable constant="0" name="scratchSize" sid="9052999839548576" static="0" type="number">10</variable>
@@ -130,6 +131,13 @@
                                 <condition id="-22" name="Else" sid="8281128913031716" type="System" />
                             </conditions>
                             <actions>
+                                <action id="-9" name="Set value" sid="7964622773110465" type="System">
+                                    <param id="0" name="Variable">debug2</param>
+                                    <param id="1" name="Value">TimeAwayL.ElapsedTime/LastGameTimerInSecond</param>
+                                </action>
+                                <action id="3" name="Set progress" sid="2315909266035281" type="ProgressBar">
+                                    <param id="0" name="Value">TimeAwayL.ElapsedTime/LastGameTimerInSecond * ProgressBar.Maximum</param>
+                                </action>
                                 <action id="-2" name="Go to layout" sid="3732861654638515" type="System">
                                     <param id="0" name="Layout">Layout 2</param>
                                 </action>

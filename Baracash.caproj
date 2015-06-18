@@ -104,6 +104,7 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="10" loop="0" name="Loading" pingpong="0" repeatcount="1" repeatto="0" sid="8306111746877408" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_8.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_3.png" />
@@ -111,7 +112,6 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_5.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_6.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_7.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_8.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_9.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_10.png" />
                 </animation>
