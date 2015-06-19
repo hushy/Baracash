@@ -105,7 +105,6 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="10" loop="0" name="Loading" pingpong="0" repeatcount="1" repeatto="0" sid="8306111746877408" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_8.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_3.png" />
@@ -113,6 +112,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_5.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_6.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_8.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_9.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_10.png" />
                 </animation>
@@ -127,8 +127,7 @@
             </behaviors>
             <container>
                 <type>result</type>
-                <type>TextBox</type>
-                <type>BRI</type>
+                <type>MailBox</type>
             </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Lose" pingpong="0" repeatcount="1" repeatto="0" sid="8799132369838851" speed="5">
@@ -139,23 +138,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TextBox" sid="216507672055013">
+        <object-type name="MailBox" sid="216507672055013">
             <plugin id="TextBox" />
             <container>
                 <type>result</type>
-                <type>TextBox</type>
-                <type>BRI</type>
-            </container>
-        </object-type>
-        <object-type name="Text" sid="3065632316772462">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="BRI" sid="6820045315212185">
-            <plugin id="TextBox" />
-            <container>
-                <type>result</type>
-                <type>TextBox</type>
-                <type>BRI</type>
+                <type>MailBox</type>
             </container>
         </object-type>
         <object-type name="LocalStorage" sid="4949617433012997">
@@ -178,14 +165,14 @@
         <object-type name="ProgressBar" sid="1164689577870269">
             <plugin id="progressbar" />
         </object-type>
-        <object-type name="Text2" sid="3066525046705744">
-            <plugin id="Text" />
-        </object-type>
         <object-type name="Timer" sid="7780617530494352">
             <plugin id="Text" />
         </object-type>
         <object-type global="1" name="Date" sid="5022984442309546">
             <plugin id="Rex_Date" />
+        </object-type>
+        <object-type name="BRIBox" sid="3218134636025345">
+            <plugin id="TextBox" />
         </object-type>
     </object-folder>
     <families />
