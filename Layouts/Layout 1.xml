@@ -61,14 +61,6 @@
                         <effect>(none)</effect>
                         <hotspot>Top-left</hotspot>
                     </properties>
-                    <instance-variables>
-                        <IsWinningTicket>false</IsWinningTicket>
-                        <WinningProba>0.5</WinningProba>
-                        <winningSimilarItem>2</winningSimilarItem>
-                        <WinningItemsSet>0</WinningItemsSet>
-                        <IsTouched>false</IsTouched>
-                        <isGameOver>false</isGameOver>
-                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -116,14 +108,6 @@
                         <effect>(none)</effect>
                         <hotspot>Top-left</hotspot>
                     </properties>
-                    <instance-variables>
-                        <IsWinningTicket>false</IsWinningTicket>
-                        <WinningProba>0.5</WinningProba>
-                        <winningSimilarItem>2</winningSimilarItem>
-                        <WinningItemsSet>0</WinningItemsSet>
-                        <IsTouched>false</IsTouched>
-                        <isGameOver>false</isGameOver>
-                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -171,14 +155,6 @@
                         <effect>(none)</effect>
                         <hotspot>Top-left</hotspot>
                     </properties>
-                    <instance-variables>
-                        <IsWinningTicket>false</IsWinningTicket>
-                        <WinningProba>0.5</WinningProba>
-                        <winningSimilarItem>2</winningSimilarItem>
-                        <WinningItemsSet>0</WinningItemsSet>
-                        <IsTouched>false</IsTouched>
-                        <isGameOver>false</isGameOver>
-                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -226,14 +202,6 @@
                         <effect>(none)</effect>
                         <hotspot>Top-left</hotspot>
                     </properties>
-                    <instance-variables>
-                        <IsWinningTicket>false</IsWinningTicket>
-                        <WinningProba>0.5</WinningProba>
-                        <winningSimilarItem>2</winningSimilarItem>
-                        <WinningItemsSet>0</WinningItemsSet>
-                        <IsTouched>false</IsTouched>
-                        <isGameOver>false</isGameOver>
-                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -345,14 +313,6 @@
                         <effect>(none)</effect>
                         <hotspot>Top-left</hotspot>
                     </properties>
-                    <instance-variables>
-                        <IsWinningTicket>false</IsWinningTicket>
-                        <WinningProba>0.5</WinningProba>
-                        <winningSimilarItem>2</winningSimilarItem>
-                        <WinningItemsSet>0</WinningItemsSet>
-                        <IsTouched>false</IsTouched>
-                        <isGameOver>false</isGameOver>
-                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -450,6 +410,48 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="Particles" uid="16">
+                    <properties>
+                        <rate>100</rate>
+                        <spray-cone>120</spray-cone>
+                        <type>Continuous spray</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>16</speed>
+                        <size>1</size>
+                        <opacity>100</opacity>
+                        <grow-rate>0</grow-rate>
+                        <x-randomiser>2</x-randomiser>
+                        <y-randomiser>2</y-randomiser>
+                        <speed-randomiser->16</speed-randomiser->
+                        <size-randomiser>0</size-randomiser>
+                        <grow-rate-randomiser>0</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>10</acceleration>
+                        <gravity>50</gravity>
+                        <angle-randomiser>0</angle-randomiser>
+                        <speed-randomiser>0</speed-randomiser>
+                        <opacity-randomiser>0</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>5</timeout>
+                    </properties>
+                    <instance-variables>
+                        <DefaultRate>100</DefaultRate>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-189.496643066</x>
+                        <y>44.817111969</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>1.570795774</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>

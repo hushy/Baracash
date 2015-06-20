@@ -16,7 +16,7 @@
         <event-block sid="4592693072425734">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="38358784383646" type="System">
-                    <param id="0" name="Interval (seconds)">1.0</param>
+                    <param id="0" name="Interval (seconds)">0.2</param>
                 </condition>
             </conditions>
             <actions>
@@ -35,7 +35,7 @@
             <actions>
                 <action id="-9" name="Set value" sid="3150957605098214" type="System">
                     <param id="0" name="Variable">remainingTime</param>
-                    <param id="1" name="Value">LastGameTimerInSecond-TimeAwayL.ElapsedTime</param>
+                    <param id="1" name="Value">LastGameTimerInSeconds-TimeAwayL.ElapsedTime</param>
                 </action>
             </actions>
         </event-block>
@@ -52,7 +52,7 @@
                     <param id="0" name="Text">Date.GetDateString(remainingTime)</param>
                 </action>
                 <action id="3" name="Set progress" sid="4609997204139141" type="ProgressBar">
-                    <param id="0" name="Value">TimeAwayL.ElapsedTime/LastGameTimerInSecond*ProgressBar.Maximum</param>
+                    <param id="0" name="Value">TimeAwayL.ElapsedTime/LastGameTimerInSeconds*ProgressBar.Maximum</param>
                 </action>
             </actions>
         </event-block>
@@ -61,9 +61,20 @@
                 <condition id="-22" name="Else" sid="5130664018214651" type="System" />
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="3451412669362777" type="System">
+                <action id="3" name="Set enabled" sid="1586025538570765" type="Button">
+                    <param id="0" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9819017301671909">
+            <conditions>
+                <condition id="0" name="On clicked" sid="6004687612581699" type="Button" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9648626740550017" type="System">
                     <param id="0" name="Layout">Layout 1</param>
                 </action>
+                <action id="-21" name="Reset global variables" sid="8446927038142427" type="System" />
             </actions>
         </event-block>
     </events>

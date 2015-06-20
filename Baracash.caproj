@@ -10,8 +10,9 @@
     <unique-id>3t8fqcjm7dvrh</unique-id>
     <saved-with-version>20600</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Rex.Rainbow" id="Rex_Date" version="1">Date</plugin>
         <plugin author="Rex.Rainbow" id="Rex_TimeAwayL" version="0.100000001">Time away L</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -54,14 +55,6 @@
     <object-folder>
         <object-type name="ScratchZone" sid="5334967479662794">
             <plugin id="c2canvas" />
-            <instance-variables>
-                <instance-variable name="IsWinningTicket" sid="5556637883218976" type="boolean" />
-                <instance-variable name="WinningProba" sid="2320184090987095" type="number" />
-                <instance-variable name="winningSimilarItem" sid="9935996548202578" type="number" />
-                <instance-variable name="WinningItemsSet" sid="6839250807041944" type="number" />
-                <instance-variable name="IsTouched" sid="4348011117875877" type="boolean" />
-                <instance-variable name="isGameOver" sid="2500240124551757" type="boolean" />
-            </instance-variables>
             <container>
                 <type>ScratchZone</type>
                 <type>Sprite</type>
@@ -148,9 +141,6 @@
         <object-type name="LocalStorage" sid="4949617433012997">
             <plugin id="LocalStorage" />
         </object-type>
-        <object-type name="Browser" sid="7962304995655881">
-            <plugin id="Browser" />
-        </object-type>
         <object-type name="TimeAwayL" sid="2570945835548508">
             <plugin id="Rex_TimeAwayL" />
         </object-type>
@@ -174,6 +164,16 @@
         <object-type name="BRIBox" sid="3218134636025345">
             <plugin id="TextBox" />
         </object-type>
+        <object-type name="Button" sid="6469362977631787">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Particles" sid="1591621651736752">
+            <plugin id="Particles" />
+            <instance-variables>
+                <instance-variable name="DefaultRate" sid="5326842049180203" type="number" />
+            </instance-variables>
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -191,7 +191,6 @@
             </properties>
         </global-instance>
         <global-instance type="LocalStorage" uid="15" />
-        <global-instance type="Browser" uid="16" />
         <global-instance type="TimeAwayL" uid="18" />
     </global-instances>
     <sounds-folder />
