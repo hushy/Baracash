@@ -87,21 +87,32 @@
             </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Win" pingpong="0" repeatcount="1" repeatto="0" sid="1984837412463079" speed="5">
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.585366" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\Xbox_One_(logo).png">
+                    <frame duration="1" hotspotX="0.534091" hotspotY="0.621795" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\Xbox_One_(logo).png">
                         <collision-poly>
-                            <point x="0.280702" y="0.5" />
-                            <point x="0.520468" y="0.25" />
-                            <point x="0.812865" y="0.25" />
-                            <point x="0.923977" y="0.583333" />
-                            <point x="0.77193" y="0.722222" />
-                            <point x="0.520468" y="0.777778" />
-                            <point x="0.298246" y="0.583333" />
-                            <point x="0.0116959" y="0.583333" />
+                            <point x="0.283425" y="0.526994" />
+                            <point x="0.534356" y="0.241002" />
+                            <point x="0.840369" y="0.241002" />
+                            <point x="0.956655" y="0.622325" />
+                            <point x="0.797527" y="0.78121" />
+                            <point x="0.534356" y="0.844764" />
+                            <point x="0.301786" y="0.622325" />
+                            <point x="0.00189261" y="0.622325" />
                         </collision-poly>
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3313835896648145" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\nespresso.png">
+                        <collision-poly>
+                            <point x="0.35" y="0.35" />
+                            <point x="0.5" y="0.23" />
+                            <point x="0.655" y="0.345" />
+                            <point x="0.655" y="0.5" />
+                            <point x="0.69" y="0.69" />
+                            <point x="0.5" y="0.685" />
+                            <point x="0.275" y="0.725" />
+                            <point x="0.35" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="samsung" pingpong="0" repeatcount="1" repeatto="0" sid="164358397124465" speed="5">
                     <frame duration="1" hotspotX="0.501818" hotspotY="0.5" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\samsung.png">
