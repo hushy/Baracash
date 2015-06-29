@@ -4,7 +4,7 @@
     <sid>761990100485601</sid>
     <event-sheet>Event sheet 1</event-sheet>
     <size>
-        <width>720</width>
+        <width>1000</width>
         <height>446</height>
     </size>
     <margins>
@@ -29,6 +29,28 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="Sprite" uid="28">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>999</x>
+                        <y>480</y>
+                        <z>0</z>
+                        <width>2000</width>
+                        <height>956</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="BRIBox" uid="14">
                     <properties>
                         <text></text>
@@ -65,7 +87,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>223</x>
+                        <x>495</x>
                         <y>223</y>
                         <z>0</z>
                         <width>446</width>
@@ -404,8 +426,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>9</x>
-                        <y>517</y>
+                        <x>-4</x>
+                        <y>519</y>
                         <z>0</z>
                         <width>150</width>
                         <height>22</height>
@@ -576,8 +598,8 @@
                             <properties>
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>0</fade-in-time>
-                                <wait-time>2</wait-time>
-                                <fade-out-time>2</fade-out-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
                                 <destroy>No</destroy>
                             </properties>
                         </behavior-instance>
@@ -586,10 +608,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>223</x>
-                        <y>223</y>
+                        <x>503</x>
+                        <y>548</y>
                         <z>0</z>
-                        <width>446</width>
+                        <width>720</width>
                         <height>446</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>

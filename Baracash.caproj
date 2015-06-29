@@ -31,7 +31,7 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>720</width>
+        <width>1000</width>
         <height>446</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
@@ -182,6 +182,22 @@
                 </animation>
                 <animation framecount="1" loop="0" name="Reverse" pingpong="0" repeatcount="1" repeatto="0" sid="7666312745984901" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas.verdonk\Desktop\dream.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="4936968626084859">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8184656558779365" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\skin-pa_150624043007.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="7439940263312307">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5759095725246971" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
