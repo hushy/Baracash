@@ -73,6 +73,22 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="39825084966474">
+                            <conditions>
+                                <condition id="-19" name="Pick all" sid="507029074886908" type="System">
+                                    <param id="0" name="Object">ScratchZone</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="1867206375286772" type="Icon">
+                                    <param id="0" name="X">ScratchZone.X + ScratchZone.Width/2</param>
+                                    <param id="1" name="Y">ScratchZone.Y + ScratchZone.Height/2</param>
+                                </action>
+                                <action id="-26" name="Move to layer" sid="6618582472123234" type="Icon">
+                                    <param id="0" name="Layer">&quot;item&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block bookmark="1" sid="142584016331733">
