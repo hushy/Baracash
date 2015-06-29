@@ -318,7 +318,7 @@
                         <text>C pas la rentrée… repartez en vacances avec 2000 € !</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Gabriola,-37,700,0</font>
-                        <color>153,0,0</color>
+                        <color>204,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -345,7 +345,7 @@
                         <text>Gratte 3 symboles identiques et gagne pleins de cadeaux</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Gabriola,-37,700,0</font>
-                        <color>153,0,0</color>
+                        <color>204,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
