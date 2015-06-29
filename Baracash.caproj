@@ -24,6 +24,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -88,18 +89,17 @@
             <instance-variables>
                 <instance-variable name="Loaded" sid="6245044374843979" type="boolean" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Fade" sid="6496372860724132">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Timer" sid="5615116602736077">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="10" loop="0" name="Loading" pingpong="0" repeatcount="1" repeatto="0" sid="8306111746877408" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_1.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_2.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_3.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_4.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_5.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_6.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_7.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_8.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_9.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\sprite_10.png" />
+                <animation framecount="1" loop="0" name="Loading" pingpong="0" repeatcount="1" repeatto="0" sid="8306111746877408" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\WORK\BaracashGit\Baracash\Textures\intro.jpg" />
                 </animation>
             </animation-folder>
         </object-type>
