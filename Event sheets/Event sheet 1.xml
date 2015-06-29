@@ -4,7 +4,7 @@
     <name>Event sheet 1</name>
     <events>
         <variable constant="0" name="IsWinningTicket" sid="4925112843137334" static="0" type="number">0</variable>
-        <variable constant="0" name="LastGameTimerInSeconds" sid="1843762542549096" static="0" type="number">5</variable>
+        <variable constant="0" name="LastGameTimerInSeconds" sid="1843762542549096" static="0" type="number">30</variable>
         <variable constant="0" name="Debug" sid="3394164441913506" static="0" type="text"></variable>
         <variable constant="0" name="InitState" sid="7953206043994739" static="0" type="number">-1</variable>
         <variable constant="0" name="scratchSize" sid="9052999839548576" static="0" type="number">10</variable>

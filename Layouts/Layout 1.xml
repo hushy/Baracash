@@ -4,7 +4,7 @@
     <sid>761990100485601</sid>
     <event-sheet>Event sheet 1</event-sheet>
     <size>
-        <width>720</width>
+        <width>1000</width>
         <height>446</height>
     </size>
     <margins>
@@ -45,8 +45,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>88.676116943</x>
-                        <y>113.11832428</y>
+                        <x>377</x>
+                        <y>113</y>
                         <z>0</z>
                         <width>150</width>
                         <height>22</height>
@@ -65,7 +65,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>223</x>
+                        <x>511</x>
                         <y>223</y>
                         <z>0</z>
                         <width>446</width>
@@ -87,7 +87,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>86</x>
+                        <x>374</x>
                         <y>71</y>
                         <z>0</z>
                         <width>192</width>
@@ -109,8 +109,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>387.272888184</x>
-                        <y>65.817932129</y>
+                        <x>675</x>
+                        <y>66</y>
                         <z>0</z>
                         <width>168</width>
                         <height>181</height>
@@ -131,8 +131,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>261.81652832</x>
-                        <y>369.365081787</y>
+                        <x>550</x>
+                        <y>369</y>
                         <z>0</z>
                         <width>168</width>
                         <height>182</height>
@@ -153,7 +153,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>243</x>
+                        <x>531</x>
                         <y>41</y>
                         <z>0</z>
                         <width>205</width>
@@ -175,8 +175,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>82.324020386</x>
-                        <y>364.980407715</y>
+                        <x>370</x>
+                        <y>365</y>
                         <z>0</z>
                         <width>168</width>
                         <height>182</height>
@@ -220,8 +220,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>382.325286865</x>
-                        <y>62.337387085</y>
+                        <x>670</x>
+                        <y>62</y>
                         <z>0</z>
                         <width>35.875244141</width>
                         <height>33.62146759</height>
@@ -272,8 +272,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>248.264770508</x>
-                        <y>243.672576904</y>
+                        <x>536</x>
+                        <y>244</y>
                         <z>0</z>
                         <width>373.091094971</width>
                         <height>142.501754761</height>
@@ -300,7 +300,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>9</x>
+                        <x>297</x>
                         <y>517</y>
                         <z>0</z>
                         <width>150</width>
@@ -352,6 +352,111 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="ScratchZone" uid="9">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <effect>(none)</effect>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>428</x>
+                        <y>-31</y>
+                        <z>0</z>
+                        <width>205</width>
+                        <height>145</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ScratchZone" uid="11">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <effect>(none)</effect>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>591</x>
+                        <y>-24</y>
+                        <z>0</z>
+                        <width>168</width>
+                        <height>181</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ScratchZone" uid="13">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <effect>(none)</effect>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>279</x>
+                        <y>-25</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>192</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ScratchZone" uid="12">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <effect>(none)</effect>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>466</x>
+                        <y>279</y>
+                        <z>0</z>
+                        <width>168</width>
+                        <height>182</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ScratchZone" uid="23">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <effect>(none)</effect>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>287</x>
+                        <y>274</y>
+                        <z>0</z>
+                        <width>168</width>
+                        <height>182</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="loading" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -377,119 +482,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-272</x>
-                        <y>389</y>
+                        <x>500</x>
+                        <y>223</y>
                         <z>0</z>
-                        <width>446</width>
+                        <width>1000</width>
                         <height>446</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="ScratchZone" uid="9">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <effect>(none)</effect>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>140.070587158</x>
-                        <y>-31.126564026</y>
-                        <z>0</z>
-                        <width>205</width>
-                        <height>145</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="ScratchZone" uid="11">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <effect>(none)</effect>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>303.126861572</x>
-                        <y>-24.339630127</y>
-                        <z>0</z>
-                        <width>168</width>
-                        <height>181</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="ScratchZone" uid="13">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <effect>(none)</effect>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-9.416351318</x>
-                        <y>-25.168556213</y>
-                        <z>0</z>
-                        <width>192</width>
-                        <height>192</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="ScratchZone" uid="12">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <effect>(none)</effect>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>177.669708252</x>
-                        <y>279.207397461</y>
-                        <z>0</z>
-                        <width>168</width>
-                        <height>182</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="ScratchZone" uid="23">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <effect>(none)</effect>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-1.071632385</x>
-                        <y>274.070739746</y>
-                        <z>0</z>
-                        <width>168</width>
-                        <height>182</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

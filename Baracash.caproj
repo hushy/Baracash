@@ -26,12 +26,14 @@
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Paulo Ricardo Reinehr" id="prralphathreshold">Alpha Threshold</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>720</width>
+        <width>1000</width>
         <height>446</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
@@ -107,7 +109,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Loading" pingpong="0" repeatcount="1" repeatto="0" sid="8306111746877408" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\WORK\BaracashGit\Baracash\Textures\intro.jpg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\intro3.jpg" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -190,6 +192,51 @@
                 </animation>
                 <animation framecount="1" loop="0" name="Reverse" pingpong="0" repeatcount="1" repeatto="0" sid="7666312745984901" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas.verdonk\Desktop\dream.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="8637988723780116">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="AlphaThreshold">
+                    <effect id="prralphathreshold" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2943042025229972" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\loading2.jpg">
+                        <collision-poly>
+                            <point x="0.267361" y="0.267361" />
+                            <point x="0.732639" y="0.267361" />
+                            <point x="1" y="0.5" />
+                            <point x="0.854167" y="0.854167" />
+                            <point x="0.5" y="1" />
+                            <point x="0.145833" y="0.854167" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="clicked" pingpong="0" repeatcount="1" repeatto="0" sid="5741033124039596" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\clic.jpg">
+                        <collision-poly>
+                            <point x="0.145833" y="0.145833" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854167" y="0.145833" />
+                            <point x="1" y="0.5" />
+                            <point x="0.854167" y="0.854167" />
+                            <point x="0.5" y="1" />
+                            <point x="0.145833" y="0.854167" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="1810472602978306">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9384546288352948" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Baracash\Baracash\Textures\skin-pa_150624043007.jpg" />
                 </animation>
             </animation-folder>
         </object-type>
