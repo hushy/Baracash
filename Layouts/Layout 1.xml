@@ -571,25 +571,26 @@
                     <instance-variables>
                         <Loaded>false</Loaded>
                     </instance-variables>
-						<behavior-instances>
+                    <behavior-instances>
                         <behavior-instance type="Fade">
                             <properties>
                                 <active-at-start>No</active-at-start>
-                                <fade-in-time>2</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>0</fade-out-time>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>2</wait-time>
+                                <fade-out-time>2</fade-out-time>
                                 <destroy>No</destroy>
                             </properties>
                         </behavior-instance>
-						</behavior-instances>
+                        <behavior-instance type="Timer" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>203.907897949</x>
-                        <y>698.546081543</y>
+                        <x>223</x>
+                        <y>223</y>
                         <z>0</z>
-                        <width>445.909240723</width>
-                        <height>444.727661133</height>
+                        <width>446</width>
+                        <height>446</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
