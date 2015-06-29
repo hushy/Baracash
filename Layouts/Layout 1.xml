@@ -40,7 +40,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>999</x>
-                        <y>480</y>
+                        <y>477</y>
                         <z>0</z>
                         <width>2000</width>
                         <height>956</height>
@@ -67,8 +67,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>88.676116943</x>
-                        <y>113.11832428</y>
+                        <x>476</x>
+                        <y>243</y>
                         <z>0</z>
                         <width>150</width>
                         <height>22</height>
@@ -306,6 +306,126 @@
                         <z>0</z>
                         <width>29</width>
                         <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="LeftText" uid="29">
+                    <properties>
+                        <text>C pas la rentrée… repartez en vacances avec 2000 € !</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Gabriola,-37,700,0</font>
+                        <color>153,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3</x>
+                        <y>119</y>
+                        <z>0</z>
+                        <width>268</width>
+                        <height>247</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="RightText" uid="30">
+                    <properties>
+                        <text>Gratte 3 symboles identiques et gagne pleins de cadeaux</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Gabriola,-37,700,0</font>
+                        <color>153,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>750</x>
+                        <y>42</y>
+                        <z>0</z>
+                        <width>237</width>
+                        <height>200</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="xboxlogo" uid="31">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>895</x>
+                        <y>294</y>
+                        <z>0</z>
+                        <width>176</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="samsunglogo" uid="32">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>836</x>
+                        <y>361</y>
+                        <z>0</z>
+                        <width>166.451950073</width>
+                        <height>108.950363159</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50181818</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="NespressoLogo" uid="33">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>932</x>
+                        <y>393</y>
+                        <z>0</z>
+                        <width>128.809936523</width>
+                        <height>128.809936523</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -608,8 +728,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>526</x>
-                        <y>463</y>
+                        <x>498</x>
+                        <y>223</y>
                         <z>0</z>
                         <width>720</width>
                         <height>446</height>
