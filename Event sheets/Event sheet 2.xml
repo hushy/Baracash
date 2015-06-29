@@ -51,7 +51,7 @@
                 <action id="0" name="Set text" sid="8056913778419256" type="Timer">
                     <param id="0" name="Text">Date.GetDateString(remainingTime)</param>
                 </action>
-                <action id="-28" name="Set effect parameter" sid="4609997204139141" type="Sprite">
+                <action id="-28" name="Set effect parameter" sid="4609997204139141" type="loadingButton">
                     <param id="0" name="Effect">&quot;AlphaThreshold&quot;</param>
                     <param id="1" name="Parameter index">0</param>
                     <param id="2" name="Value">TimeAwayL.ElapsedTime/LastGameTimerInSeconds*100</param>
@@ -71,11 +71,11 @@
                 <event-block sid="9371044189702892">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="4578379950122831" type="Touch">
-                            <param id="0" name="Object">Sprite</param>
+                            <param id="0" name="Object">loadingButton</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="4412714541553414" type="Sprite">
+                        <action id="4" name="Set animation" sid="4412714541553414" type="loadingButton">
                             <param id="0" name="Animation">&quot;Clicked&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -92,7 +92,7 @@
                 <condition id="1" name="On any touch end" sid="3830516241789761" type="Touch" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="6967459440850215" type="Sprite">
+                <action id="4" name="Set animation" sid="6967459440850215" type="loadingButton">
                     <param id="0" name="Animation">&quot;Default&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>

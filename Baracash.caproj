@@ -195,7 +195,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="8637988723780116">
+        <object-type name="loadingButton" sid="8637988723780116">
             <plugin id="Sprite" />
             <effects>
                 <effect-type name="AlphaThreshold">
@@ -232,7 +232,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="1810472602978306">
+        <object-type name="loadingBG" sid="1810472602978306">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9384546288352948" speed="5">
