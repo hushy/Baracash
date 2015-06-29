@@ -1,6 +1,6 @@
   
 // PA replace
-$('.pa:eq(1) tr:eq(1) td:eq(0)').html('<div style="width: 1000px;height:450px;"><object style="width:720px;height: 446px;margin-left:140px" data="http://10.190.0.219:8080/"/></div>')
+$('.pa:eq(1) tr:eq(1) td:eq(0)').html('<div style="width: 1000px;height:450px;"><object style="width:720px;height: 446px;margin-left:140px" data="http://10.190.0.233:8080/"/></div>')
 
 // baracash ticket add
 $('.fTopSides').append('<div class="fTCGaranty"><div id="baracashTicketDiv" class="fTSidesTit">BARACASH</div><label><input id="InsuranceWarrantyList_0__Value_0__FormData_IsChecked" name="InsuranceWarrantyList[0].Value[0].FormData.IsChecked" onclick="" type="checkbox" value="true"><p class="fpTGarTxt">Ticket Baracash<br><span class="redS">0,99€</span><br><img src="http://jeuxdegrattage.eu//wp-content/uploads/2015/04/banco-jeu-grattage.jpg"/></p></label></div>');
