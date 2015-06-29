@@ -29,7 +29,11 @@
                             <param id="0" name="Variable">InitState</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="2" name="Stop" sid="5013793760948326" type="loading" />
+                        <action behavior="Timer" id="0" name="Start timer" sid="5013793760948326" type="loading">
+                            <param id="0" name="Duration">1.0</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;LaunchGame&quot;</param>
+                        </action>
                         <action id="-9" name="Set value" sid="1902972935672675" type="System">
                             <param id="0" name="Variable">Debug</param>
                             <param id="1" name="Value">&quot;start &quot; </param>
@@ -147,13 +151,11 @@
                                                     <param id="0" name="Instance variable">IsLosing</param>
                                                     <param id="1" name="Value">0</param>
                                                 </action>
-                                                <action id="3" name="Start" sid="4671114728976184" type="loading">
-                                                    <param id="0" name="From">1</param>
-                                                </action>
                                                 <action id="-9" name="Set value" sid="7387151273373704" type="System">
                                                     <param id="0" name="Variable">Debug</param>
                                                     <param id="1" name="Value">&quot;iswinning true&quot;</param>
                                                 </action>
+                                                <action behavior="Fade" id="1" name="Start fade" sid="2013413633972965" type="loading" />
                                             </actions>
                                         </event-block>
                                     </sub-events>
@@ -193,15 +195,23 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="1528872051755436">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="6314723569906876" type="loading">
+                            <param id="0" name="Tag">&quot;LaunchGame&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="4593719107548018" type="loading" />
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="2460555805912128" title="game">
             <sub-events>
                 <event-block sid="2906716232014056">
                     <conditions>
-                        <condition id="4" name="On finished" sid="6040497869541631" type="loading">
-                            <param id="0" name="Animation">&quot;Loading&quot;</param>
-                        </condition>
+                        <condition behavior="Fade" id="0" name="On fade-out finished" sid="6040497869541631" type="loading" />
                     </conditions>
                     <actions>
                         <action id="-13" name="Set boolean" sid="3453765067588478" type="loading">
