@@ -126,7 +126,7 @@
             </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Lose" pingpong="0" repeatcount="1" repeatto="0" sid="8799132369838851" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\lose.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Baracash\Baracash\Textures\skin-pa_150624043007.jpg" />
                 </animation>
                 <animation framecount="1" loop="0" name="Win" pingpong="0" repeatcount="1" repeatto="0" sid="740081139302436" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\win.png" />
@@ -165,9 +165,6 @@
         </object-type>
         <object-type name="BRIBox" sid="3218134636025345">
             <plugin id="TextBox" />
-        </object-type>
-        <object-type name="Button" sid="6469362977631787">
-            <plugin id="Button" />
         </object-type>
         <object-type name="Particles" sid="1591621651736752">
             <plugin id="Particles" />
@@ -306,6 +303,21 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\nespresso.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="mailTxt" sid="6526420321877978">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="resultTxt" sid="6955635820826348">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="nextTicketTxt" sid="7879459438414942">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TimerTxt" sid="9975715475535553">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button2" sid="2666180199339734">
+            <plugin id="Button" />
         </object-type>
     </object-folder>
     <families />
