@@ -26,7 +26,9 @@
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Paulo Ricardo Reinehr" id="prralphathreshold">Alpha Threshold</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -131,7 +133,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Loading" pingpong="0" repeatcount="1" repeatto="0" sid="8306111746877408" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\WORK\BaracashGit\Baracash\Textures\intro.jpg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\intro3.jpg" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -217,6 +219,43 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="loadingButton" sid="8637988723780116">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="AlphaThreshold">
+                    <effect id="prralphathreshold" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2943042025229972" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\loading2.jpg">
+                        <collision-poly>
+                            <point x="0.267361" y="0.267361" />
+                            <point x="0.732639" y="0.267361" />
+                            <point x="1" y="0.5" />
+                            <point x="0.854167" y="0.854167" />
+                            <point x="0.5" y="1" />
+                            <point x="0.145833" y="0.854167" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="clicked" pingpong="0" repeatcount="1" repeatto="0" sid="5741033124039596" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\clic.jpg">
+                        <collision-poly>
+                            <point x="0.145833" y="0.145833" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854167" y="0.145833" />
+                            <point x="1" y="0.5" />
+                            <point x="0.854167" y="0.854167" />
+                            <point x="0.5" y="1" />
+                            <point x="0.145833" y="0.854167" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
         <object-type name="Sprite" sid="4936968626084859">
             <plugin id="Sprite" />
             <animation-folder>
@@ -276,22 +315,19 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="loadingBG" sid="1810472602978306">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9384546288352948" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Baracash\Baracash\Textures\skin-pa_150624043007.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
         <object-type name="NespressoLogo" sid="2767089989933912">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6698036113092686" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\nespresso.png">
-                        <collision-poly>
-                            <point x="0.35" y="0.35" />
-                            <point x="0.5" y="0.23" />
-                            <point x="0.655" y="0.345" />
-                            <point x="0.655" y="0.5" />
-                            <point x="0.69" y="0.69" />
-                            <point x="0.5" y="0.685" />
-                            <point x="0.275" y="0.725" />
-                            <point x="0.35" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\nespresso.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -306,13 +342,13 @@
         <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Touch" uid="1">
+        <global-instance type="Touch" uid="15">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="LocalStorage" uid="15" />
-        <global-instance type="TimeAwayL" uid="18" />
+        <global-instance type="LocalStorage" uid="18" />
+        <global-instance type="TimeAwayL" uid="21" />
     </global-instances>
     <sounds-folder />
     <music-folder />
