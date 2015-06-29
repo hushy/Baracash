@@ -85,10 +85,34 @@
             </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Win" pingpong="0" repeatcount="1" repeatto="0" sid="1984837412463079" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.585366" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\Xbox_One_(logo).png">
+                        <collision-poly>
+                            <point x="0.280702" y="0.5" />
+                            <point x="0.520468" y="0.25" />
+                            <point x="0.812865" y="0.25" />
+                            <point x="0.923977" y="0.583333" />
+                            <point x="0.77193" y="0.722222" />
+                            <point x="0.520468" y="0.777778" />
+                            <point x="0.298246" y="0.583333" />
+                            <point x="0.0116959" y="0.583333" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3313835896648145" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="samsung" pingpong="0" repeatcount="1" repeatto="0" sid="164358397124465" speed="5">
+                    <frame duration="1" hotspotX="0.501818" hotspotY="0.5" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\samsung.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.305556" />
+                            <point x="0.498182" y="0.172222" />
+                            <point x="0.876364" y="0.188889" />
+                            <point x="0.738182" y="0.5" />
+                            <point x="0.901818" y="0.85" />
+                            <point x="0.101818" y="0.844444" />
+                            <point x="0.0509091" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -303,6 +327,7 @@
             <file name="XboxOne.png" />
             <file name="samsung.png" />
             <file name="nespresso.png" />
+            <file name="Xbox_One_(logo).png" />
         </file-folder>
         <file name="BRI.txt" />
     </files-folder>
