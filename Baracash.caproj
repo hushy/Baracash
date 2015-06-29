@@ -30,8 +30,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>250</width>
-        <height>250</height>
+        <width>720</width>
+        <height>446</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -55,11 +55,7 @@
     <object-folder>
         <object-type name="ScratchZone" sid="5334967479662794">
             <plugin id="c2canvas" />
-            <container>
-                <type>ScratchZone</type>
-                <type>Sprite</type>
-            </container>
-            <texture />
+            <texture original-source="C:\Users\lucas.verdonk\Desktop\dreamcache.png" />
         </object-type>
         <object-type name="Touch" sid="7538855580201067">
             <plugin id="Touch" />
@@ -72,16 +68,12 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="3997137695233146">
+        <object-type name="Icon" sid="3997137695233146">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="IsLosing" sid="1584063996079342" type="boolean" />
                 <instance-variable name="IsOnTop" sid="8552729175195099" type="boolean" />
             </instance-variables>
-            <container>
-                <type>ScratchZone</type>
-                <type>Sprite</type>
-            </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Win" pingpong="0" repeatcount="1" repeatto="0" sid="1984837412463079" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -173,6 +165,25 @@
                 <instance-variable name="DefaultRate" sid="5326842049180203" type="number" />
             </instance-variables>
             <texture />
+        </object-type>
+        <object-type name="BG" sid="1137566938818338">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8347892243751119" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas.verdonk\Desktop\class.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dreamBg" sid="6758735428379169">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3228274781587997" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas.verdonk\Desktop\dream.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Reverse" pingpong="0" repeatcount="1" repeatto="0" sid="7666312745984901" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas.verdonk\Desktop\dream.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
