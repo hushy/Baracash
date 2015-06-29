@@ -11,7 +11,7 @@
         <variable constant="0" name="Y" sid="6213800150554527" static="0" type="number">-1</variable>
         <variable constant="0" name="X" sid="677297388789187" static="0" type="number">-1</variable>
         <variable constant="0" name="RequiredSimilarItem" sid="8452282829456966" static="0" type="number">2</variable>
-        <variable constant="0" name="WinningProba" sid="5146284929258479" static="0" type="number">0.5</variable>
+        <variable constant="0" name="WinningProba" sid="5146284929258479" static="0" type="number">0.9</variable>
         <variable constant="0" name="TestRadius" sid="7963960825571197" static="0" type="number">0</variable>
         <variable constant="0" name="lastDistance" sid="3122512309201403" static="0" type="number">0</variable>
         <variable constant="0" name="cos45" sid="5212342653531882" static="0" type="number">1</variable>
