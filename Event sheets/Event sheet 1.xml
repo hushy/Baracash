@@ -609,7 +609,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="7029617791037177" type="TimerTxt">
-                            <param id="0" name="Text">Date.GetDateString(remainingTime)</param>
+                            <param id="0" name="Text">&quot;Rejoue bientot &quot; &amp; newline &amp; int(remainingTime) </param>
                         </action>
                         <action id="-28" name="Set effect parameter" sid="8604812374410318" type="loadingButton">
                             <param id="0" name="Effect">&quot;AlphaThreshold&quot;</param>
