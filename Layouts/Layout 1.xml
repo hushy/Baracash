@@ -501,8 +501,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-189.496643066</x>
-                        <y>44.817111969</y>
+                        <x>-111</x>
+                        <y>12</y>
                         <z>0</z>
                         <width>128</width>
                         <height>128</height>
@@ -779,7 +779,7 @@
                 </instance>
                 <instance type="MailBox" uid="5">
                     <properties>
-                        <text>email</text>
+                        <text>CGagné@cdiscount.com</text>
                         <placeholder></placeholder>
                         <tooltip></tooltip>
                         <initial-visibility>Invisible</initial-visibility>
