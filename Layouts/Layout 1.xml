@@ -719,11 +719,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>502</x>
-                        <y>249</y>
+                        <x>500</x>
+                        <y>281</y>
                         <z>0</z>
-                        <width>277</width>
-                        <height>69</height>
+                        <width>417</width>
+                        <height>121</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1066,6 +1066,7 @@
     </layers>
     <nonworld-instances>
         <instance type="Date" uid="20" />
+        <instance type="dude" uid="47" />
     </nonworld-instances>
     <effects />
 </c2layout>

@@ -437,6 +437,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type global="1" name="dude" sid="3776964852811844">
+            <plugin id="Rex_Date" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
