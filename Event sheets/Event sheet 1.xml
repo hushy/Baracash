@@ -11,7 +11,7 @@
         <variable constant="0" name="Y" sid="6213800150554527" static="0" type="number">-1</variable>
         <variable constant="0" name="X" sid="677297388789187" static="0" type="number">-1</variable>
         <variable constant="0" name="RequiredSimilarItem" sid="8452282829456966" static="0" type="number">3</variable>
-        <variable constant="0" name="WinningProba" sid="5146284929258479" static="0" type="number">0.9</variable>
+        <variable constant="0" name="WinningProba" sid="5146284929258479" static="0" type="number">1</variable>
         <variable constant="0" name="TestRadius" sid="7963960825571197" static="0" type="number">0</variable>
         <variable constant="0" name="lastDistance" sid="3122512309201403" static="0" type="number">0</variable>
         <variable constant="0" name="cos45" sid="5212342653531882" static="0" type="number">1</variable>
@@ -55,6 +55,9 @@
                         <action id="-9" name="Set value" sid="5554831253009599" type="System">
                             <param id="0" name="Variable">TestRadius</param>
                             <param id="1" name="Value">scratchSize/2-1</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="2137023674789992" type="loadingButton">
+                            <param id="0" name="State">0</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -439,6 +442,7 @@
             <sub-events>
                 <event-block sid="1082746071745186">
                     <conditions>
+                        <condition id="1" name="On any touch end" sid="9513258022800599" type="Touch" />
                         <condition id="-14" name="Compare variable" sid="7156630693343427" type="System">
                             <param id="0" name="Variable">IsGameOver</param>
                             <param id="1" name="Comparison">0</param>
@@ -469,16 +473,16 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="1795780610052628" type="BRIBox">
-                                    <param id="0" name="Text">&quot;CDAV-&quot;&amp;floor(random(1000))</param>
+                                    <param id="0" name="Text">&quot;XBone-&quot;&amp;floor(random(100))</param>
                                 </action>
                                 <action id="7" name="Set CSS style" sid="6376038795085982" type="BRIBox">
                                     <param id="0" name="Property name">&quot;background-color&quot;</param>
                                     <param id="1" name="Value">&quot;rgba(0,0,0,0)&quot;</param>
                                 </action>
                                 <action id="0" name="Set text" sid="1692090574429177" type="resultTxt">
-                                    <param id="0" name="Text">&quot;Bravo ! Tu as gagné un bon de reduction de 30€ sur  les packs XBOX.&quot;</param>
+                                    <param id="0" name="Text">&quot;Bravo ! Tu as gagné un bon de réduction de 30€ sur  les packs XBOX.&quot;</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="9695396688088485" type="Sprite4">
+                                <action id="-15" name="Set visible" sid="9695396688088485" type="winLogo">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>
@@ -533,12 +537,26 @@
                                 <action id="2" name="Set visible" sid="1110864536185092" type="Button2">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
+                                <action id="-15" name="Set visible" sid="4130178528783562" type="newSprite">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="9003643613729355" type="samsungSprite">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="1504058974265181" type="xboxSprite">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="7562963406159172" type="System">
                                     <param id="0" name="Variable">IsGameOver</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="9951979433617468" type="result" />
                                 <action id="1" name="Start timer" sid="5272088249559289" type="TimeAwayL">
                                     <param id="0" name="Key">&quot;LastGame&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="1427328236694039" type="System">
+                                    <param id="0" name="Variable">remainingTime</param>
+                                    <param id="1" name="Value">LastGameTimerInSeconds</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -554,11 +572,7 @@
                     <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="11" name="Get elapsed time" sid="381089563071336" type="TimeAwayL">
-                    <param id="0" name="Key">&quot;LastGame&quot;</param>
-                </action>
-            </actions>
+            <actions />
             <sub-events>
                 <event-block sid="2483907414886947">
                     <conditions>
@@ -566,7 +580,11 @@
                             <param id="0" name="Interval (seconds)">0.2</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="11" name="Get elapsed time" sid="381089563071336" type="TimeAwayL">
+                            <param id="0" name="Key">&quot;LastGame&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="8821864411365301">
                     <conditions>
@@ -583,7 +601,7 @@
                 </event-block>
                 <event-block sid="622552675912734">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="7409875197946409" type="System">
+                        <condition id="-14" name="Compare variable" sid="1594404458337156" type="System">
                             <param id="0" name="Variable">remainingTime</param>
                             <param id="1" name="Comparison">4</param>
                             <param id="2" name="Value">0</param>
@@ -598,44 +616,56 @@
                             <param id="1" name="Parameter index">0</param>
                             <param id="2" name="Value">TimeAwayL.ElapsedTime/LastGameTimerInSeconds*100</param>
                         </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="304409831276428" type="loadingButton">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8810691469148708">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="8160440725862483" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="6481383365483681" type="TimerTxt">
+                            <param id="0" name="Text">&quot;Clique pour rejouer!&quot;</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="3066322937054476" type="loadingButton">
+                            <param id="0" name="State">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="404646843525216">
                     <conditions>
-                        <condition id="-22" name="Else" sid="8523803176914675" type="System" />
+                        <condition id="0" name="On any touch start" sid="2950014330311671" type="Touch" />
+                        <condition id="-14" name="Compare variable" sid="7409875197946409" type="System">
+                            <param id="0" name="Variable">remainingTime</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="6481383365483681" type="TimerTxt">
-                            <param id="0" name="Text">&quot;Cliquez pour rejouer!&quot;</param>
+                        <action id="4" name="Set animation" sid="7248096589613597" type="loadingButton">
+                            <param id="0" name="Animation">&quot;Clicked&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
-                    <sub-events>
-                        <event-block sid="8935873750437396">
-                            <conditions>
-                                <condition id="4" name="Is touching object" sid="2950014330311671" type="Touch">
-                                    <param id="0" name="Object">loadingButton</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="7248096589613597" type="loadingButton">
-                                    <param id="0" name="Animation">&quot;Clicked&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="-21" name="Reset global variables" sid="1465209668349837" type="System" />
-                                <action id="-26" name="Restart layout" sid="6348928272393112" type="System" />
-                            </actions>
-                        </event-block>
-                    </sub-events>
                 </event-block>
                 <event-block sid="5069503761526471">
                     <conditions>
                         <condition id="1" name="On any touch end" sid="3314841043106484" type="Touch" />
+                        <condition id="-14" name="Compare variable" sid="226138634039521" type="System">
+                            <param id="0" name="Variable">remainingTime</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="6951371372458428" type="loadingButton">
                             <param id="0" name="Animation">&quot;Default&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="-21" name="Reset global variables" sid="1465209668349837" type="System" />
+                        <action id="-26" name="Restart layout" sid="6348928272393112" type="System" />
                     </actions>
                 </event-block>
             </sub-events>

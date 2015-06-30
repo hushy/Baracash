@@ -25,7 +25,7 @@
                 </action>
             </actions>
         </event-block>
-        <variable constant="0" name="remainingTime" sid="3482504439336996" static="0" type="number">0</variable>
+        <variable constant="0" name="remainingTime" sid="3482504439336996" static="0" type="number">100</variable>
         <event-block sid="4730608328085435">
             <conditions>
                 <condition id="11" name="On elapsed time get" sid="2511236602638574" type="TimeAwayL">
@@ -64,15 +64,16 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="1586025538570765" type="Timer">
-                    <param id="0" name="Text">&quot;Cliquez pour rejouer!&quot;</param>
+                    <param id="0" name="Text">&quot;Clique pour rejouer!&quot;</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="7887177249966096" type="loadingButton">
+                    <param id="0" name="State">1</param>
                 </action>
             </actions>
             <sub-events>
                 <event-block sid="9371044189702892">
                     <conditions>
-                        <condition id="4" name="Is touching object" sid="4578379950122831" type="Touch">
-                            <param id="0" name="Object">loadingButton</param>
-                        </condition>
+                        <condition id="0" name="On any touch start" sid="4578379950122831" type="Touch" />
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="4412714541553414" type="loadingButton">
