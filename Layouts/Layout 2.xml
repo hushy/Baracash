@@ -39,11 +39,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>499</x>
-                        <y>222</y>
+                        <x>1000</x>
+                        <y>480</y>
                         <z>0</z>
-                        <width>1000</width>
-                        <height>446</height>
+                        <width>2000</width>
+                        <height>956</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
