@@ -471,65 +471,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="result" uid="2">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Lose</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0.5</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>0</fade-out-time>
-                                <destroy>No</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>499.5</x>
-                        <y>218</y>
-                        <z>0</z>
-                        <width>459</width>
-                        <height>223</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>0.949999988</opacity>
-                    </world>
-                </instance>
-                <instance type="MailBox" uid="5">
-                    <properties>
-                        <text>email</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <enabled>No</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>275</x>
-                        <y>226</y>
-                        <z>0</z>
-                        <width>211.606872559</width>
-                        <height>22</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
                 <instance type="Particles" uid="16">
                     <properties>
                         <rate>100</rate>
@@ -677,26 +618,36 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mailTxt" uid="34">
+                <instance type="loading" uid="4">
                     <properties>
-                        <text>Saisis ton email pour ne pas le perdre</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Gabriola,-24,400,0</font>
-                        <color>204,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Loaded>false</Loaded>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>1</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Timer" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>421.10559082</x>
-                        <y>225.210281372</y>
+                        <x>-512</x>
+                        <y>336</y>
                         <z>0</z>
-                        <width>292.71484375</width>
-                        <height>45.026344299</height>
+                        <width>728</width>
+                        <height>446</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -704,11 +655,33 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="result" uid="2">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Lose</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1000</x>
+                        <y>477</y>
+                        <z>0</z>
+                        <width>2000</width>
+                        <height>956</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.949999988</opacity>
+                    </world>
+                </instance>
                 <instance type="resultTxt" uid="35">
                     <properties>
                         <text>Résultat</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Gabriola,-24,400,0</font>
+                        <font>Gabriola,-37,700,0</font>
                         <color>204,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -719,38 +692,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>500</x>
-                        <y>142</y>
+                        <x>501</x>
+                        <y>132</y>
                         <z>0</z>
-                        <width>413.724914551</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="nextTicketTxt" uid="37">
-                    <properties>
-                        <text>Retente ta chance dans :</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Gabriola,-24,400,0</font>
-                        <color>204,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>398.368438721</x>
-                        <y>313.43460083</y>
-                        <z>0</z>
-                        <width>249.964416504</width>
-                        <height>44.876022339</height>
+                        <width>945</width>
+                        <height>73</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -774,11 +720,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>417</x>
-                        <y>176.882003784</y>
+                        <x>400</x>
+                        <y>148</y>
                         <z>0</z>
-                        <width>163</width>
-                        <height>22</height>
+                        <width>200</width>
+                        <height>28</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -788,7 +734,7 @@
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Gabriola,-24,400,0</font>
+                        <font>Gabriola,-37,700,0</font>
                         <color>204,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -799,11 +745,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>500</x>
-                        <y>322.117858887</y>
+                        <x>502</x>
+                        <y>249</y>
                         <z>0</z>
-                        <width>78</width>
-                        <height>47</height>
+                        <width>277</width>
+                        <height>69</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -831,10 +777,63 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>500</x>
-                        <y>273.87487793</y>
+                        <y>306</y>
                         <z>0</z>
-                        <width>41.276367188</width>
-                        <height>43.329071045</height>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="MailBox" uid="5">
+                    <properties>
+                        <text>email</text>
+                        <placeholder></placeholder>
+                        <tooltip></tooltip>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <enabled>No</enabled>
+                        <read-only>No</read-only>
+                        <spell-check>No</spell-check>
+                        <type>Text</type>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>361</x>
+                        <y>400</y>
+                        <z>0</z>
+                        <width>211.606872559</width>
+                        <height>22</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="mailTxt" uid="34">
+                    <properties>
+                        <text>Saisis ton email pour ne pas le perdre.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Gabriola,-37,700,0</font>
+                        <color>204,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>501</x>
+                        <y>391</y>
+                        <z>0</z>
+                        <width>918</width>
+                        <height>68</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -856,8 +855,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>491.020019531</x>
-                        <y>225.237808228</y>
+                        <x>597</x>
+                        <y>399</y>
                         <z>0</z>
                         <width>24.789337158</width>
                         <height>24</height>
@@ -866,36 +865,168 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="loading" uid="4">
+                <instance type="Sprite4" uid="42">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <collisions>Disabled</collisions>
+                        <collisions>Enabled</collisions>
                     </properties>
-                    <instance-variables>
-                        <Loaded>false</Loaded>
-                    </instance-variables>
                     <behavior-instances>
-                        <behavior-instance type="Fade">
+                        <behavior-instance type="Sine">
                             <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>1</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>No</destroy>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>3</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="Timer" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>500</x>
-                        <y>223</y>
+                        <x>494</x>
+                        <y>59</y>
                         <z>0</z>
-                        <width>728</width>
-                        <height>446</height>
+                        <width>176</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite5" uid="37">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>855</x>
+                        <y>165</y>
+                        <z>0</z>
+                        <width>129</width>
+                        <height>130</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite6" uid="40">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>855</x>
+                        <y>265</y>
+                        <z>0</z>
+                        <width>119</width>
+                        <height>71</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50181818</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite7" uid="41">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>858</x>
+                        <y>331</y>
+                        <z>0</z>
+                        <width>93</width>
+                        <height>58</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite5" uid="43">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>135</x>
+                        <y>158</y>
+                        <z>0</z>
+                        <width>129</width>
+                        <height>130</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite6" uid="44">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>135</x>
+                        <y>257</y>
+                        <z>0</z>
+                        <width>119</width>
+                        <height>71</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50181818</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite7" uid="45">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>138</x>
+                        <y>324</y>
+                        <z>0</z>
+                        <width>93</width>
+                        <height>58</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

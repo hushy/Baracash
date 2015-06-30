@@ -454,7 +454,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Fade" id="1" name="Start fade" sid="5068149370657547" type="result" />
                         <action id="-15" name="Set visible" sid="7237007983272313" type="result">
                             <param id="0" name="Visibility">1</param>
                         </action>
@@ -477,7 +476,10 @@
                                     <param id="1" name="Value">&quot;rgba(0,0,0,0)&quot;</param>
                                 </action>
                                 <action id="0" name="Set text" sid="1692090574429177" type="resultTxt">
-                                    <param id="0" name="Text">&quot;Bravo ! Tu as gagné un bon de reduction de 15€ sur  les packs XBOX&quot;</param>
+                                    <param id="0" name="Text">&quot;Bravo ! Tu as gagné un bon de reduction de 30€ sur  les packs XBOX.&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="9695396688088485" type="Sprite4">
+                                    <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>
                         </event-block>

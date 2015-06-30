@@ -24,6 +24,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
     </used-behaviors>
     <used-effects>
@@ -150,11 +151,6 @@
         </object-type>
         <object-type name="result" sid="3574939244352747">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Fade" sid="6134344372884142">
-                    <behavior id="Fade" />
-                </behavior-type>
-            </behaviors>
             <container>
                 <type>result</type>
                 <type>MailBox</type>
@@ -353,6 +349,86 @@
         </object-type>
         <object-type name="Button2" sid="2666180199339734">
             <plugin id="Button" />
+        </object-type>
+        <object-type name="Sprite4" sid="5044826464400341">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="7878095527922532">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9807151537292216" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Baracash\Textures\XboxOne.png">
+                        <collision-poly>
+                            <point x="0.267045" y="0.47" />
+                            <point x="0.5" y="0.38" />
+                            <point x="0.784091" y="0.38" />
+                            <point x="0.892045" y="0.5" />
+                            <point x="0.744318" y="0.55" />
+                            <point x="0.5" y="0.57" />
+                            <point x="0.284091" y="0.5" />
+                            <point x="0.00568182" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="6779939268646863">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4501073793715683" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Baracash\Textures\nespresso.png">
+                        <collision-poly>
+                            <point x="0.35" y="0.35" />
+                            <point x="0.5" y="0.23" />
+                            <point x="0.655" y="0.345" />
+                            <point x="0.655" y="0.5" />
+                            <point x="0.69" y="0.69" />
+                            <point x="0.5" y="0.685" />
+                            <point x="0.275" y="0.725" />
+                            <point x="0.35" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="7760684811654119">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7741798799989905" speed="5">
+                    <frame duration="1" hotspotX="0.501818" hotspotY="0.5" original-source="D:\Baracash\Textures\samsung.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.305556" />
+                            <point x="0.498182" y="0.172222" />
+                            <point x="0.876364" y="0.188889" />
+                            <point x="0.738182" y="0.5" />
+                            <point x="0.901818" y="0.85" />
+                            <point x="0.101818" y="0.844444" />
+                            <point x="0.0509091" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="5902789220107373">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7954077160651595" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Baracash\Textures\XboxOne.png">
+                        <collision-poly>
+                            <point x="0.267045" y="0.47" />
+                            <point x="0.5" y="0.38" />
+                            <point x="0.784091" y="0.38" />
+                            <point x="0.892045" y="0.5" />
+                            <point x="0.744318" y="0.55" />
+                            <point x="0.5" y="0.57" />
+                            <point x="0.284091" y="0.5" />
+                            <point x="0.00568182" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
