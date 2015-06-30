@@ -38,9 +38,6 @@
                             <param id="0" name="Variable">Debug</param>
                             <param id="1" name="Value">&quot;start &quot; </param>
                         </action>
-                        <action id="11" name="Get elapsed time" sid="189522954682573" type="TimeAwayL">
-                            <param id="0" name="Key">&quot;LastGame&quot;</param>
-                        </action>
                         <action id="1" name="Set rate" sid="4942224728538108" type="Particles">
                             <param id="0" name="Rate">0</param>
                         </action>
@@ -239,6 +236,9 @@
                     </conditions>
                     <actions>
                         <action behavior="Fade" id="1" name="Start fade" sid="4593719107548018" type="loading" />
+                        <action id="11" name="Get elapsed time" sid="189522954682573" type="TimeAwayL">
+                            <param id="0" name="Key">&quot;LastGame&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
