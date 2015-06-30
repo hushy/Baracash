@@ -619,8 +619,8 @@
                                     <param id="0" name="Animation">&quot;Clicked&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
-                                <action id="-26" name="Restart layout" sid="6348928272393112" type="System" />
                                 <action id="-21" name="Reset global variables" sid="1465209668349837" type="System" />
+                                <action id="-26" name="Restart layout" sid="6348928272393112" type="System" />
                             </actions>
                         </event-block>
                     </sub-events>
