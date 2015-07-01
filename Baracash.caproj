@@ -440,6 +440,14 @@
         <object-type global="1" name="dude" sid="3776964852811844">
             <plugin id="Rex_Date" />
         </object-type>
+        <object-type name="Sprite" sid="8821446867614121">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8745775068515649" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Baracash\Animations\loadingButton\Default\000.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

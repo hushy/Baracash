@@ -10,7 +10,7 @@
         <variable constant="0" name="Y" sid="6213800150554527" static="0" type="number">-1</variable>
         <variable constant="0" name="X" sid="677297388789187" static="0" type="number">-1</variable>
         <variable constant="0" name="RequiredSimilarItem" sid="8452282829456966" static="0" type="number">3</variable>
-        <variable constant="0" name="WinningProba" sid="5146284929258479" static="0" type="number">20</variable>
+        <variable constant="0" name="WinningProba" sid="5146284929258479" static="0" type="number">0.2</variable>
         <variable constant="0" name="TestRadius" sid="7963960825571197" static="0" type="number">0</variable>
         <variable constant="0" name="lastDistance" sid="3122512309201403" static="0" type="number">0</variable>
         <variable constant="0" name="cos45" sid="5212342653531882" static="0" type="number">1</variable>
@@ -531,7 +531,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="8846370558543717" type="resultTxt">
-                                    <param id="0" name="Text">&quot;Dommage ! Retente ta chance dés que possible ! &quot;</param>
+                                    <param id="0" name="Text">&quot;Dommage ! Retente ta chance dès que possible ! &quot;</param>
                                 </action>
                                 <action id="0" name="Set text" sid="9037057537764936" type="mailTxt">
                                     <param id="0" name="Text">&quot;Saisis ton email pour être avertis !&quot;</param>
