@@ -106,7 +106,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\brocoli.png">
                         <collision-poly>
                             <point x="0.15102" y="0.117089" />
-                            <point x="0.497959" y="0.00316456" />
+                            <point x="0.497959" y="0.00316459" />
                             <point x="0.840816" y="0.123418" />
                             <point x="0.95102" y="0.5" />
                             <point x="0.497959" y="0.993671" />
