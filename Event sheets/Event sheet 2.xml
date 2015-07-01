@@ -54,7 +54,7 @@
                 <action id="-28" name="Set effect parameter" sid="4609997204139141" type="loadingButton">
                     <param id="0" name="Effect">&quot;AlphaThreshold&quot;</param>
                     <param id="1" name="Parameter index">0</param>
-                    <param id="2" name="Value">TimeAwayL.ElapsedTime/LastGameTimerInSeconds*100</param>
+                    <param id="2" name="Value">min(TimeAwayL.ElapsedTime/LastGameTimerInSeconds*100,100)</param>
                 </action>
             </actions>
         </event-block>
