@@ -254,6 +254,10 @@
                             <param id="0" name="Instance variable">Loaded</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="0" name="Request URL" sid="9227861607929108" type="WSCaller">
+                            <param id="0" name="Tag">&quot;CallToBazaazVoice&quot;</param>
+                            <param id="1" name="URL">&quot;http://stg.api.bazaarvoice.com/data/submitquestion.json?apiversion=5.4&amp;CategoryId=1020&amp;UserId=craiggil&amp;passkey=2cpdrhohmgmwfz8vqyo48f529&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="252413573179065">
@@ -564,6 +568,18 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="2230216781809349">
+            <conditions>
+                <condition id="0" name="On completed" sid="7060306521623003" type="WSCaller">
+                    <param id="0" name="Tag">&quot;CallToBazaazVoice&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="4371109692279985" type="LeftText">
+                    <param id="0" name="Text">WSCaller.LastData</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="5611514006100025">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="4356118773133542" type="System">

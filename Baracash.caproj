@@ -10,6 +10,7 @@
     <unique-id>3t8fqcjm7dvrh</unique-id>
     <saved-with-version>20600</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
@@ -448,6 +449,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="WSCaller" sid="2642348017633266">
+            <plugin id="AJAX" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -466,6 +470,7 @@
         </global-instance>
         <global-instance type="LocalStorage" uid="18" />
         <global-instance type="TimeAwayL" uid="21" />
+        <global-instance type="WSCaller" uid="48" />
     </global-instances>
     <sounds-folder />
     <music-folder />
