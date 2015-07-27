@@ -1,6 +1,9 @@
   
 // PA replace
-$('.pa:eq(1) tr:eq(1) td:eq(0)').html('<div style="width: 1000px;height:450px;"><object style="width:1000px;height: 446px;margin-left:0px" data="http://baracash.azurewebsites.net/Demo/Index.html"/></div>')
+//$('.pa:eq(1) tr:eq(1) td:eq(0)').html('<div style="width: 1000px;height:450px;"><object style="width:1000px;height: 446px;margin-left:0px" data="http://baracash.azurewebsites.net/Demo/Index.html"/></div>')
+$('.landCarImgs li:eq(0) div:eq(1)').html('');
+$('.landCarImgs li:eq(0) div:eq(0)').css("margin-left","0px");
+$('.landCarImgs li:eq(0) picture').html('<div style="width: 1000px;height:450px;margin-left:-20px"><object style="width:1000px;height: 446px;margin-left:0px" data="http://baracash.azurewebsites.net/Demo/index.html"/></div>');
 
 // baracash ticket add
 $('.fTopSides').append('<div class="fTCGaranty"><div id="baracashTicketDiv" class="fTSidesTit">BARACASH</div><label><input id="InsuranceWarrantyList_0__Value_0__FormData_IsChecked" name="InsuranceWarrantyList[0].Value[0].FormData.IsChecked" onclick="" type="checkbox" value="true"><p class="fpTGarTxt">Ticket Baracash<br><span class="redS">0,99€</span><br><img src="http://jeuxdegrattage.eu//wp-content/uploads/2015/04/banco-jeu-grattage.jpg"/></p></label></div>');
