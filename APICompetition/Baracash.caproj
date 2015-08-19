@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Baracash</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3t8fqcjm7dvrh</unique-id>
+    <saved-with-version>20600</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_Date" version="1">Date</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_TimeAwayL" version="0.100000001">Time away L</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="R0J0hound" id="c2canvas" version="2">Canvas</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Paulo Ricardo Reinehr" id="prralphathreshold">Alpha Threshold</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1000</width>
+        <height>446</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Layout 1</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="ScratchZone" sid="5334967479662794">
+            <plugin id="c2canvas" />
+            <container>
+                <type>ScratchZone</type>
+                <type>Icon</type>
+            </container>
+            <texture original-source="C:\Users\lucas.verdonk\Desktop\dreamcache.png" />
+        </object-type>
+        <object-type name="Touch" sid="7538855580201067">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Background" sid="4021587011810791">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1268053250439279" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Icon" sid="3997137695233146">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="IsLosing" sid="1584063996079342" type="boolean" />
+                <instance-variable name="IsOnTop" sid="8552729175195099" type="boolean" />
+            </instance-variables>
+            <container>
+                <type>ScratchZone</type>
+                <type>Icon</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Win" pingpong="0" repeatcount="1" repeatto="0" sid="1984837412463079" speed="5">
+                    <frame duration="1" hotspotX="0.534091" hotspotY="0.621795" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\Xbox_One_(logo).png">
+                        <collision-poly>
+                            <point x="0.283425" y="0.526994" />
+                            <point x="0.534356" y="0.241002" />
+                            <point x="0.840369" y="0.241002" />
+                            <point x="0.956655" y="0.622325" />
+                            <point x="0.797527" y="0.78121" />
+                            <point x="0.534356" y="0.844764" />
+                            <point x="0.301786" y="0.622325" />
+                            <point x="0.00189261" y="0.622325" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3313835896648145" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\nespresso.png">
+                        <collision-poly>
+                            <point x="0.35" y="0.35" />
+                            <point x="0.5" y="0.23" />
+                            <point x="0.655" y="0.345" />
+                            <point x="0.655" y="0.5" />
+                            <point x="0.69" y="0.69" />
+                            <point x="0.5" y="0.685" />
+                            <point x="0.275" y="0.725" />
+                            <point x="0.35" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="samsung" pingpong="0" repeatcount="1" repeatto="0" sid="164358397124465" speed="5">
+                    <frame duration="1" hotspotX="0.501818" hotspotY="0.5" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\samsung.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.305556" />
+                            <point x="0.498182" y="0.172222" />
+                            <point x="0.876364" y="0.188889" />
+                            <point x="0.738182" y="0.5" />
+                            <point x="0.901818" y="0.85" />
+                            <point x="0.101818" y="0.844444" />
+                            <point x="0.0509091" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="loading" sid="4322587657949782">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Loaded" sid="6245044374843979" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Fade" sid="6496372860724132">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Timer" sid="5615116602736077">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Loading" pingpong="0" repeatcount="1" repeatto="0" sid="8306111746877408" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Baracash\Baracash\Textures\intro.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="result" sid="3574939244352747">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="9879023674148831">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>result</type>
+                <type>MailBox</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Lose" pingpong="0" repeatcount="1" repeatto="0" sid="8799132369838851" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Baracash\Baracash\Textures\skin-pa_150624043007.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MailBox" sid="216507672055013">
+            <plugin id="TextBox" />
+            <container>
+                <type>result</type>
+                <type>MailBox</type>
+            </container>
+        </object-type>
+        <object-type name="LocalStorage" sid="4949617433012997">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="TimeAwayL" sid="2570945835548508">
+            <plugin id="Rex_TimeAwayL" />
+        </object-type>
+        <object-type name="Sprite2" sid="2175532174858335">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5936645367758125" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressBar" sid="1164689577870269">
+            <plugin id="progressbar" />
+        </object-type>
+        <object-type name="Timer" sid="7780617530494352">
+            <plugin id="Text" />
+        </object-type>
+        <object-type global="1" name="Date" sid="5022984442309546">
+            <plugin id="Rex_Date" />
+        </object-type>
+        <object-type name="BRIBox" sid="3218134636025345">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Particles" sid="1591621651736752">
+            <plugin id="Particles" />
+            <instance-variables>
+                <instance-variable name="DefaultRate" sid="5326842049180203" type="number" />
+            </instance-variables>
+            <texture />
+        </object-type>
+        <object-type name="BG" sid="1137566938818338">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8347892243751119" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas.verdonk\Desktop\class.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dreamBg" sid="6758735428379169">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3228274781587997" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas.verdonk\Desktop\dream.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Reverse" pingpong="0" repeatcount="1" repeatto="0" sid="7666312745984901" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas.verdonk\Desktop\dream.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="loadingButton" sid="8637988723780116">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="6445566437693758">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="AlphaThreshold">
+                    <effect id="prralphathreshold" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2943042025229972" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\loading2.jpg">
+                        <collision-poly>
+                            <point x="0.267361" y="0.267361" />
+                            <point x="0.732639" y="0.267361" />
+                            <point x="1" y="0.5" />
+                            <point x="0.854167" y="0.854167" />
+                            <point x="0.5" y="1" />
+                            <point x="0.145833" y="0.854167" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="clicked" pingpong="0" repeatcount="1" repeatto="0" sid="5741033124039596" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\clic.jpg">
+                        <collision-poly>
+                            <point x="0.145833" y="0.145833" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854167" y="0.145833" />
+                            <point x="1" y="0.5" />
+                            <point x="0.854167" y="0.854167" />
+                            <point x="0.5" y="1" />
+                            <point x="0.145833" y="0.854167" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="endBG" sid="4936968626084859">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8184656558779365" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Baracash\Baracash\Textures\skin-pa_150624043007.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="7439940263312307">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5759095725246971" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LeftText" sid="2502313446353971">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="RightText" sid="533541004442694">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="xboxlogo" sid="9142542669209066">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9518982006602929" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\XboxOne.png">
+                        <collision-poly>
+                            <point x="0.267045" y="0.47" />
+                            <point x="0.5" y="0.38" />
+                            <point x="0.784091" y="0.38" />
+                            <point x="0.892045" y="0.5" />
+                            <point x="0.744318" y="0.55" />
+                            <point x="0.5" y="0.57" />
+                            <point x="0.284091" y="0.5" />
+                            <point x="0.00568182" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="samsunglogo" sid="3035602119355297">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9195537518691466" speed="5">
+                    <frame duration="1" hotspotX="0.501818" hotspotY="0.5" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\samsung.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.305556" />
+                            <point x="0.498182" y="0.172222" />
+                            <point x="0.876364" y="0.188889" />
+                            <point x="0.738182" y="0.5" />
+                            <point x="0.901818" y="0.85" />
+                            <point x="0.101818" y="0.844444" />
+                            <point x="0.0509091" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="loadingBG" sid="1810472602978306">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9384546288352948" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Baracash\Baracash\Textures\skin-pa_150624043007.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NespressoLogo" sid="2767089989933912">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6698036113092686" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bigeyes\Documents\GitHub\Baracash\Textures\nespresso.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mailTxt" sid="6526420321877978">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="resultTxt" sid="6955635820826348">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="nextTicketTxt" sid="7879459438414942">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TimerTxt" sid="9975715475535553">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button2" sid="2666180199339734">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="winLogo" sid="5044826464400341">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="7878095527922532">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9807151537292216" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Baracash\Textures\XboxOne.png">
+                        <collision-poly>
+                            <point x="0.267045" y="0.47" />
+                            <point x="0.5" y="0.38" />
+                            <point x="0.784091" y="0.38" />
+                            <point x="0.892045" y="0.5" />
+                            <point x="0.744318" y="0.55" />
+                            <point x="0.5" y="0.57" />
+                            <point x="0.284091" y="0.5" />
+                            <point x="0.00568182" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="newSprite" sid="6779939268646863">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4501073793715683" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Baracash\Textures\nespresso.png">
+                        <collision-poly>
+                            <point x="0.35" y="0.35" />
+                            <point x="0.5" y="0.23" />
+                            <point x="0.655" y="0.345" />
+                            <point x="0.655" y="0.5" />
+                            <point x="0.69" y="0.69" />
+                            <point x="0.5" y="0.685" />
+                            <point x="0.275" y="0.725" />
+                            <point x="0.35" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="samsungSprite" sid="7760684811654119">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7741798799989905" speed="5">
+                    <frame duration="1" hotspotX="0.501818" hotspotY="0.5" original-source="D:\Baracash\Textures\samsung.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.305556" />
+                            <point x="0.498182" y="0.172222" />
+                            <point x="0.876364" y="0.188889" />
+                            <point x="0.738182" y="0.5" />
+                            <point x="0.901818" y="0.85" />
+                            <point x="0.101818" y="0.844444" />
+                            <point x="0.0509091" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="xboxSprite" sid="5902789220107373">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7954077160651595" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Baracash\Textures\XboxOne.png">
+                        <collision-poly>
+                            <point x="0.267045" y="0.47" />
+                            <point x="0.5" y="0.38" />
+                            <point x="0.784091" y="0.38" />
+                            <point x="0.892045" y="0.5" />
+                            <point x="0.744318" y="0.55" />
+                            <point x="0.5" y="0.57" />
+                            <point x="0.284091" y="0.5" />
+                            <point x="0.00568182" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="dude" sid="3776964852811844">
+            <plugin id="Rex_Date" />
+        </object-type>
+        <object-type name="Sprite" sid="8821446867614121">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8745775068515649" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Baracash\Animations\loadingButton\Default\000.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WSCaller" sid="2642348017633266">
+            <plugin id="AJAX" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="15">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="LocalStorage" uid="18" />
+        <global-instance type="TimeAwayL" uid="21" />
+        <global-instance type="WSCaller" uid="48" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+            <file name="XboxOne.png" />
+            <file name="samsung.png" />
+            <file name="nespresso.png" />
+            <file name="Xbox_One_(logo).png" />
+        </file-folder>
+        <file name="BRI.txt" />
+    </files-folder>
+</c2project>
