@@ -3,15 +3,18 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Debug" sid="4100423820922422" static="0" type="text"></variable>
+        <variable constant="0" name="getPrizePath" sid="9834580253533465" static="0" type="text">api/prizes/random/</variable>
+        <variable constant="0" name="campaignId" sid="1552601337797602" static="0" type="number">2799</variable>
+        <variable constant="0" name="debugEndpoint" sid="899216139316483" static="0" type="text">http://localhost:8080/</variable>
+        <variable constant="0" name="endpoint" sid="2180184633429476" static="0" type="text">http://front-load-balancer-1402238357.eu-central-1.elb.amazonaws.com:8080/</variable>
         <variable constant="0" name="IsWinningTicket" sid="4925112843137334" static="0" type="number">0</variable>
         <variable constant="0" name="LastGameTimerInSeconds" sid="1843762542549096" static="0" type="number">10</variable>
-        <variable constant="0" name="Debug" sid="3394164441913506" static="0" type="text"></variable>
         <variable constant="0" name="InitState" sid="7953206043994739" static="0" type="number">-1</variable>
         <variable constant="0" name="scratchSize" sid="9052999839548576" static="0" type="number">10</variable>
         <variable constant="0" name="Y" sid="6213800150554527" static="0" type="number">-1</variable>
         <variable constant="0" name="X" sid="677297388789187" static="0" type="number">-1</variable>
         <variable constant="0" name="RequiredSimilarItem" sid="8452282829456966" static="0" type="number">3</variable>
-        <variable constant="0" name="WinningProba" sid="5146284929258479" static="0" type="number">1</variable>
         <variable constant="0" name="TestRadius" sid="7963960825571197" static="0" type="number">0</variable>
         <variable constant="0" name="lastDistance" sid="3122512309201403" static="0" type="number">0</variable>
         <variable constant="0" name="cos45" sid="5212342653531882" static="0" type="number">1</variable>
@@ -25,18 +28,10 @@
                     </conditions>
                     <actions>
                         <action id="-21" name="Reset global variables" sid="7479184121559202" type="System" />
-                        <action id="-9" name="Set value" sid="4593624718391128" type="System">
-                            <param id="0" name="Variable">InitState</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
                         <action behavior="Timer" id="0" name="Start timer" sid="5013793760948326" type="loading">
                             <param id="0" name="Duration">1.0</param>
                             <param id="1" name="Type">0</param>
                             <param id="2" name="Tag">&quot;LaunchGame&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="1902972935672675" type="System">
-                            <param id="0" name="Variable">Debug</param>
-                            <param id="1" name="Value">&quot;start &quot; </param>
                         </action>
                         <action id="1" name="Set rate" sid="4942224728538108" type="Particles">
                             <param id="0" name="Rate">0</param>
@@ -56,22 +51,19 @@
                         <action behavior="Sine" id="0" name="Set active" sid="2137023674789992" type="loadingButton">
                             <param id="0" name="State">0</param>
                         </action>
+                        <action id="0" name="Request URL" sid="9227861607929108" type="WSCaller">
+                            <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
+                            <param id="1" name="URL">debugEndpoint &amp; getPrizePath &amp; campaignId</param>
+                        </action>
+                        <action id="0" name="Request URL" sid="8305784945083653" type="WSCaller">
+                            <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
+                            <param id="1" name="URL">&quot;http://stg.api.bazaarvoice.com/data/submitquestion.json?apiversion=5.4&amp;CategoryId=1020&amp;UserId=craiggil&amp;passkey=2cpdrhohmgmwfz8vqyo48f529&quot;</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="8278621339600193">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="3587389419293458" type="System">
-                                    <param id="0" name="Variable">WinningProba</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">random(1)</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="4397577713409251" type="System">
-                                    <param id="0" name="Variable">IsWinningTicket</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
+                            <conditions />
+                            <actions />
                         </event-block>
                         <event-block sid="39825084966474">
                             <conditions>
@@ -122,10 +114,6 @@
                                     <param id="0" name="Variable">InitState</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="1010745076209849" type="System">
-                                    <param id="0" name="Variable">Debug</param>
-                                    <param id="1" name="Value">&quot;test &quot; &amp; TimeAwayL.ElapsedTime &amp; &quot; &lt; &quot; &amp; LastGameTimerInSeconds</param>
-                                </action>
                             </actions>
                             <sub-events>
                                 <event-block sid="8517728180955664">
@@ -136,12 +124,7 @@
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="1248632102895535" type="System">
-                                            <param id="0" name="Variable">Debug</param>
-                                            <param id="1" name="Value">&quot;iswinning&quot;</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
                                     <sub-events>
                                         <event-block sid="9600447670630281">
                                             <conditions>
@@ -167,11 +150,6 @@
                                                     <param id="0" name="Instance variable">IsLosing</param>
                                                     <param id="1" name="Value">0</param>
                                                 </action>
-                                                <action id="-9" name="Set value" sid="7387151273373704" type="System">
-                                                    <param id="0" name="Variable">Debug</param>
-                                                    <param id="1" name="Value">&quot;iswinning true&quot;</param>
-                                                </action>
-                                                <action behavior="Fade" id="1" name="Start fade" sid="2013413633972965" type="loading" />
                                             </actions>
                                         </event-block>
                                         <event-block sid="8263303369564762">
@@ -208,10 +186,6 @@
                                         <action id="3" name="Start" sid="8788156770234062" type="loading">
                                             <param id="0" name="From">1</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="4917647665002186" type="System">
-                                            <param id="0" name="Variable">Debug</param>
-                                            <param id="1" name="Value">&quot;iswinning false&quot;</param>
-                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -243,6 +217,24 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="7108246072269756">
+            <conditions>
+                <condition id="0" name="On completed" sid="4273731154319349" type="WSCaller">
+                    <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="339829385232504" type="System">
+                    <param id="0" name="Variable">Debug</param>
+                    <param id="1" name="Value">&quot;toto&quot; &amp; WSCaller.LastData</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="6271202190589292" type="loading" />
+                <action id="-9" name="Set value" sid="4593624718391128" type="System">
+                    <param id="0" name="Variable">InitState</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" sid="2460555805912128" title="game">
             <sub-events>
                 <event-block sid="2906716232014056">
@@ -253,10 +245,6 @@
                         <action id="-13" name="Set boolean" sid="3453765067588478" type="loading">
                             <param id="0" name="Instance variable">Loaded</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="0" name="Request URL" sid="9227861607929108" type="WSCaller">
-                            <param id="0" name="Tag">&quot;CallToBazaazVoice&quot;</param>
-                            <param id="1" name="URL">&quot;http://stg.api.bazaarvoice.com/data/submitquestion.json?apiversion=5.4&amp;CategoryId=1020&amp;UserId=craiggil&amp;passkey=2cpdrhohmgmwfz8vqyo48f529&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -568,18 +556,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="2230216781809349">
-            <conditions>
-                <condition id="0" name="On completed" sid="7060306521623003" type="WSCaller">
-                    <param id="0" name="Tag">&quot;CallToBazaazVoice&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="4371109692279985" type="LeftText">
-                    <param id="0" name="Text">WSCaller.LastData</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="5611514006100025">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="4356118773133542" type="System">

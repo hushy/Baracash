@@ -54,7 +54,7 @@
                 <instance type="HTML_Div_Pode" uid="49">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <innerhtml>&lt;form action=&quot;http://192.168.56.1:8080/api/prizes/discover/45c661f6-37b2-4524-ac22-09e1a2a84166&quot; method=&quot;get&quot;&gt;&lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;&lt;input name=&quot;email&quot; type=&quot;email&quot; required&gt;&lt;div class=&quot;g-recaptcha&quot; data-sitekey=&quot;6LfeOwsTAAAAACoNrLmVhqwEQH3wU3Sl2I66C2du&quot;&gt;&lt;/div&gt;&lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;&lt;/form&gt;&lt;script src=&apos;https://www.google.com/recaptcha/api.js&apos;&gt;&lt;/script&gt; </innerhtml>
+                        <innerhtml>&lt;form action=&quot;http://192.168.56.1:8080/api/giftcodes/discover/45c661f6-37b2-4524-ac22-09e1a2a84166&quot; method=&quot;get&quot;&gt;&lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;&lt;input name=&quot;email&quot; type=&quot;email&quot; required&gt;&lt;div class=&quot;g-recaptcha&quot; data-sitekey=&quot;6LfeOwsTAAAAACoNrLmVhqwEQH3wU3Sl2I66C2du&quot;&gt;&lt;/div&gt;&lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;&lt;/form&gt;&lt;script src=&apos;https://www.google.com/recaptcha/api.js&apos;&gt;&lt;/script&gt; </innerhtml>
                         <style></style>
                         <html-tag-id>my_div</html-tag-id>
                     </properties>
@@ -70,6 +70,30 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
+                    </world>
+                </instance>
+                <instance type="Button" uid="51">
+                    <properties>
+                        <type>Button</type>
+                        <text>OK</text>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                        <checked>No</checked>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>476</x>
+                        <y>293</y>
+                        <z>0</z>
+                        <width>72</width>
+                        <height>24</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                     </world>
                 </instance>
             </instances>

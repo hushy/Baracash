@@ -464,6 +464,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Button" sid="458692231334746">
+            <plugin id="Button" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

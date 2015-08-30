@@ -2,5 +2,13 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 3</name>
-    <events />
+    <events>
+        <variable constant="0" name="testCaptcha" sid="3398115170500714" static="0" type="number">0</variable>
+        <event-block sid="5666397736818609">
+            <conditions>
+                <condition id="0" name="On clicked" sid="1453354269989435" type="Button" />
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
 </c2eventsheet>
