@@ -11,6 +11,7 @@
     <saved-with-version>20600</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="lverdonk-hush" id="BaracashAPI" version="1">BaracashAPI</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
@@ -451,6 +452,9 @@
         </object-type>
         <object-type name="WSCaller" sid="2642348017633266">
             <plugin id="AJAX" />
+        </object-type>
+        <object-type global="1" name="BaracashAPI" sid="6387218095929444">
+            <plugin id="BaracashAPI" />
         </object-type>
     </object-folder>
     <families />

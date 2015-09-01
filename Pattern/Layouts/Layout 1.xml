@@ -1067,6 +1067,7 @@
     <nonworld-instances>
         <instance type="Date" uid="20" />
         <instance type="dude" uid="47" />
+        <instance type="BaracashAPI" uid="49" />
     </nonworld-instances>
     <effects />
 </c2layout>
