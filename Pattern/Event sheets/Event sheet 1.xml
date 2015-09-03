@@ -103,6 +103,9 @@
                             <param id="0" name="Variable">IsWinningTicket</param>
                             <param id="1" name="Value">prizeId &lt;&gt; &quot;NONE&quot;</param>
                         </action>
+                        <action id="0" name="Set text" sid="496687676200226" type="resultTxt">
+                            <param id="0" name="Text">BaracashAPI.GetPrizeDescription</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="3847605037486752">
@@ -452,11 +455,6 @@
                 <event-block sid="1082746071745186">
                     <conditions>
                         <condition id="1" name="On any touch end" sid="9513258022800599" type="Touch" />
-                        <condition id="-14" name="Compare variable" sid="7156630693343427" type="System">
-                            <param id="0" name="Variable">IsGameOver</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
                         <condition id="-8" name="Is boolean instance variable set" sid="2720108840218678" type="Icon">
                             <param id="0" name="Instance variable">IsOnTop</param>
                         </condition>
@@ -467,233 +465,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="7237007983272313" type="result">
-                            <param id="0" name="Visibility">1</param>
+                        <action id="-2" name="Go to layout" sid="8276861373147883" type="System">
+                            <param id="0" name="Layout">Layout 3</param>
                         </action>
                     </actions>
-                    <sub-events>
-                        <event-block sid="1757955654433285">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="4806561162641673" type="System">
-                                    <param id="0" name="Variable">IsWinningTicket</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="1795780610052628" type="BRIBox">
-                                    <param id="0" name="Text">&quot;XBone-&quot;&amp;floor(random(100))</param>
-                                </action>
-                                <action id="7" name="Set CSS style" sid="6376038795085982" type="BRIBox">
-                                    <param id="0" name="Property name">&quot;background-color&quot;</param>
-                                    <param id="1" name="Value">&quot;rgba(0,0,0,0)&quot;</param>
-                                </action>
-                                <action id="0" name="Set text" sid="1692090574429177" type="resultTxt">
-                                    <param id="0" name="Text">&quot;Bravo ! Tu as gagné un bon de réduction de 30€ sur  les packs XBOX.&quot;</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="9695396688088485" type="winLogo">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="1696677621431358">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="7241818583127868" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="8846370558543717" type="resultTxt">
-                                    <param id="0" name="Text">&quot;Dommage ! Retente ta chance dés que possible ! &quot;</param>
-                                </action>
-                                <action id="0" name="Set text" sid="9037057537764936" type="mailTxt">
-                                    <param id="0" name="Text">&quot;Saisis ton email pour être avertis !&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="7266615986256487">
-                            <conditions />
-                            <actions>
-                                <action id="-15" name="Set visible" sid="3155017951261519" type="loadingButton">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="7" name="Set CSS style" sid="2165623278992467" type="MailBox">
-                                    <param id="0" name="Property name">&quot;background-color&quot;</param>
-                                    <param id="1" name="Value">&quot;rgba(0,0,0,0)&quot;</param>
-                                </action>
-                                <action id="4" name="Set enabled" sid="3554564171384764" type="MailBox">
-                                    <param id="0" name="Mode">1</param>
-                                </action>
-                                <action id="3" name="Set visible" sid="452652954053157" type="MailBox">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="3" name="Set visible" sid="9704712063768525" type="BRIBox">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="3243268997030788" type="nextTicketTxt">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="1410359048512717" type="mailTxt">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="2530284201216585" type="resultTxt">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="2446438966788105" type="Timer">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="4799173957381805" type="TimerTxt">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="2" name="Set visible" sid="1110864536185092" type="Button2">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="4130178528783562" type="newSprite">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="9003643613729355" type="samsungSprite">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="1504058974265181" type="xboxSprite">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="7562963406159172" type="System">
-                                    <param id="0" name="Variable">IsGameOver</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action behavior="Fade" id="1" name="Start fade" sid="9951979433617468" type="result" />
-                                <action id="1" name="Start timer" sid="5272088249559289" type="TimeAwayL">
-                                    <param id="0" name="Key">&quot;LastGame&quot;</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="1427328236694039" type="System">
-                                    <param id="0" name="Variable">remainingTime</param>
-                                    <param id="1" name="Value">LastGameTimerInSeconds</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="5611514006100025">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="4356118773133542" type="System">
-                    <param id="0" name="Variable">IsGameOver</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="2483907414886947">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="1584092061662384" type="System">
-                            <param id="0" name="Interval (seconds)">0.2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="11" name="Get elapsed time" sid="381089563071336" type="TimeAwayL">
-                            <param id="0" name="Key">&quot;LastGame&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="8821864411365301">
-                    <conditions>
-                        <condition id="11" name="On elapsed time get" sid="9028150400165535" type="TimeAwayL">
-                            <param id="0" name="Key">&quot;LastGame&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="2751613844760667" type="System">
-                            <param id="0" name="Variable">remainingTime</param>
-                            <param id="1" name="Value">LastGameTimerInSeconds-TimeAwayL.ElapsedTime</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="622552675912734">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="1594404458337156" type="System">
-                            <param id="0" name="Variable">remainingTime</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="7029617791037177" type="TimerTxt">
-                            <param id="0" name="Text">&quot;Rejoue bientot &quot; &amp; newline &amp; int(remainingTime) </param>
-                        </action>
-                        <action id="-28" name="Set effect parameter" sid="8604812374410318" type="loadingButton">
-                            <param id="0" name="Effect">&quot;AlphaThreshold&quot;</param>
-                            <param id="1" name="Parameter index">0</param>
-                            <param id="2" name="Value">min(TimeAwayL.ElapsedTime/LastGameTimerInSeconds*100,100)</param>
-                        </action>
-                        <action behavior="Sine" id="0" name="Set active" sid="304409831276428" type="loadingButton">
-                            <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="8810691469148708">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="8160440725862483" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="6481383365483681" type="TimerTxt">
-                            <param id="0" name="Text">&quot;Clique pour rejouer!&quot;</param>
-                        </action>
-                        <action behavior="Sine" id="0" name="Set active" sid="3066322937054476" type="loadingButton">
-                            <param id="0" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="404646843525216">
-                    <conditions>
-                        <condition id="0" name="On any touch start" sid="2950014330311671" type="Touch" />
-                        <condition id="-14" name="Compare variable" sid="7409875197946409" type="System">
-                            <param id="0" name="Variable">remainingTime</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="7248096589613597" type="loadingButton">
-                            <param id="0" name="Animation">&quot;Clicked&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="5069503761526471">
-                    <conditions>
-                        <condition id="1" name="On any touch end" sid="3314841043106484" type="Touch" />
-                        <condition id="-14" name="Compare variable" sid="226138634039521" type="System">
-                            <param id="0" name="Variable">remainingTime</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="6951371372458428" type="loadingButton">
-                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-21" name="Reset global variables" sid="1465209668349837" type="System" />
-                        <action id="-26" name="Restart layout" sid="6348928272393112" type="System" />
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="7054858552072818">
-            <conditions>
-                <condition id="0" name="On clicked" sid="9829478965373199" type="Button2" />
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="1227493697586298" type="mailTxt">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="2" name="Set visible" sid="9983457916958007" type="Button2">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="3" name="Set visible" sid="9381499572173398" type="MailBox">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>

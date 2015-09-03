@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 3</name>
+    <events>
+        <event-block sid="9697988243399768">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8106631221286837" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="3232170136925623" type="result" />
+            </actions>
+            <sub-events>
+                <event-block sid="5679582322153779">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6260350373600893" type="System">
+                            <param id="0" name="Variable">IsWinningTicket</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="7993198638979828" type="resultTxt">
+                            <param id="0" name="Text">&quot;Bravo ! Tu as gagné &quot; &amp; BaracashAPI.GetPrizeDescription</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9265397368632952">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="5492032813789801" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="6859808424473182" type="resultTxt">
+                            <param id="0" name="Text">&quot;Dommage ! Retente ta chance dés que possible ! &quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="387478591079017" type="mailTxt">
+                            <param id="0" name="Text">&quot;Saisis ton email pour être avertis !&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2267830228091932">
+            <conditions>
+                <condition id="4" name="On captcha response" sid="1640325846654723" type="HTML_Div_Pode" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2191563618941956" type="resultTxt">
+                    <param id="0" name="Text">HTML_Div_Pode.GetReCaptcha</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

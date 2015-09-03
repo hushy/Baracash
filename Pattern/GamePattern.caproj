@@ -12,7 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="lverdonk-hush" id="BaracashAPI" version="1">BaracashAPI</plugin>
-        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Jesse Johnston, mod. JP Deblonde" id="HTML_Div_Pode" version="1.399999976">HTML_Div_Pode</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Rex.Rainbow" id="Rex_Date" version="1">Date</plugin>
@@ -198,9 +198,6 @@
         <object-type global="1" name="Date" sid="5022984442309546">
             <plugin id="Rex_Date" />
         </object-type>
-        <object-type name="BRIBox" sid="3218134636025345">
-            <plugin id="TextBox" />
-        </object-type>
         <object-type name="Particles" sid="1591621651736752">
             <plugin id="Particles" />
             <instance-variables>
@@ -356,9 +353,6 @@
         <object-type name="TimerTxt" sid="9975715475535553">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Button2" sid="2666180199339734">
-            <plugin id="Button" />
-        </object-type>
         <object-type name="winLogo" sid="5044826464400341">
             <plugin id="Sprite" />
             <behaviors>
@@ -439,9 +433,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type global="1" name="dude" sid="3776964852811844">
-            <plugin id="Rex_Date" />
-        </object-type>
         <object-type name="Sprite" sid="8821446867614121">
             <plugin id="Sprite" />
             <animation-folder>
@@ -456,15 +447,20 @@
         <object-type global="1" name="BaracashAPI" sid="6387218095929444">
             <plugin id="BaracashAPI" />
         </object-type>
+        <object-type name="HTML_Div_Pode" sid="8595074815766357">
+            <plugin id="HTML_Div_Pode" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
         <layout>Layout 2.xml</layout>
+        <layout>Layout 3.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="15">
