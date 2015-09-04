@@ -88,7 +88,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="load a response" sid="6371112755819036" type="BaracashAPI">
+                        <action id="0" name="load a gift response" sid="6371112755819036" type="BaracashAPI">
                             <param id="0" name="Data">WSCaller.LastData</param>
                         </action>
                         <action id="-9" name="Set value" sid="4593624718391128" type="System">

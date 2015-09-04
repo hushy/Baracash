@@ -450,6 +450,9 @@
         <object-type name="HTML_Div_Pode" sid="8595074815766357">
             <plugin id="HTML_Div_Pode" />
         </object-type>
+        <object-type name="GiftCode" sid="1841980531700215">
+            <plugin id="TextBox" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

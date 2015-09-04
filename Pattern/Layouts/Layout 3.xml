@@ -78,10 +78,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>488</x>
-                        <y>55</y>
+                        <y>84.5</y>
                         <z>0</z>
                         <width>945</width>
-                        <height>73</height>
+                        <height>132</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -98,7 +98,7 @@
                         <enabled>No</enabled>
                         <read-only>No</read-only>
                         <spell-check>No</spell-check>
-                        <type>Text</type>
+                        <type>Email</type>
                         <auto-font-size>Yes</auto-font-size>
                         <id-optional></id-optional>
                     </properties>
@@ -106,7 +106,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>263</x>
-                        <y>307</y>
+                        <y>331</y>
                         <z>0</z>
                         <width>328</width>
                         <height>25</height>
@@ -131,7 +131,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>135</x>
-                        <y>335</y>
+                        <y>359</y>
                         <z>0</z>
                         <width>253</width>
                         <height>68</height>
@@ -163,7 +163,51 @@
                         <angle>0</angle>
                     </world>
                 </instance>
+                <instance type="GiftCode" uid="37">
+                    <properties>
+                        <text>********</text>
+                        <placeholder></placeholder>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <read-only>No</read-only>
+                        <spell-check>No</spell-check>
+                        <type>Text</type>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>263</x>
+                        <y>217</y>
+                        <z>0</z>
+                        <width>486</width>
+                        <height>65</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
             </instances>
+            <effects />
+        </layer>
+        <layer name="Layer 1" sid="209348018596841">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances />
             <effects />
         </layer>
     </layers>
