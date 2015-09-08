@@ -41,7 +41,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Layout 1</first-layout>
+    <first-layout>game</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -450,20 +450,29 @@
         <object-type name="HTML_Div_Pode" sid="8595074815766357">
             <plugin id="HTML_Div_Pode" />
         </object-type>
-        <object-type name="GiftCode" sid="1841980531700215">
-            <plugin id="TextBox" />
+        <object-type name="resultScratchZone" sid="1539476968314282">
+            <plugin id="c2canvas" />
+            <texture original-source="C:\Users\lucas.verdonk\Desktop\dreamcache.png" />
+        </object-type>
+        <object-type name="scratchText" sid="2548154056693645">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="GiftCode" sid="5434317318988145">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
-        <layout>Layout 2.xml</layout>
-        <layout>Layout 3.xml</layout>
+        <layout>game.xml</layout>
+        <layout>retry.xml</layout>
+        <layout>result_win.xml</layout>
+        <layout>result_lose.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 2.xml</event-sheet>
-        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>ev_game.xml</event-sheet>
+        <event-sheet>ev_retry.xml</event-sheet>
+        <event-sheet>ev_result_win.xml</event-sheet>
+        <event-sheet>ev_result_lose.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="15">

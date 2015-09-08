@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 2</name>
+    <name>retry</name>
     <sid>8294854767206343</sid>
-    <event-sheet>Event sheet 2</event-sheet>
+    <event-sheet>ev_retry</event-sheet>
     <size>
         <width>1000</width>
         <height>446</height>

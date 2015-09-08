@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ev_result_win</name>
+    <events>
+        <variable constant="0" name="resultState" sid="8539054646063116" static="0" type="number">0</variable>
+        <variable constant="0" name="captchaRoot" sid="2839952603027862" static="0" type="text">g-recaptcha-response</variable>
+        <variable constant="0" name="discoverAPIRoot" sid="2266390881598362" static="0" type="text">/api/giftCodes/discover/</variable>
+        <variable constant="0" name="tickCountKey" sid="129234097537225" static="0" type="text">cnt</variable>
+        <variable constant="0" name="keyRoot" sid="8998144862457183" static="0" type="text">key</variable>
+        <variable constant="0" name="behaviorCounter" sid="6241871095929083" static="0" type="number">0</variable>
+        <variable constant="0" name="key" sid="9848181315875273" static="0" type="number">0</variable>
+        <event-block sid="7297353894556343">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1275660866773285" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4208034380774906" type="System">
+                    <param id="0" name="Variable">IsWinningTicket</param>
+                    <param id="1" name="Value">BaracashAPI.GetPrizeId &lt;&gt; &quot;NONE&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="7984685665452536">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="2667613419425086" type="System">
+                            <param id="0" name="Variable">IsWinningTicket</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="9501348283258097" type="resultTxt">
+                            <param id="0" name="Text">&quot;Bravo ! Tu as gagné &quot; &amp; BaracashAPI.GetPrizeDescription</param>
+                        </action>
+                        <action id="0" name="Set text" sid="3450485290484222" type="resultTxt">
+                            <param id="0" name="Text">behaviorCounter</param>
+                        </action>
+                        <action id="0" name="Request URL" sid="1570040808025935" type="WSCaller">
+                            <param id="0" name="Tag">&quot;discoverCode&quot;</param>
+                            <param id="1" name="URL">debugEndpoint &amp; discoverAPIRoot &amp; prizeId &amp; &quot;?&quot; &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9514261598972498">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6256487749279091" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="1861699875106361" type="resultTxt">
+                            <param id="0" name="Text">&quot;Dommage ! Retente ta chance dés que possible ! &quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="1994655026751787" type="mailTxt">
+                            <param id="0" name="Text">&quot;Saisis ton email pour être avertis !&quot;</param>
+                        </action>
+                        <action id="3" name="Set visible" sid="1528485896935734" type="HTML_Div_Pode">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="1015271487365824" type="System">
+                            <param id="0" name="Layout">result_lose</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9673305190104388">
+            <conditions>
+                <condition id="0" name="On completed" sid="4322211440892414" type="WSCaller">
+                    <param id="0" name="Tag">&quot;discoverCode&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="load a code response" sid="9302331358659048" type="BaracashAPI">
+                    <param id="0" name="Data">WSCaller.LastData</param>
+                </action>
+                <action id="-9" name="Set value" sid="7898238604836845" type="System">
+                    <param id="0" name="Variable">resultState</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="5681029885035208" type="resultTxt">
+                    <param id="0" name="Text">BaracashAPI.GetGiftCode</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5900680368224933">
+            <conditions>
+                <condition id="1" name="On error" sid="7513166713210961" type="WSCaller">
+                    <param id="0" name="Tag">&quot;discoverCode&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="814721232732557" type="resultTxt">
+                    <param id="0" name="Text">&quot;CALL error&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8927551285460372">
+            <conditions>
+                <condition id="7" name="Compare touch speed" sid="264844707803776" type="Touch">
+                    <param id="0" name="Touch index">0</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Speed">5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8091431364202984" type="System">
+                    <param id="0" name="Variable">resultState</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="23" name="Clear Circle" sid="1559601472746734" type="resultScratchZone">
+                    <param id="0" name="x">Touch.X - resultScratchZone.X</param>
+                    <param id="1" name="y">Touch.Y - resultScratchZone.Y</param>
+                    <param id="2" name="radius">scratchSize/2</param>
+                    <param id="3" name="color">&quot;black&quot;</param>
+                    <param id="4" name="line_width">1.0</param>
+                </action>
+                <action id="-3" name="Set position" sid="3614475498872093" type="Particles">
+                    <param id="0" name="X">Touch.X</param>
+                    <param id="1" name="Y">Touch.Y</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="203541007849337">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="8243460359924192" type="Touch">
+                            <param id="0" name="Object">ScratchZone</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="1482760801052249">
+                            <conditions>
+                                <condition id="0" inverted="1" name="Is alpha less than" sid="7694745285742459" type="resultScratchZone">
+                                    <param id="0" name="x">(Touch.X - ScratchZone.X) + TestRadius</param>
+                                    <param id="1" name="y">(Touch.Y - ScratchZone.Y)</param>
+                                    <param id="2" name="alpha">0.5</param>
+                                </condition>
+                                <condition id="-12" inverted="1" name="Is clockwise from" sid="815969754626831" type="resultScratchZone">
+                                    <param id="0" name="Angle">(Touch.X - ScratchZone.X) - TestRadius</param>
+                                </condition>
+                                <condition id="0" inverted="1" name="Is alpha less than" sid="185714896742419" type="resultScratchZone">
+                                    <param id="0" name="x">(Touch.X - ScratchZone.X) </param>
+                                    <param id="1" name="y">(Touch.Y - ScratchZone.Y) + TestRadius</param>
+                                    <param id="2" name="alpha">0.5</param>
+                                </condition>
+                                <condition id="0" inverted="1" name="Is alpha less than" sid="1041835752128199" type="resultScratchZone">
+                                    <param id="0" name="x">(Touch.X - ScratchZone.X) </param>
+                                    <param id="1" name="y">(Touch.Y - ScratchZone.Y) - TestRadius</param>
+                                    <param id="2" name="alpha">0.5</param>
+                                </condition>
+                                <condition id="0" inverted="1" name="Is alpha less than" sid="4816864435859484" type="resultScratchZone">
+                                    <param id="0" name="x">(Touch.X - ScratchZone.X) + TestRadius*cos45</param>
+                                    <param id="1" name="y">(Touch.Y - ScratchZone.Y) + TestRadius*sin45</param>
+                                    <param id="2" name="alpha">0.5</param>
+                                </condition>
+                                <condition id="0" inverted="1" name="Is alpha less than" sid="4689901701086748" type="resultScratchZone">
+                                    <param id="0" name="x">(Touch.X - ScratchZone.X) - TestRadius*cos45</param>
+                                    <param id="1" name="y">(Touch.Y - ScratchZone.Y) - TestRadius*sin45</param>
+                                    <param id="2" name="alpha">0.5</param>
+                                </condition>
+                                <condition id="0" inverted="1" name="Is alpha less than" sid="7276391154205926" type="resultScratchZone">
+                                    <param id="0" name="x">(Touch.X - ScratchZone.X) - TestRadius*cos45</param>
+                                    <param id="1" name="y">(Touch.Y - ScratchZone.Y) + TestRadius*sin45</param>
+                                    <param id="2" name="alpha">0.5</param>
+                                </condition>
+                                <condition id="0" inverted="1" name="Is alpha less than" sid="9585160164653571" type="resultScratchZone">
+                                    <param id="0" name="x">(Touch.X - ScratchZone.X) + TestRadius*cos45</param>
+                                    <param id="1" name="y">(Touch.Y - ScratchZone.Y) - TestRadius*sin45</param>
+                                    <param id="2" name="alpha">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set rate" sid="6070293831640489" type="Particles">
+                                    <param id="0" name="Rate">Particles.DefaultRate</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1829592501586303">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="5877959437308066" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set rate" sid="3894629107333554" type="Particles">
+                                    <param id="0" name="Rate">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="484965462872745">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="101585497925282" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set rate" sid="2096305086333947" type="Particles">
+                            <param id="0" name="Rate">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2104973655692299">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8219451657395515" type="System">
+                            <param id="0" name="Variable">X</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="3289679108463443" type="System">
+                            <param id="0" name="First value">distance(X,Y,Touch.X-scratchZone.X,Touch.Y-scratchZone.Y)</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">scratchSize</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="24" name="Clear Line" sid="266583146937261" type="resultScratchZone">
+                            <param id="0" name="x1">Touch.X - resultScratchZone.X</param>
+                            <param id="1" name="y1">Touch.Y - resultScratchZone.Y</param>
+                            <param id="2" name="x2">X - resultScratchZone.X</param>
+                            <param id="3" name="y2">Y - resultScratchZone.Y</param>
+                            <param id="4" name="color">&quot;black&quot;</param>
+                            <param id="5" name="line_width">scratchSize+1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="269497548984539" type="System">
+                            <param id="0" name="Variable">behaviorCounter</param>
+                            <param id="1" name="Value">behaviorCounter + dt</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3726926879526028">
+                    <conditions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="9581819613397355" type="System">
+                            <param id="0" name="Variable">X</param>
+                            <param id="1" name="Value">Touch.X </param>
+                        </action>
+                        <action id="-9" name="Set value" sid="570355072719276" type="System">
+                            <param id="0" name="Variable">Y</param>
+                            <param id="1" name="Value">Touch.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

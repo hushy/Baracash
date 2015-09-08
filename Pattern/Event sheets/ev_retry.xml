@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Event sheet 2</name>
+    <name>ev_retry</name>
     <events>
         <event-block sid="7889887655932702">
             <conditions>
@@ -102,7 +102,7 @@
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="9648626740550017" type="System">
-                    <param id="0" name="Layout">Layout 1</param>
+                    <param id="0" name="Layout">game</param>
                 </action>
                 <action id="-21" name="Reset global variables" sid="8446927038142427" type="System" />
             </actions>
