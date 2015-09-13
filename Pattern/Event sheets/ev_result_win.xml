@@ -19,30 +19,40 @@
                     <param id="0" name="Variable">IsWinningTicket</param>
                     <param id="1" name="Value">BaracashAPI.GetPrizeId &lt;&gt; &quot;NONE&quot;</param>
                 </action>
+                <action id="0" name="Set text" sid="9501348283258097" type="resultTxt">
+                    <param id="0" name="Text">&quot;Bravo ! Tu as gagné &quot; &amp; BaracashAPI.GetPrizeDescription</param>
+                </action>
             </actions>
             <sub-events>
-                <event-block sid="7984685665452536">
+                <event-block sid="5991167484933874">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="2667613419425086" type="System">
+                        <condition id="-14" name="Compare variable" sid="471929989181724" type="System">
                             <param id="0" name="Variable">IsWinningTicket</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="9501348283258097" type="resultTxt">
-                            <param id="0" name="Text">&quot;Bravo ! Tu as gagné &quot; &amp; BaracashAPI.GetPrizeDescription</param>
-                        </action>
-                        <action id="0" name="Set text" sid="3450485290484222" type="resultTxt">
-                            <param id="0" name="Text">behaviorCounter</param>
-                        </action>
-                        <action id="0" name="Request URL" sid="1570040808025935" type="WSCaller">
-                            <param id="0" name="Tag">&quot;discoverCode&quot;</param>
-                            <param id="1" name="URL">debugEndpoint &amp; discoverAPIRoot &amp; prizeId &amp; &quot;?&quot; &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount</param>
+                        <action id="-2" name="Go to layout" sid="309183526189457" type="System">
+                            <param id="0" name="Layout">result_lose</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="7984685665452536">
+            <conditions>
+                <condition id="0" name="On clicked" sid="1741347818871474" type="Button" />
+            </conditions>
+            <actions>
+                <action id="0" name="Request URL" sid="1570040808025935" type="WSCaller">
+                    <param id="0" name="Tag">&quot;discoverCode&quot;</param>
+                    <param id="1" name="URL">debugEndpoint &amp; discoverAPIRoot &amp; prizeId &amp; &quot;?&quot; &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount &amp; &quot;&amp;email=&quot;&amp;MailBox.Text</param>
+                </action>
+                <action id="3" name="Set enabled" sid="2411131131084857" type="Button">
+                    <param id="0" name="Mode">0</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="9673305190104388">
             <conditions>
@@ -58,8 +68,11 @@
                     <param id="0" name="Variable">resultState</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="0" name="Set text" sid="5681029885035208" type="resultTxt">
+                <action id="0" name="Set text" sid="8485984129156619" type="bri">
                     <param id="0" name="Text">BaracashAPI.GetGiftCode</param>
+                </action>
+                <action id="5" name="Set read-only" sid="1418687505095194" type="bri">
+                    <param id="0" name="Mode">0</param>
                 </action>
             </actions>
         </event-block>
@@ -217,6 +230,37 @@
                         <action id="-9" name="Set value" sid="570355072719276" type="System">
                             <param id="0" name="Variable">Y</param>
                             <param id="1" name="Value">Touch.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3904427278801183">
+            <conditions>
+                <condition id="1" name="On text changed" sid="6827761901780964" type="MailBox" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5107636316608687">
+                    <conditions>
+                        <condition id="0" inverted="1" name="Compare text" sid="1134842458954889" type="MailBox">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set enabled" sid="4090836311163884" type="Button">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7935829592396295">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="5224202740362762" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set enabled" sid="9067312517287425" type="Button">
+                            <param id="0" name="Mode">0</param>
                         </action>
                     </actions>
                 </event-block>

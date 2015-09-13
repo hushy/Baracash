@@ -25,6 +25,25 @@
         <variable constant="0" name="IsGameOver" sid="7777748381604351" static="0" type="number">0</variable>
         <event-group description="" sid="3029858108535978" title="Start">
             <sub-events>
+                <event-block sid="8278621339600193">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Compare two values" sid="3741711198066919" type="System">
+                            <param id="0" name="First value">BaracashAPI.GetFingerPrint</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Request URL" sid="9227861607929108" type="WSCaller">
+                            <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
+                            <param id="1" name="URL">debugEndpoint &amp; getPrizePath &amp; campaignId &amp;&quot;&amp;fp=&quot; &amp; BaracashAPI.GetFingerPrint</param>
+                        </action>
+                        <action disabled="1" id="0" name="Request URL" sid="8305784945083653" type="WSCaller">
+                            <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
+                            <param id="1" name="URL">&quot;http://stg.api.bazaarvoice.com/data/submitquestion.json?apiversion=5.4&amp;CategoryId=1020&amp;UserId=craiggil&amp;passkey=2cpdrhohmgmwfz8vqyo48f529&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="5094716460790787">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="1211866829365002" type="System" />
@@ -49,20 +68,8 @@
                         <action behavior="Sine" id="0" name="Set active" sid="2137023674789992" type="loadingButton">
                             <param id="0" name="State">0</param>
                         </action>
-                        <action id="0" name="Request URL" sid="9227861607929108" type="WSCaller">
-                            <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
-                            <param id="1" name="URL">debugEndpoint &amp; getPrizePath &amp; campaignId</param>
-                        </action>
-                        <action disabled="1" id="0" name="Request URL" sid="8305784945083653" type="WSCaller">
-                            <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
-                            <param id="1" name="URL">&quot;http://stg.api.bazaarvoice.com/data/submitquestion.json?apiversion=5.4&amp;CategoryId=1020&amp;UserId=craiggil&amp;passkey=2cpdrhohmgmwfz8vqyo48f529&quot;</param>
-                        </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="8278621339600193">
-                            <conditions />
-                            <actions />
-                        </event-block>
                         <event-block sid="39825084966474">
                             <conditions>
                                 <condition id="-19" name="Pick all" sid="507029074886908" type="System">
@@ -252,6 +259,10 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="4837168999224023">
+                    <conditions />
+                    <actions />
                 </event-block>
             </sub-events>
         </event-group>

@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="lverdonk-hush" id="BaracashAPI" version="1">BaracashAPI</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Jesse Johnston, mod. JP Deblonde" id="HTML_Div_Pode" version="1.399999976">HTML_Div_Pode</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
@@ -158,10 +159,6 @@
                     <behavior id="Fade" />
                 </behavior-type>
             </behaviors>
-            <container>
-                <type>result</type>
-                <type>MailBox</type>
-            </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Lose" pingpong="0" repeatcount="1" repeatto="0" sid="8799132369838851" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Baracash\Baracash\Textures\skin-pa_150624043007.jpg" />
@@ -170,24 +167,12 @@
         </object-type>
         <object-type name="MailBox" sid="216507672055013">
             <plugin id="TextBox" />
-            <container>
-                <type>result</type>
-                <type>MailBox</type>
-            </container>
         </object-type>
         <object-type name="LocalStorage" sid="4949617433012997">
             <plugin id="LocalStorage" />
         </object-type>
         <object-type name="TimeAwayL" sid="2570945835548508">
             <plugin id="Rex_TimeAwayL" />
-        </object-type>
-        <object-type name="Sprite2" sid="2175532174858335">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5936645367758125" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="ProgressBar" sid="1164689577870269">
             <plugin id="progressbar" />
@@ -271,14 +256,6 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8184656558779365" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Baracash\Baracash\Textures\skin-pa_150624043007.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite3" sid="7439940263312307">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5759095725246971" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -433,14 +410,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="8821446867614121">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8745775068515649" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Baracash\Animations\loadingButton\Default\000.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="WSCaller" sid="2642348017633266">
             <plugin id="AJAX" />
         </object-type>
@@ -462,6 +431,15 @@
         </object-type>
         <object-type name="HTML_Div_Pode2" sid="6886935405052998">
             <plugin id="HTML_Div_Pode" />
+        </object-type>
+        <object-type name="Text" sid="9787060856192853">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="bri" sid="9275239667439587">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Button" sid="9716640533945294">
+            <plugin id="Button" />
         </object-type>
     </object-folder>
     <families />
