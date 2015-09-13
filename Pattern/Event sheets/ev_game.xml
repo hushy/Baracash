@@ -13,7 +13,7 @@
         <variable constant="0" name="debugEndpoint" sid="899216139316483" static="0" type="text">http://localhost:8080/</variable>
         <variable constant="0" name="endpoint" sid="2180184633429476" static="0" type="text">http://front-load-balancer-1402238357.eu-central-1.elb.amazonaws.com:8080/</variable>
         <variable constant="0" name="LastGameTimerInSeconds" sid="1843762542549096" static="0" type="number">10</variable>
-        <variable constant="0" name="InitState" sid="7953206043994739" static="0" type="number">-1</variable>
+        <variable constant="0" name="InitState" sid="7953206043994739" static="0" type="number">-2</variable>
         <variable constant="0" name="scratchSize" sid="9052999839548576" static="0" type="number">10</variable>
         <variable constant="0" name="Y" sid="6213800150554527" static="0" type="number">-1</variable>
         <variable constant="0" name="X" sid="677297388789187" static="0" type="number">-1</variable>
@@ -32,15 +32,24 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">&quot;&quot;</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="6773628711079734" type="System">
+                            <param id="0" name="Variable">InitState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-2</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Request URL" sid="9227861607929108" type="WSCaller">
                             <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
-                            <param id="1" name="URL">debugEndpoint &amp; getPrizePath &amp; campaignId &amp;&quot;&amp;fp=&quot; &amp; BaracashAPI.GetFingerPrint</param>
+                            <param id="1" name="URL">debugEndpoint &amp; getPrizePath &amp; campaignId &amp;&quot;?fp=&quot; &amp; BaracashAPI.GetFingerPrint</param>
                         </action>
                         <action disabled="1" id="0" name="Request URL" sid="8305784945083653" type="WSCaller">
                             <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
                             <param id="1" name="URL">&quot;http://stg.api.bazaarvoice.com/data/submitquestion.json?apiversion=5.4&amp;CategoryId=1020&amp;UserId=craiggil&amp;passkey=2cpdrhohmgmwfz8vqyo48f529&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2325335204596938" type="System">
+                            <param id="0" name="Variable">InitState</param>
+                            <param id="1" name="Value">-1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -122,10 +131,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="803311529292913" type="System">
-                            <param id="0" name="Variable">InitState</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
                         <action id="-9" name="Set value" sid="9761448861505558" type="System">
                             <param id="0" name="Variable">IsWinningTicket</param>
                             <param id="1" name="Value">0</param>
@@ -133,6 +138,10 @@
                         <action id="-9" name="Set value" sid="4993921771515195" type="System">
                             <param id="0" name="Variable">Debug</param>
                             <param id="1" name="Value">&quot;error&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6080019176799038" type="System">
+                            <param id="0" name="Variable">InitState</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>

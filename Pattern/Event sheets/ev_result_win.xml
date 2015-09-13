@@ -47,7 +47,7 @@
             <actions>
                 <action id="0" name="Request URL" sid="1570040808025935" type="WSCaller">
                     <param id="0" name="Tag">&quot;discoverCode&quot;</param>
-                    <param id="1" name="URL">debugEndpoint &amp; discoverAPIRoot &amp; prizeId &amp; &quot;?&quot; &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount &amp; &quot;&amp;email=&quot;&amp;MailBox.Text</param>
+                    <param id="1" name="URL">debugEndpoint &amp; discoverAPIRoot &amp; prizeId &amp; &quot;?&quot; &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount &amp; &quot;&amp;email=&quot;&amp;MailBox.Text &amp; &quot;&amp;fp=&quot;&amp;BaracashAPI.GetFingerPrint</param>
                 </action>
                 <action id="3" name="Set enabled" sid="2411131131084857" type="Button">
                     <param id="0" name="Mode">0</param>
@@ -74,6 +74,12 @@
                 <action id="5" name="Set read-only" sid="1418687505095194" type="bri">
                     <param id="0" name="Mode">0</param>
                 </action>
+                <action id="3" name="Set enabled" sid="2158530810734635" type="Button">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set enabled" sid="4657221760679351" type="MailBox">
+                    <param id="0" name="Mode">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="5900680368224933">
@@ -82,11 +88,7 @@
                     <param id="0" name="Tag">&quot;discoverCode&quot;</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="814721232732557" type="resultTxt">
-                    <param id="0" name="Text">&quot;CALL error&quot;</param>
-                </action>
-            </actions>
+            <actions />
         </event-block>
         <event-block sid="8927551285460372">
             <conditions>
