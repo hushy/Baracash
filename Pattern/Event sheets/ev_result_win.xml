@@ -22,6 +22,10 @@
                 <action id="0" name="Set text" sid="9501348283258097" type="resultTxt">
                     <param id="0" name="Text">&quot;Bravo ! Tu as gagné &quot; &amp; BaracashAPI.GetPrizeDescription</param>
                 </action>
+                <action id="0" name="Track Event" sid="9029982457418098" type="GoogleAnalytics">
+                    <param id="0" name="Category">&quot;Rugby01&quot;</param>
+                    <param id="1" name="Name">&quot;Win&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="5991167484933874">

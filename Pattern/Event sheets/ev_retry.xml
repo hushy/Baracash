@@ -11,6 +11,10 @@
                 <action id="11" name="Get elapsed time" sid="8721806986263172" type="TimeAwayL">
                     <param id="0" name="Key">&quot;LastGame&quot;</param>
                 </action>
+                <action id="0" name="Track Event" sid="6205083114440109" type="GoogleAnalytics">
+                    <param id="0" name="Category">&quot;Rugby01&quot;</param>
+                    <param id="1" name="Name">&quot;Retry&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="4592693072425734">

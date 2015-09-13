@@ -8,11 +8,12 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>3t8fqcjm7dvrh</unique-id>
-    <saved-with-version>20600</saved-with-version>
+    <saved-with-version>21202</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="lverdonk-hush" id="BaracashAPI" version="1">BaracashAPI</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Sun Temple" id="GoogleAnalytics_ST" version="1">Google Analytics</plugin>
         <plugin author="Jesse Johnston, mod. JP Deblonde" id="HTML_Div_Pode" version="1.399999976">HTML_Div_Pode</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
@@ -441,6 +442,9 @@
         <object-type name="Button" sid="9716640533945294">
             <plugin id="Button" />
         </object-type>
+        <object-type name="GoogleAnalytics" sid="8291750782910751">
+            <plugin id="GoogleAnalytics_ST" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -464,6 +468,11 @@
         <global-instance type="LocalStorage" uid="18" />
         <global-instance type="TimeAwayL" uid="21" />
         <global-instance type="WSCaller" uid="48" />
+        <global-instance type="GoogleAnalytics" uid="2">
+            <properties>
+                <tracking-id>UA-67253337-1</tracking-id>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
     <music-folder />
