@@ -22,6 +22,10 @@
                 <action id="0" name="Set text" sid="9501348283258097" type="resultTxt">
                     <param id="0" name="Text">&quot;Bravo ! Tu as gagné &quot; &amp; BaracashAPI.GetPrizeDescription</param>
                 </action>
+                <action id="0" name="Track Event" sid="9029982457418098" type="GoogleAnalytics">
+                    <param id="0" name="Category">&quot;Rugby01&quot;</param>
+                    <param id="1" name="Name">&quot;Win&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="5991167484933874">
@@ -42,14 +46,14 @@
         </event-block>
         <event-block sid="7984685665452536">
             <conditions>
-                <condition id="0" name="On clicked" sid="1741347818871474" type="Button" />
+                <condition id="0" name="On clicked" sid="1741347818871474" type="Submit" />
             </conditions>
             <actions>
                 <action id="0" name="Request URL" sid="1570040808025935" type="WSCaller">
                     <param id="0" name="Tag">&quot;discoverCode&quot;</param>
-                    <param id="1" name="URL">debugEndpoint &amp; discoverAPIRoot &amp; prizeId &amp; &quot;?&quot; &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount &amp; &quot;&amp;email=&quot;&amp;MailBox.Text &amp; &quot;&amp;fp=&quot;&amp;BaracashAPI.GetFingerPrint</param>
+                    <param id="1" name="URL">debugEndpoint &amp; discoverAPIRoot &amp; prizeId &amp; &quot;?&quot; &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount &amp; &quot;&amp;email=&quot;&amp;MailBox.Text &amp; &quot;&amp;fp=&quot;&amp;BaracashAPI.GetFingerPrint&amp;&quot;&amp;campaign=&quot;&amp;campaignId</param>
                 </action>
-                <action id="3" name="Set enabled" sid="2411131131084857" type="Button">
+                <action id="3" name="Set enabled" sid="2411131131084857" type="Submit">
                     <param id="0" name="Mode">0</param>
                 </action>
             </actions>
@@ -74,7 +78,7 @@
                 <action id="5" name="Set read-only" sid="1418687505095194" type="bri">
                     <param id="0" name="Mode">0</param>
                 </action>
-                <action id="3" name="Set enabled" sid="2158530810734635" type="Button">
+                <action id="3" name="Set enabled" sid="2158530810734635" type="Submit">
                     <param id="0" name="Mode">0</param>
                 </action>
                 <action id="4" name="Set enabled" sid="4657221760679351" type="MailBox">
@@ -251,7 +255,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="3" name="Set enabled" sid="4090836311163884" type="Button">
+                        <action id="3" name="Set enabled" sid="4090836311163884" type="Submit">
                             <param id="0" name="Mode">1</param>
                         </action>
                     </actions>
@@ -261,7 +265,7 @@
                         <condition id="-22" name="Else" sid="5224202740362762" type="System" />
                     </conditions>
                     <actions>
-                        <action id="3" name="Set enabled" sid="9067312517287425" type="Button">
+                        <action id="3" name="Set enabled" sid="9067312517287425" type="Submit">
                             <param id="0" name="Mode">0</param>
                         </action>
                     </actions>

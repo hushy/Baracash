@@ -10,9 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">game</layout>
+        <layout order="0">game</layout>
+        <layout order="2">result_win</layout>
+        <layout order="3">retry</layout>
+        <layout order="7">result_lose</layout>
         <event-sheet order="1">ev_game</event-sheet>
-        <event-sheet order="2">ev_result_win</event-sheet>
+        <event-sheet order="4">ev_retry</event-sheet>
+        <event-sheet active="1" order="5">ev_result_win</event-sheet>
+        <event-sheet order="6">ev_result_lose</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -23,27 +28,23 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/gui/" />
+        <folder expanded="0" path="object-folder/sprite/" />
+        <folder expanded="1" path="object-folder/object/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
-        <folder expanded="1" path="file-folder/" />
+        <folder expanded="0" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/loadingButton/" />
         <folder expanded="1" path="animation-folder/Background/" />
-        <folder expanded="1" path="animation-folder/Icon/" />
-        <folder expanded="1" path="animation-folder/loading/" />
-        <folder expanded="1" path="animation-folder/result/" />
         <folder expanded="1" path="animation-folder/BG/" />
         <folder expanded="1" path="animation-folder/dreamBg/" />
-        <folder expanded="1" path="animation-folder/loadingButton/" />
         <folder expanded="1" path="animation-folder/endBG/" />
-        <folder expanded="1" path="animation-folder/xboxlogo/" />
-        <folder expanded="1" path="animation-folder/samsunglogo/" />
+        <folder expanded="1" path="animation-folder/loading/" />
         <folder expanded="1" path="animation-folder/loadingBG/" />
-        <folder expanded="1" path="animation-folder/NespressoLogo/" />
-        <folder expanded="1" path="animation-folder/winLogo/" />
-        <folder expanded="1" path="animation-folder/newSprite/" />
-        <folder expanded="1" path="animation-folder/samsungSprite/" />
-        <folder expanded="1" path="animation-folder/xboxSprite/" />
+        <folder expanded="1" path="animation-folder/result/" />
+        <folder expanded="1" path="animation-folder/Icon/" />
     </folders-expanded>
 </c2uistate>

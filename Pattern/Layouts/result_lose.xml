@@ -64,7 +64,7 @@
                 </instance>
                 <instance type="resultTxt" uid="35">
                     <properties>
-                        <text>&quot;Dommage ! Retente ta chance dés que possible ! &quot;</text>
+                        <text>Dommage. Tout n&apos;est pas perdu! Participe au tirage au sort et remporte le gros lot.</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Gabriola,-37,700,0</font>
                         <color>204,0,0</color>
@@ -77,10 +77,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>488</x>
-                        <y>82</y>
+                        <x>509</x>
+                        <y>97</y>
                         <z>0</z>
-                        <width>945</width>
+                        <width>658</width>
                         <height>132</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -105,8 +105,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>387</x>
-                        <y>188</y>
+                        <x>322</x>
+                        <y>177</y>
                         <z>0</z>
                         <width>328</width>
                         <height>25</height>
@@ -130,8 +130,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>269</x>
-                        <y>216</y>
+                        <x>204</x>
+                        <y>205</y>
                         <z>0</z>
                         <width>253</width>
                         <height>68</height>
@@ -140,6 +140,51 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Submit" uid="31">
+                    <properties>
+                        <type>Button</type>
+                        <text>OK</text>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                        <checked>No</checked>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>322</x>
+                        <y>212</y>
+                        <z>0</z>
+                        <width>72</width>
+                        <height>24</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="facebookShare" uid="32">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <innerhtml> &lt;div class=&quot;fb-share-button&quot; data-href=&quot;http://baracash.azurewebsites.net/fbr.html&quot; data-layout=&quot;button_count&quot;&gt;&lt;/div&gt;&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt;    &lt;script&gt;    (function (d, s, id) {      var js, fjs = d.getElementsByTagName(s)[0];        if (d.getElementById(id)) return;        js = d.createElement(s); js.id = id;        js.src = &quot;//connect.facebook.net/fr_FR/sdk.js#xfbml=1&amp;version=v2.4&amp;appId=1736591459889631&quot;; fjs.parentNode.insertBefore(js, fjs);    }(document, &apos;script&apos;, &apos;facebook-jssdk&apos;));        &lt;/script&gt;</innerhtml>
+                        <style></style>
+                        <html-tag-id>my_div</html-tag-id>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>323</x>
+                        <y>246</y>
+                        <z>0</z>
+                        <width>150</width>
+                        <height>22</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
                     </world>
                 </instance>
             </instances>
