@@ -2,5 +2,54 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ev_result_lose</name>
-    <events />
+    <events>
+        <variable constant="0" name="subscribeAPIRoot" sid="4013698982686558" static="0" type="text">/api/campaignBehaviors/subscribe/</variable>
+        <event-block sid="3504298512721187">
+            <conditions>
+                <condition id="0" name="On clicked" sid="8991943739887891" type="Submit" />
+            </conditions>
+            <actions>
+                <action id="0" name="Request URL" sid="1601103803934225" type="WSCaller">
+                    <param id="0" name="Tag">&quot;subscribe&quot;</param>
+                    <param id="1" name="URL">debugEndpoint &amp; subscribeAPIRoot &amp; campaignId &amp; &quot;?fp=&quot; &amp;BaracashAPI.GetFingerPrint</param>
+                </action>
+                <action id="3" name="Set enabled" sid="9852355894612009" type="Submit">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set enabled" sid="3528642016794781" type="MailBox">
+                    <param id="0" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="698227279357925">
+            <conditions>
+                <condition id="1" name="On error" sid="9700524463455911" type="WSCaller">
+                    <param id="0" name="Tag">&quot;subscribe&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Set visible" sid="9345151149464436" type="Submit">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5293133520064708">
+            <conditions>
+                <condition id="1" name="On error" sid="6347779013425399" type="WSCaller">
+                    <param id="0" name="Tag">&quot;subscribe&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set enabled" sid="2094852232203155" type="Submit">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="4" name="Set enabled" sid="8933769395832698" type="MailBox">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="7702281753215173" type="Submit">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
