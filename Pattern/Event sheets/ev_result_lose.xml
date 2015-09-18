@@ -3,15 +3,17 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ev_result_lose</name>
     <events>
-        <variable constant="0" name="subscribeAPIRoot" sid="4013698982686558" static="0" type="text">/api/campaignBehaviors/subscribe/</variable>
+        <variable constant="0" name="subscribeAPIRoot" sid="4013698982686558" static="0" type="text">api/campaignBehaviors/subscribe/</variable>
         <event-block sid="3504298512721187">
             <conditions>
                 <condition id="0" name="On clicked" sid="8991943739887891" type="Submit" />
             </conditions>
             <actions>
-                <action id="0" name="Request URL" sid="1601103803934225" type="WSCaller">
+                <action id="2" name="Post to URL" sid="1601103803934225" type="WSCaller">
                     <param id="0" name="Tag">&quot;subscribe&quot;</param>
-                    <param id="1" name="URL">debugEndpoint &amp; subscribeAPIRoot &amp; campaignId &amp; &quot;?fp=&quot; &amp;BaracashAPI.GetFingerPrint</param>
+                    <param id="1" name="URL">debugEndpoint &amp; subscribeAPIRoot &amp; campaignId &amp; &quot;?fp=&quot; &amp;BaracashAPI.GetFingerPrint &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount</param>
+                    <param id="2" name="Data">&quot;&quot;</param>
+                    <param id="3" name="Method">&quot;POST&quot;</param>
                 </action>
                 <action id="3" name="Set enabled" sid="9852355894612009" type="Submit">
                     <param id="0" name="Mode">0</param>
@@ -23,13 +25,20 @@
         </event-block>
         <event-block sid="698227279357925">
             <conditions>
-                <condition id="1" name="On error" sid="9700524463455911" type="WSCaller">
+                <condition id="0" name="On completed" sid="9700524463455911" type="WSCaller">
                     <param id="0" name="Tag">&quot;subscribe&quot;</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="2" name="Set visible" sid="9345151149464436" type="Submit">
                     <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="3" name="Set visible" sid="5177436423357636" type="facebookShare">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set item" sid="4908439759480718" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Email&quot;</param>
+                    <param id="1" name="Value">MailBox.Text</param>
                 </action>
             </actions>
         </event-block>
@@ -49,7 +58,57 @@
                 <action id="2" name="Set visible" sid="7702281753215173" type="Submit">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action id="3" name="Set visible" sid="9537334642050871" type="facebookShare">
+                    <param id="0" name="Visibility">0</param>
+                </action>
             </actions>
+        </event-block>
+        <event-block sid="7511649824154604">
+            <conditions>
+                <condition id="3" name="On touched object" sid="2644327313321189" type="Touch">
+                    <param id="0" name="Object">facebookShare</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="3850235313727032" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Shared&quot;</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8838335261310887">
+            <conditions>
+                <condition id="1" name="On text changed" sid="6669193194221741" type="MailBox" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="938477136938479">
+                    <conditions>
+                        <condition id="0" inverted="1" name="Compare text" sid="9603679654927149" type="MailBox">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set enabled" sid="4070451338522857" type="Submit">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="2" name="Set visible" sid="2387603396852482" type="Submit">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8786310881706979">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6776075162241838" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set enabled" sid="4745157324410008" type="Submit">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

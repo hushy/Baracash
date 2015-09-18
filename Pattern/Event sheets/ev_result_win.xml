@@ -49,9 +49,11 @@
                 <condition id="0" name="On clicked" sid="1741347818871474" type="Submit" />
             </conditions>
             <actions>
-                <action id="0" name="Request URL" sid="1570040808025935" type="WSCaller">
+                <action id="2" name="Post to URL" sid="1570040808025935" type="WSCaller">
                     <param id="0" name="Tag">&quot;discoverCode&quot;</param>
                     <param id="1" name="URL">debugEndpoint &amp; discoverAPIRoot &amp; prizeId &amp; &quot;?&quot; &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount &amp; &quot;&amp;email=&quot;&amp;MailBox.Text &amp; &quot;&amp;fp=&quot;&amp;BaracashAPI.GetFingerPrint&amp;&quot;&amp;campaign=&quot;&amp;campaignId</param>
+                    <param id="2" name="Data">&quot;&quot;</param>
+                    <param id="3" name="Method">&quot;POST&quot;</param>
                 </action>
                 <action id="3" name="Set enabled" sid="2411131131084857" type="Submit">
                     <param id="0" name="Mode">0</param>
@@ -83,6 +85,18 @@
                 </action>
                 <action id="4" name="Set enabled" sid="4657221760679351" type="MailBox">
                     <param id="0" name="Mode">0</param>
+                </action>
+                <action id="0" name="Set item" sid="6978276807333815" type="LocalStorage">
+                    <param id="0" name="Key">&quot;GiftCode&quot;</param>
+                    <param id="1" name="Value">BaracashAPI.GetGiftCode</param>
+                </action>
+                <action id="0" name="Set item" sid="6061944791451785" type="LocalStorage">
+                    <param id="0" name="Key">&quot;HasWon&quot;</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set item" sid="8234724624442101" type="LocalStorage">
+                    <param id="0" name="Key">&quot;Email&quot;</param>
+                    <param id="1" name="Value">MailBox.Text</param>
                 </action>
             </actions>
         </event-block>
@@ -257,6 +271,9 @@
                     <actions>
                         <action id="3" name="Set enabled" sid="4090836311163884" type="Submit">
                             <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="2" name="Set visible" sid="7857537324309975" type="Submit">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>

@@ -16,8 +16,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="7">result_lose</layout>
         <event-sheet order="1">ev_game</event-sheet>
         <event-sheet order="4">ev_retry</event-sheet>
-        <event-sheet active="1" order="5">ev_result_win</event-sheet>
-        <event-sheet order="6">ev_result_lose</event-sheet>
+        <event-sheet order="5">ev_result_win</event-sheet>
+        <event-sheet active="1" order="6">ev_result_lose</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

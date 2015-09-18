@@ -9,9 +9,9 @@
         <variable constant="0" name="GiftValue" sid="7357975800208961" static="0" type="number">0</variable>
         <variable constant="0" name="Debug" sid="4100423820922422" static="0" type="text"></variable>
         <variable constant="0" name="getPrizePath" sid="9834580253533465" static="0" type="text">api/prizes/random/</variable>
-        <variable constant="0" name="campaignId" sid="1552601337797602" static="0" type="number">1025</variable>
+        <variable constant="0" name="campaignId" sid="1552601337797602" static="0" type="number">1826</variable>
         <variable constant="0" name="debugEndpoint" sid="899216139316483" static="0" type="text">http://localhost:8080/</variable>
-        <variable constant="0" name="endpoint" sid="2180184633429476" static="0" type="text">http://front-load-balancer-1402238357.eu-central-1.elb.amazonaws.com:8080/</variable>
+        <variable constant="0" name="endpoint" sid="2180184633429476" static="0" type="text">http://baracashapi-test.elasticbeanstalk.com/</variable>
         <variable constant="0" name="LastGameTimerInSeconds" sid="1843762542549096" static="0" type="number">10</variable>
         <variable constant="0" name="InitState" sid="7953206043994739" static="0" type="number">-2</variable>
         <variable constant="0" name="scratchSize" sid="9052999839548576" static="0" type="number">10</variable>
