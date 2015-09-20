@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ev_campaign_over</name>
+    <events>
+        <event-block sid="9213427482509215">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3128110107553608" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="6940465883983325" type="bri">
+                    <param id="0" name="Text">BaracashAPI.GetGiftCode</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ev_result_win</name>
+    <events>
+        <variable constant="0" name="resultState" sid="8539054646063116" static="0" type="number">0</variable>
+        <variable constant="0" name="captchaRoot" sid="2839952603027862" static="0" type="text">g-recaptcha-response</variable>
+        <variable constant="0" name="discoverAPIRoot" sid="2266390881598362" static="0" type="text">/api/giftCodes/discover/</variable>
+        <variable constant="0" name="tickCountKey" sid="129234097537225" static="0" type="text">cnt</variable>
+        <variable constant="0" name="keyRoot" sid="8998144862457183" static="0" type="text">key</variable>
+        <variable constant="0" name="behaviorCounter" sid="6241871095929083" static="0" type="number">0</variable>
+        <variable constant="0" name="key" sid="9848181315875273" static="0" type="number">0</variable>
+        <event-block sid="7297353894556343">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1275660866773285" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4208034380774906" type="System">
+                    <param id="0" name="Variable">IsWinningTicket</param>
+                    <param id="1" name="Value">BaracashAPI.IsWinning</param>
+                </action>
+                <action id="-9" name="Set value" sid="2449462815873135" type="System">
+                    <param id="0" name="Variable">subscribeCall</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="5991167484933874">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="471929989181724" type="System">
+                            <param id="0" name="Variable">IsWinningTicket</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="309183526189457" type="System">
+                            <param id="0" name="Layout">result_lose</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7132889999182874">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4887129934685162" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="9501348283258097" type="resultTxt">
+                            <param id="0" name="Text">&quot;Bravo ! Tu as gagné &quot; &amp; BaracashAPI.GetPrizeDescription</param>
+                        </action>
+                        <action id="0" name="Track Event" sid="9029982457418098" type="GoogleAnalytics">
+                            <param id="0" name="Category">&quot;Rugby01&quot;</param>
+                            <param id="1" name="Name">&quot;Win&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="7909078131263679" type="resultTxt">
+                            <param id="0" name="Text">BaracashAPI.GetPrizeDescription</param>
+                        </action>
+                        <action id="0" name="Set text" sid="7730592265831775" type="nameTxt">
+                            <param id="0" name="Text">BaracashAPI.GetPrizeName</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9673305190104388">
+            <conditions>
+                <condition id="0" name="On completed" sid="4322211440892414" type="WSCaller">
+                    <param id="0" name="Tag">&quot;discoverCode&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="load a code response" sid="9302331358659048" type="BaracashAPI">
+                    <param id="0" name="Data">WSCaller.LastData</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="5377145586508368">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="3077742950870865" type="System">
+                            <param id="0" name="First value">BaracashAPI.GetGiftCode</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;NONE&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7898238604836845" type="System">
+                            <param id="0" name="Variable">resultState</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set item" sid="6978276807333815" type="LocalStorage">
+                            <param id="0" name="Key">&quot;GiftCode&quot;</param>
+                            <param id="1" name="Value">BaracashAPI.GetGiftCode</param>
+                        </action>
+                        <action id="0" name="Set item" sid="6061944791451785" type="LocalStorage">
+                            <param id="0" name="Key">&quot;HasWon&quot;</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set item" sid="8234724624442101" type="LocalStorage">
+                            <param id="0" name="Key">&quot;Email&quot;</param>
+                            <param id="1" name="Value">MailBox.Text</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="6665247921721926" type="System">
+                            <param id="0" name="Layout">campaign_over</param>
+                        </action>
+                        <action id="0" name="Add key" sid="7435192780099957" type="Dictionary">
+                            <param id="0" name="Key">&quot;Code&quot;</param>
+                            <param id="1" name="Value">BaracashAPI.GetGiftCode</param>
+                        </action>
+                        <action id="0" name="Add key" sid="5114116389444386" type="Dictionary">
+                            <param id="0" name="Key">&quot;HasWon&quot;</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Add key" sid="3158964629422955" type="Dictionary">
+                            <param id="0" name="Key">&quot;Email&quot;</param>
+                            <param id="1" name="Value">MailBox.Text</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5900680368224933">
+            <conditions>
+                <condition id="1" name="On error" sid="7513166713210961" type="WSCaller">
+                    <param id="0" name="Tag">&quot;discoverCode&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set enabled" sid="5284235545457437" type="MailBox">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="3942279195983573" type="System">
+                    <param id="0" name="Variable">subscribeCall</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="7142400120423676" type="SubmitButton">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="521957073435544">
+            <conditions>
+                <condition id="1" name="On text changed" sid="2301607708069971" type="MailBox" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4151823345557046">
+                    <conditions>
+                        <condition id="0" inverted="1" name="Compare text" sid="3804358305238485" type="MailBox">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="8172659040190988" type="SubmitButton">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5108864435012811">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="1832033402053202" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="2141933196088982" type="SubmitButton">
+                            <param id="0" name="Opacity">40</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5175093553541404">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="3672166497648297" type="Touch">
+                    <param id="0" name="Object">SubmitButton</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="1594319819017136" type="SubmitButton">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8800153855345196" type="System">
+                    <param id="0" name="Variable">subscribeCall</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5655159209180328" type="SubmitButton">
+                    <param id="0" name="Animation">&quot;clicked&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="980631799882185" type="System">
+                    <param id="0" name="Variable">subscribeCall</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="3002489023298321" type="SubmitButton">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+                <action id="2" name="Post to URL" sid="8468402482153799" type="WSCaller">
+                    <param id="0" name="Tag">&quot;discoverCode&quot;</param>
+                    <param id="1" name="URL">debugEndpoint &amp; discoverAPIRoot &amp; prizeId &amp; &quot;?&quot; &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount &amp; &quot;&amp;email=&quot;&amp;MailBox.Text &amp; &quot;&amp;fp=&quot;&amp;BaracashAPI.GetFingerPrint&amp;&quot;&amp;campaign=&quot;&amp;campaignId</param>
+                    <param id="2" name="Data">&quot;&quot;</param>
+                    <param id="3" name="Method">&quot;POST&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9233152881066464">
+            <conditions>
+                <condition id="-22" name="Else" sid="1311101626690772" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="8432657668324969">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9337125767303864" type="System">
+                            <param id="0" name="Variable">subscribeCall</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="7092209233703336">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8514058664455602" type="System">
+                            <param id="0" name="Variable">subscribeCall</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9163571938108712" type="SubmitButton">
+                            <param id="0" name="Animation">&quot;default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

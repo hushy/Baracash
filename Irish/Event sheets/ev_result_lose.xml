@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ev_result_lose</name>
+    <events>
+        <variable constant="0" name="subscribeCall" sid="3115293399265912" static="0" type="number">0</variable>
+        <variable constant="0" name="subscribeAPIRoot" sid="4013698982686558" static="0" type="text">api/campaignBehaviors/subscribe/</variable>
+        <event-block sid="4844203442161054">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1552804952789265" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1469420359233728" type="System">
+                    <param id="0" name="Variable">subscribeCall</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="698227279357925">
+            <conditions>
+                <condition id="0" name="On completed" sid="9700524463455911" type="WSCaller">
+                    <param id="0" name="Tag">&quot;subscribe&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9180795278196927" type="System">
+                    <param id="0" name="Variable">subscribeCall</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Add key" sid="6084510211126125" type="Dictionary">
+                    <param id="0" name="Key">&quot;Subscribed&quot;</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Add key" sid="6812658346180267" type="Dictionary">
+                    <param id="0" name="Key">&quot;Email&quot;</param>
+                    <param id="1" name="Value">MailBox.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5293133520064708">
+            <conditions>
+                <condition id="1" name="On error" sid="6347779013425399" type="WSCaller">
+                    <param id="0" name="Tag">&quot;subscribe&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set enabled" sid="8933769395832698" type="MailBox">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="9236079184867725" type="System">
+                    <param id="0" name="Variable">subscribeCall</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="2238978915651673" type="SubmitButton">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8838335261310887">
+            <conditions>
+                <condition id="1" name="On text changed" sid="6669193194221741" type="MailBox" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="938477136938479">
+                    <conditions>
+                        <condition id="0" inverted="1" name="Compare text" sid="9603679654927149" type="MailBox">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="6214976918894584" type="SubmitButton">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8786310881706979">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6776075162241838" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="8356014956606688" type="SubmitButton">
+                            <param id="0" name="Opacity">40</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="481667501036462">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="3633506138796421" type="Touch">
+                    <param id="0" name="Object">SubmitButton</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="7353989731754126" type="SubmitButton">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4404928218751013" type="System">
+                    <param id="0" name="Variable">subscribeCall</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6452864404726158" type="SubmitButton">
+                    <param id="0" name="Animation">&quot;clicked&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="2" name="Post to URL" sid="1601103803934225" type="WSCaller">
+                    <param id="0" name="Tag">&quot;subscribe&quot;</param>
+                    <param id="1" name="URL">debugEndpoint &amp; subscribeAPIRoot &amp; campaignId &amp; &quot;?fp=&quot; &amp;BaracashAPI.GetFingerPrint &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount</param>
+                    <param id="2" name="Data">&quot;&quot;</param>
+                    <param id="3" name="Method">&quot;POST&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="5128978218208254" type="System">
+                    <param id="0" name="Variable">subscribeCall</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="9543991240212939" type="SubmitButton">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2439541560738632">
+            <conditions>
+                <condition id="-22" name="Else" sid="7323811338436464" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9226894175574435">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="2772574451102766" type="System">
+                            <param id="0" name="Variable">subscribeCall</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="9138631852116342">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="2118815585778071" type="System">
+                            <param id="0" name="Variable">subscribeCall</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8401662608230151" type="SubmitButton">
+                            <param id="0" name="Animation">&quot;default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

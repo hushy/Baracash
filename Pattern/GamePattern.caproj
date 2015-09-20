@@ -323,6 +323,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text2" sid="4144972687682749">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -330,12 +333,14 @@
         <layout>retry.xml</layout>
         <layout>result_win.xml</layout>
         <layout>result_lose.xml</layout>
+        <layout>campaign_over.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>ev_game.xml</event-sheet>
         <event-sheet>ev_retry.xml</event-sheet>
         <event-sheet>ev_result_win.xml</event-sheet>
         <event-sheet>ev_result_lose.xml</event-sheet>
+        <event-sheet>ev_campaign_over.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="15">
