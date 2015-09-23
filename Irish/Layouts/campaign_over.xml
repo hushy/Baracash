@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="loading2" uid="23">
+                <instance type="recapBG" uid="23">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -90,6 +90,27 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="facebookShare" uid="28">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <innerhtml> &lt;div class=&quot;fb-share-button&quot; data-href=&quot;http://baracash.azurewebsites.net/fbr.html&quot; data-layout=&quot;button_count&quot;&gt;&lt;/div&gt;&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt;    &lt;script&gt;    (function (d, s, id) {      var js, fjs = d.getElementsByTagName(s)[0];        if (d.getElementById(id)) return;        js = d.createElement(s); js.id = id;        js.src = &quot;//connect.facebook.net/fr_FR/sdk.js#xfbml=1&amp;version=v2.4&amp;appId=1736591459889631&quot;; fjs.parentNode.insertBefore(js, fjs);    }(document, &apos;script&apos;, &apos;facebook-jssdk&apos;));        &lt;/script&gt;</innerhtml>
+                        <style></style>
+                        <html-tag-id>my_div</html-tag-id>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>810</x>
+                        <y>258</y>
+                        <z>0</z>
+                        <width>122</width>
+                        <height>28</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
                     </world>
                 </instance>
             </instances>

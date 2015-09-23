@@ -10,7 +10,7 @@
         <variable constant="0" name="Debug" sid="4100423820922422" static="0" type="text"></variable>
         <variable constant="0" name="getPrizePath" sid="9834580253533465" static="0" type="text">api/prizes/random/</variable>
         <variable constant="0" name="campaignId" sid="1552601337797602" static="0" type="number">1826</variable>
-        <variable constant="0" name="debugEndpoint" sid="899216139316483" static="0" type="text">http://localhost:8080/</variable>
+        <variable constant="0" name="debugEndpoint" sid="899216139316483" static="0" type="text">http://baracashapi-test.elasticbeanstalk.com/</variable>
         <variable constant="0" name="endpoint" sid="2180184633429476" static="0" type="text">http://baracashapi-test.elasticbeanstalk.com/</variable>
         <variable constant="0" name="LastGameTimerInSeconds" sid="1843762542549096" static="0" type="number">10</variable>
         <variable constant="0" name="InitState" sid="7953206043994739" static="0" type="number">-3</variable>
@@ -154,7 +154,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Fade" id="1" name="Start fade" sid="4593719107548018" type="loading" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="4593719107548018" type="loadingBG" />
                         <action id="11" name="Get elapsed time" sid="189522954682573" type="TimeAwayL">
                             <param id="0" name="Key">&quot;LastGame&quot;</param>
                         </action>
@@ -293,6 +293,32 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="2243634793154295">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="3688791344690111" type="System">
+                                    <param id="0" name="First value">Browser.QueryParam(&quot;Code&quot;)</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">&quot;&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Add key" sid="4177584201517759" type="Dictionary">
+                                    <param id="0" name="Key">&quot;HasWon&quot;</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Add key" sid="2435080504750561" type="Dictionary">
+                                    <param id="0" name="Key">&quot;Code&quot;</param>
+                                    <param id="1" name="Value">Browser.QueryParam(&quot;Code&quot;)</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="3007936010812643" type="System">
+                                    <param id="0" name="Layout">campaign_over</param>
+                                </action>
+                                <action id="0" name="Set item" sid="9704313794423594" type="LocalStorage">
+                                    <param id="0" name="Key">&quot;GameData&quot;</param>
+                                    <param id="1" name="Value">Dictionary.AsJSON</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
@@ -301,10 +327,10 @@
             <sub-events>
                 <event-block sid="2906716232014056">
                     <conditions>
-                        <condition behavior="Fade" id="0" name="On fade-out finished" sid="6040497869541631" type="loading" />
+                        <condition behavior="Fade" id="0" name="On fade-out finished" sid="6040497869541631" type="loadingBG" />
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set boolean" sid="3453765067588478" type="loading">
+                        <action id="-13" name="Set boolean" sid="3453765067588478" type="loadingBG">
                             <param id="0" name="Instance variable">Loaded</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -312,7 +338,7 @@
                 </event-block>
                 <event-block sid="252413573179065">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="1370411280643206" type="loading">
+                        <condition id="-8" name="Is boolean instance variable set" sid="1370411280643206" type="loadingBG">
                             <param id="0" name="Instance variable">Loaded</param>
                         </condition>
                         <condition id="7" name="Compare touch speed" sid="7344706586713858" type="Touch">

@@ -35,6 +35,10 @@
                     <param id="0" name="Key">&quot;Email&quot;</param>
                     <param id="1" name="Value">MailBox.Text</param>
                 </action>
+                <action id="0" name="Set item" sid="6834323401879659" type="LocalStorage">
+                    <param id="0" name="Key">&quot;GameData&quot;</param>
+                    <param id="1" name="Value">Dictionary.AsJSON</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="5293133520064708">

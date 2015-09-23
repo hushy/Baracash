@@ -7,11 +7,23 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="3128110107553608" type="System" />
             </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="6940465883983325" type="bri">
-                    <param id="0" name="Text">BaracashAPI.GetGiftCode</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="43471627394885">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="2244870628614042" type="Dictionary">
+                            <param id="0" name="Key">&quot;HasWon&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="6940465883983325" type="bri">
+                            <param id="0" name="Text">Dictionary.Get(&quot;Code&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

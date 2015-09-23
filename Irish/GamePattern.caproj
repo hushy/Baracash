@@ -12,12 +12,12 @@
     <used-plugins>
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="lverdonk-hush" id="BaracashAPI" version="1">BaracashAPI</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
         <plugin author="Sun Temple" id="GoogleAnalytics_ST" version="1">Google Analytics</plugin>
         <plugin author="Jesse Johnston, mod. JP Deblonde" id="HTML_Div_Pode" version="1.399999976">HTML_Div_Pode</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
-        <plugin author="Rex.Rainbow" id="Rex_Date" version="1">Date</plugin>
         <plugin author="Rex.Rainbow" id="Rex_TimeAwayL" version="0.100000001">Time away L</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -113,15 +113,7 @@
             </object-type>
         </object-folder>
         <object-folder name="sprite">
-            <object-type name="Background" sid="4021587011810791">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1268053250439279" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="BG" sid="1137566938818338">
+            <object-type name="GameBG" sid="1137566938818338">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8347892243751119" speed="5">
@@ -129,26 +121,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="dreamBg" sid="6758735428379169">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3228274781587997" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas.verdonk\Desktop\dream.png" />
-                    </animation>
-                    <animation framecount="1" loop="0" name="Reverse" pingpong="0" repeatcount="1" repeatto="0" sid="7666312745984901" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas.verdonk\Desktop\dream.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="endBG" sid="4936968626084859">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8184656558779365" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Baracash\Baracash\Textures\skin-pa_150624043007.jpg" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="loading" sid="4322587657949782">
+            <object-type name="loadingBG" sid="4322587657949782">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="Loaded" sid="6245044374843979" type="boolean" />
@@ -167,15 +140,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="loadingBG" sid="1810472602978306">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9384546288352948" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Baracash\Baracash\Textures\skin-pa_150624043007.jpg" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="result" sid="3574939244352747">
+            <object-type name="LoseBG" sid="3574939244352747">
                 <plugin id="Sprite" />
                 <behaviors>
                     <behavior-type name="Fade" sid="9879023674148831">
@@ -188,7 +153,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="loading2" sid="6281005489291145">
+            <object-type name="recapBG" sid="6281005489291145">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="Loaded" sid="1791081780714292" type="boolean" />
@@ -207,13 +172,115 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="WinBG" sid="7148586735837453">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6659126796819497" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\Baracash-STEP3.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Icon" sid="3997137695233146">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="IsLosing" sid="1584063996079342" type="boolean" />
+                    <instance-variable name="IsOnTop" sid="8552729175195099" type="boolean" />
+                </instance-variables>
+                <container>
+                    <type>ScratchZone</type>
+                    <type>Icon</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Win" pingpong="0" repeatcount="1" repeatto="0" sid="1984837412463079" speed="5">
+                        <frame duration="1" hotspotX="0.535928" hotspotY="0.621762" original-source="C:\Users\lverd_000\Desktop\New folder\Tete1.png">
+                            <collision-poly>
+                                <point x="0.283425" y="0.526994" />
+                                <point x="0.534356" y="0.241002" />
+                                <point x="0.840369" y="0.241002" />
+                                <point x="0.956655" y="0.622325" />
+                                <point x="0.797527" y="0.78121" />
+                                <point x="0.534356" y="0.844764" />
+                                <point x="0.301786" y="0.622325" />
+                                <point x="0.00189261" y="0.622325" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="a1" pingpong="0" repeatcount="1" repeatto="0" sid="3313835896648145" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\Tete2.png">
+                            <collision-poly>
+                                <point x="0.35" y="0.35" />
+                                <point x="0.5" y="0.23" />
+                                <point x="0.655" y="0.345" />
+                                <point x="0.655" y="0.5" />
+                                <point x="0.69" y="0.69" />
+                                <point x="0.5" y="0.685" />
+                                <point x="0.275" y="0.725" />
+                                <point x="0.35" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="a2" pingpong="0" repeatcount="1" repeatto="0" sid="164358397124465" speed="5">
+                        <frame duration="1" hotspotX="0.501887" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\Tete3.png">
+                            <collision-poly>
+                                <point x="0.2" y="0.305556" />
+                                <point x="0.498182" y="0.172222" />
+                                <point x="0.876364" y="0.188889" />
+                                <point x="0.738182" y="0.5" />
+                                <point x="0.901818" y="0.85" />
+                                <point x="0.101818" y="0.844444" />
+                                <point x="0.0509091" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="a3" pingpong="0" repeatcount="1" repeatto="0" sid="2339506584002257" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\Tete1.png">
+                            <collision-poly>
+                                <point x="0.155689" y="0.134715" />
+                                <point x="0.5" y="0.0310881" />
+                                <point x="0.877245" y="0.106218" />
+                                <point x="0.928144" y="0.5" />
+                                <point x="0.805389" y="0.831606" />
+                                <point x="0.5" y="0.976684" />
+                                <point x="0.287425" y="0.751295" />
+                                <point x="0.164671" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SubmitButton" sid="4718638656760441">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8898497043222683" speed="5">
+                        <frame duration="1" hotspotX="0.501805" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\CTAenvoyer1.png">
+                            <collision-poly>
+                                <point x="0.032491" y="0.1125" />
+                                <point x="0.498195" y="0.1125" />
+                                <point x="0.870036" y="0.45" />
+                                <point x="0.870036" y="0.55" />
+                                <point x="0.498195" y="0.8875" />
+                                <point x="0.032491" y="0.8875" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="clicked" pingpong="0" repeatcount="1" repeatto="0" sid="9241416532323129" speed="5">
+                        <frame duration="1" hotspotX="0.501805" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\CTAenvoyer2.png">
+                            <collision-poly>
+                                <point x="0.032491" y="0.1125" />
+                                <point x="0.498195" y="0.1125" />
+                                <point x="0.870036" y="0.45" />
+                                <point x="0.870036" y="0.55" />
+                                <point x="0.498195" y="0.8875" />
+                                <point x="0.032491" y="0.8875" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="object">
             <object-type global="1" name="BaracashAPI" sid="6387218095929444">
                 <plugin id="BaracashAPI" />
-            </object-type>
-            <object-type global="1" name="Date" sid="5022984442309546">
-                <plugin id="Rex_Date" />
             </object-type>
             <object-type name="GoogleAnalytics" sid="8291750782910751">
                 <plugin id="GoogleAnalytics_ST" />
@@ -237,115 +304,13 @@
             <object-type name="Touch" sid="7538855580201067">
                 <plugin id="Touch" />
             </object-type>
+            <object-type name="Browser" sid="8576337599669744">
+                <plugin id="Browser" />
+            </object-type>
+            <object-type global="1" name="Dictionary" sid="4025315283209594">
+                <plugin id="Dictionary" />
+            </object-type>
         </object-folder>
-        <object-type name="Icon" sid="3997137695233146">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="IsLosing" sid="1584063996079342" type="boolean" />
-                <instance-variable name="IsOnTop" sid="8552729175195099" type="boolean" />
-            </instance-variables>
-            <container>
-                <type>ScratchZone</type>
-                <type>Icon</type>
-            </container>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Win" pingpong="0" repeatcount="1" repeatto="0" sid="1984837412463079" speed="5">
-                    <frame duration="1" hotspotX="0.535928" hotspotY="0.621762" original-source="C:\Users\lverd_000\Desktop\New folder\Tete1.png">
-                        <collision-poly>
-                            <point x="0.283425" y="0.526994" />
-                            <point x="0.534356" y="0.241002" />
-                            <point x="0.840369" y="0.241002" />
-                            <point x="0.956655" y="0.622325" />
-                            <point x="0.797527" y="0.78121" />
-                            <point x="0.534356" y="0.844764" />
-                            <point x="0.301786" y="0.622325" />
-                            <point x="0.00189261" y="0.622325" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="a1" pingpong="0" repeatcount="1" repeatto="0" sid="3313835896648145" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\Tete2.png">
-                        <collision-poly>
-                            <point x="0.35" y="0.35" />
-                            <point x="0.5" y="0.23" />
-                            <point x="0.655" y="0.345" />
-                            <point x="0.655" y="0.5" />
-                            <point x="0.69" y="0.69" />
-                            <point x="0.5" y="0.685" />
-                            <point x="0.275" y="0.725" />
-                            <point x="0.35" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="a2" pingpong="0" repeatcount="1" repeatto="0" sid="164358397124465" speed="5">
-                    <frame duration="1" hotspotX="0.501887" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\Tete3.png">
-                        <collision-poly>
-                            <point x="0.2" y="0.305556" />
-                            <point x="0.498182" y="0.172222" />
-                            <point x="0.876364" y="0.188889" />
-                            <point x="0.738182" y="0.5" />
-                            <point x="0.901818" y="0.85" />
-                            <point x="0.101818" y="0.844444" />
-                            <point x="0.0509091" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="a3" pingpong="0" repeatcount="1" repeatto="0" sid="2339506584002257" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\Tete1.png">
-                        <collision-poly>
-                            <point x="0.155689" y="0.134715" />
-                            <point x="0.5" y="0.0310881" />
-                            <point x="0.877245" y="0.106218" />
-                            <point x="0.928144" y="0.5" />
-                            <point x="0.805389" y="0.831606" />
-                            <point x="0.5" y="0.976684" />
-                            <point x="0.287425" y="0.751295" />
-                            <point x="0.164671" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="SubmitButton" sid="4718638656760441">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8898497043222683" speed="5">
-                    <frame duration="1" hotspotX="0.501805" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\CTAenvoyer1.png">
-                        <collision-poly>
-                            <point x="0.032491" y="0.1125" />
-                            <point x="0.498195" y="0.1125" />
-                            <point x="0.870036" y="0.45" />
-                            <point x="0.870036" y="0.55" />
-                            <point x="0.498195" y="0.8875" />
-                            <point x="0.032491" y="0.8875" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="clicked" pingpong="0" repeatcount="1" repeatto="0" sid="9241416532323129" speed="5">
-                    <frame duration="1" hotspotX="0.501805" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\CTAenvoyer2.png">
-                        <collision-poly>
-                            <point x="0.032491" y="0.1125" />
-                            <point x="0.498195" y="0.1125" />
-                            <point x="0.870036" y="0.45" />
-                            <point x="0.870036" y="0.55" />
-                            <point x="0.498195" y="0.8875" />
-                            <point x="0.032491" y="0.8875" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="WinBG" sid="7148586735837453">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6659126796819497" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\New folder\Baracash-STEP3.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type global="1" name="Dictionary" sid="4025315283209594">
-            <plugin id="Dictionary" />
-        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -376,6 +341,7 @@
                 <tracking-id>UA-67253337-1</tracking-id>
             </properties>
         </global-instance>
+        <global-instance type="Browser" uid="29" />
     </global-instances>
     <sounds-folder />
     <music-folder />
@@ -387,10 +353,6 @@
             <file name="icon-128.png" />
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
-            <file name="XboxOne.png" />
-            <file name="samsung.png" />
-            <file name="nespresso.png" />
-            <file name="Xbox_One_(logo).png" />
         </file-folder>
         <file name="BRI.txt" />
     </files-folder>
