@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>loader_ev</name>
+    <events>
+        <event-block sid="6068202155640539">
+            <conditions>
+                <condition id="-8" inverted="1" name="Compare two values" sid="7450564080189245" type="System">
+                    <param id="0" name="First value">BaracashAPI.GetFingerPrint</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5430257512856961" type="System">
+                    <param id="0" name="Variable">InitState</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">-2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Request URL" sid="5530091900294059" type="WSCaller">
+                    <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
+                    <param id="1" name="URL">debugEndpoint &amp; getPrizePath &amp; campaignId &amp;&quot;?fp=&quot; &amp; BaracashAPI.GetFingerPrint</param>
+                </action>
+                <action id="-9" name="Set value" sid="8839114923791815" type="System">
+                    <param id="0" name="Variable">InitState</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9920908391624103">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3533136500085803" type="System" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="7700628497871559" type="System" />
+                <action id="1" name="Set rate" sid="6992515728285483" type="Particles">
+                    <param id="0" name="Rate">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="6355742818003972" type="System">
+                    <param id="0" name="Variable">cos45</param>
+                    <param id="1" name="Value">cos(45)</param>
+                </action>
+                <action id="-9" name="Set value" sid="8801373467502619" type="System">
+                    <param id="0" name="Variable">sin45</param>
+                    <param id="1" name="Value">sin45</param>
+                </action>
+                <action id="-9" name="Set value" sid="8996490187042891" type="System">
+                    <param id="0" name="Variable">TestRadius</param>
+                    <param id="1" name="Value">scratchSize/2-1</param>
+                </action>
+                <action id="0" name="Track Event" sid="6389102345931594" type="GoogleAnalytics">
+                    <param id="0" name="Category">&quot;Rugby01&quot;</param>
+                    <param id="1" name="Name">&quot;StartGame&quot;</param>
+                </action>
+                <action id="1" name="Get item" sid="6948990483417532" type="LocalStorage">
+                    <param id="0" name="Key">&quot;GameData&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1162321435685629">
+                    <conditions>
+                        <condition id="-19" name="Pick all" sid="7083389689709027" type="System">
+                            <param id="0" name="Object">ScratchZone</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="5708640756488577" type="Icon">
+                            <param id="0" name="X">ScratchZone.X + ScratchZone.Width/2</param>
+                            <param id="1" name="Y">ScratchZone.Y + ScratchZone.Height/2</param>
+                        </action>
+                        <action id="-26" name="Move to layer" sid="5616544012739711" type="Icon">
+                            <param id="0" name="Layer">&quot;item&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2658864584595129">
+            <conditions>
+                <condition id="0" name="On completed" sid="3463891172875575" type="WSCaller">
+                    <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="load a gift response" sid="7001445921053455" type="BaracashAPI">
+                    <param id="0" name="Data">WSCaller.LastData</param>
+                </action>
+                <action id="-9" name="Set value" sid="1650343900289658" type="System">
+                    <param id="0" name="Variable">InitState</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="7065053779842388" type="System">
+                    <param id="0" name="Variable">prizeId</param>
+                    <param id="1" name="Value">BaracashAPI.GetPrizeId</param>
+                </action>
+                <action id="-9" name="Set value" sid="1507424892073647" type="System">
+                    <param id="0" name="Variable">IsWinningTicket</param>
+                    <param id="1" name="Value">BaracashAPI.isWinning</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="738564547149282" type="System">
+                    <param id="0" name="Layout">game</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9391149705480912">
+            <conditions>
+                <condition id="1" name="On error" sid="5758798755316694" type="WSCaller">
+                    <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3551568938528361" type="System">
+                    <param id="0" name="Variable">IsWinningTicket</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="1815676930272606" type="System">
+                    <param id="0" name="Variable">Debug</param>
+                    <param id="1" name="Value">&quot;error&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="1864993612648794" type="System">
+                    <param id="0" name="Variable">InitState</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="1367476777532749" type="System">
+                    <param id="0" name="Layout">campaign_over</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7136715842372119">
+            <conditions>
+                <condition id="1" name="On item get" sid="5905336572471326" type="LocalStorage">
+                    <param id="0" name="Key">&quot;GameData&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1485803866970968" type="System">
+                    <param id="0" name="Variable">InitState</param>
+                    <param id="1" name="Value">-2</param>
+                </action>
+                <action id="4" name="Load" sid="6579013622243178" type="Dictionary">
+                    <param id="0" name="JSON">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="6902818737552876">
+                    <conditions>
+                        <condition id="0" name="Compare value" sid="2973359533485825" type="Dictionary">
+                            <param id="0" name="Key">&quot;HasWon&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="517854233413801" type="System">
+                            <param id="0" name="Layout">campaign_over</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9962132709061759">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4505395290782149" type="System">
+                            <param id="0" name="First value">Browser.QueryParam(&quot;Code&quot;)</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">&quot;&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Add key" sid="9977208159752701" type="Dictionary">
+                            <param id="0" name="Key">&quot;HasWon&quot;</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Add key" sid="2960554295806308" type="Dictionary">
+                            <param id="0" name="Key">&quot;Code&quot;</param>
+                            <param id="1" name="Value">Browser.QueryParam(&quot;Code&quot;)</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="199946739169509" type="System">
+                            <param id="0" name="Layout">campaign_over</param>
+                        </action>
+                        <action id="0" name="Set item" sid="9427247401981851" type="LocalStorage">
+                            <param id="0" name="Key">&quot;GameData&quot;</param>
+                            <param id="1" name="Value">Dictionary.AsJSON</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3995443263806593">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1433999157757797" type="System" />
+            </conditions>
+            <actions>
+                <action id="-18" name="Rotate clockwise" sid="6841540958525659" type="loading">
+                    <param id="0" name="Degrees">180*dt</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

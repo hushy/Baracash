@@ -23,227 +23,89 @@
         <variable constant="0" name="cos45" sid="5212342653531882" static="0" type="number">1</variable>
         <variable constant="0" name="sin45" sid="7222429959322995" static="0" type="number">1</variable>
         <variable constant="0" name="IsGameOver" sid="7777748381604351" static="0" type="number">0</variable>
-        <event-group description="" sid="3029858108535978" title="Start">
+        <event-group description="" sid="3029858108535978" title="Start" />
+        <event-block bookmark="1" sid="2157373280082888">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="242456401074445" type="System">
+                    <param id="0" name="Variable">InitState</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="11" name="Get elapsed time" sid="442884790020466" type="TimeAwayL">
+                    <param id="0" name="Key">&quot;LastGame&quot;</param>
+                </action>
+            </actions>
             <sub-events>
-                <event-block sid="8278621339600193">
+                <event-block any="1" sid="7333742684557365">
                     <conditions>
-                        <condition id="-8" inverted="1" name="Compare two values" sid="3741711198066919" type="System">
-                            <param id="0" name="First value">BaracashAPI.GetFingerPrint</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">&quot;&quot;</param>
+                        <condition id="-8" name="Compare two values" sid="3083264322180623" type="System">
+                            <param id="0" name="First value">TimeAwayL.ElapsedTime</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">LastGameTimerInSeconds</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="6773628711079734" type="System">
-                            <param id="0" name="Variable">InitState</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">-2</param>
+                        <condition id="-8" name="Compare two values" sid="9194228453248354" type="System">
+                            <param id="0" name="First value">TimeAwayL.ElapsedTime</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Request URL" sid="9227861607929108" type="WSCaller">
-                            <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
-                            <param id="1" name="URL">debugEndpoint &amp; getPrizePath &amp; campaignId &amp;&quot;?fp=&quot; &amp; BaracashAPI.GetFingerPrint</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="2325335204596938" type="System">
+                        <action id="-9" name="Set value" sid="9748600667927448" type="System">
                             <param id="0" name="Variable">InitState</param>
-                            <param id="1" name="Value">-1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="5094716460790787">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="1211866829365002" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-21" name="Reset global variables" sid="7479184121559202" type="System" />
-                        <action id="1" name="Set rate" sid="4942224728538108" type="Particles">
-                            <param id="0" name="Rate">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="7711953015478792" type="System">
-                            <param id="0" name="Variable">cos45</param>
-                            <param id="1" name="Value">cos(45)</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="7540175087264903" type="System">
-                            <param id="0" name="Variable">sin45</param>
-                            <param id="1" name="Value">sin45</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="5554831253009599" type="System">
-                            <param id="0" name="Variable">TestRadius</param>
-                            <param id="1" name="Value">scratchSize/2-1</param>
-                        </action>
-                        <action id="0" name="Track Event" sid="3101914104751159" type="GoogleAnalytics">
-                            <param id="0" name="Category">&quot;Rugby01&quot;</param>
-                            <param id="1" name="Name">&quot;StartGame&quot;</param>
-                        </action>
-                        <action id="1" name="Get item" sid="1975547739851669" type="LocalStorage">
-                            <param id="0" name="Key">&quot;GameData&quot;</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="39825084966474">
+                        <event-block sid="7918210142266995">
                             <conditions>
-                                <condition id="-19" name="Pick all" sid="507029074886908" type="System">
-                                    <param id="0" name="Object">ScratchZone</param>
+                                <condition id="-14" name="Compare variable" sid="2336114294485387" type="System">
+                                    <param id="0" name="Variable">IsWinningTicket</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-3" name="Set position" sid="1867206375286772" type="Icon">
-                                    <param id="0" name="X">ScratchZone.X + ScratchZone.Width/2</param>
-                                    <param id="1" name="Y">ScratchZone.Y + ScratchZone.Height/2</param>
-                                </action>
-                                <action id="-26" name="Move to layer" sid="6618582472123234" type="Icon">
-                                    <param id="0" name="Layer">&quot;item&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="7108246072269756">
-                    <conditions>
-                        <condition id="0" name="On completed" sid="4273731154319349" type="WSCaller">
-                            <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="load a gift response" sid="6371112755819036" type="BaracashAPI">
-                            <param id="0" name="Data">WSCaller.LastData</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="4593624718391128" type="System">
-                            <param id="0" name="Variable">InitState</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="734725037020531" type="System">
-                            <param id="0" name="Variable">prizeId</param>
-                            <param id="1" name="Value">BaracashAPI.GetPrizeId</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="5874754292489974" type="System">
-                            <param id="0" name="Variable">IsWinningTicket</param>
-                            <param id="1" name="Value">BaracashAPI.isWinning</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="3847605037486752">
-                    <conditions>
-                        <condition id="1" name="On error" sid="6828436936084027" type="WSCaller">
-                            <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="9761448861505558" type="System">
-                            <param id="0" name="Variable">IsWinningTicket</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="4993921771515195" type="System">
-                            <param id="0" name="Variable">Debug</param>
-                            <param id="1" name="Value">&quot;error&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="6080019176799038" type="System">
-                            <param id="0" name="Variable">InitState</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="1041242971209895" type="System">
-                            <param id="0" name="Layout">campaign_over</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block bookmark="1" sid="142584016331733">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="2519319031506922" type="System">
-                            <param id="0" name="Variable">InitState</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Fade" id="1" name="Start fade" sid="4593719107548018" type="loadingBG" />
-                        <action id="11" name="Get elapsed time" sid="189522954682573" type="TimeAwayL">
-                            <param id="0" name="Key">&quot;LastGame&quot;</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <event-block any="1" sid="3191833225386032">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="6476843977643427" type="System">
-                                    <param id="0" name="First value">TimeAwayL.ElapsedTime</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">LastGameTimerInSeconds</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="5804916229509248" type="System">
-                                    <param id="0" name="First value">TimeAwayL.ElapsedTime</param>
-                                    <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Second value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="3705170226328938" type="System">
-                                    <param id="0" name="Variable">InitState</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
+                            <actions />
                             <sub-events>
-                                <event-block sid="8517728180955664">
+                                <event-block sid="4202571431964027">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="461002228167987" type="System">
-                                            <param id="0" name="Variable">IsWinningTicket</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
+                                        <condition id="-10" name="For" sid="3385592819096736" type="System">
+                                            <param id="0" name="Name">&quot;&quot;</param>
+                                            <param id="1" name="Start index">1</param>
+                                            <param id="2" name="End index">RequiredSimilarItem</param>
                                         </condition>
-                                    </conditions>
-                                    <actions />
-                                    <sub-events>
-                                        <event-block sid="9600447670630281">
-                                            <conditions>
-                                                <condition id="-10" name="For" sid="2428992849128049" type="System">
-                                                    <param id="0" name="Name">&quot;&quot;</param>
-                                                    <param id="1" name="Start index">1</param>
-                                                    <param id="2" name="End index">RequiredSimilarItem</param>
-                                                </condition>
-                                                <condition id="-34" name="Pick by evaluate" sid="2334781701941883" type="System">
-                                                    <param id="0" name="Object">Icon</param>
-                                                    <param id="1" name="Expression">Icon.IsLosing</param>
-                                                </condition>
-                                                <condition id="-16" name="Pick random instance" sid="6982352604773782" type="System">
-                                                    <param id="0" name="Object">Icon</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="4586976665247292" type="Icon">
-                                                    <param id="0" name="Animation">&quot;A3&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                                <action id="-13" name="Set boolean" sid="3686482017090143" type="Icon">
-                                                    <param id="0" name="Instance variable">IsLosing</param>
-                                                    <param id="1" name="Value">0</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="8263303369564762">
-                                            <conditions>
-                                                <condition id="-34" name="Pick by evaluate" sid="3566708860278596" type="System">
-                                                    <param id="0" name="Object">Icon</param>
-                                                    <param id="1" name="Expression">Icon.IsLosing</param>
-                                                </condition>
-                                                <condition id="-16" name="Pick random instance" sid="9349791406950429" type="System">
-                                                    <param id="0" name="Object">Icon</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="9907966990594353" type="Icon">
-                                                    <param id="0" name="Animation">&quot;A2&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <event-block sid="7623362852607235">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="3001127758991625" type="System" />
-                                        <condition id="-16" name="Pick random instance" sid="448205857288493" type="System">
+                                        <condition id="-34" name="Pick by evaluate" sid="2374404632860699" type="System">
+                                            <param id="0" name="Object">Icon</param>
+                                            <param id="1" name="Expression">Icon.IsLosing</param>
+                                        </condition>
+                                        <condition id="-16" name="Pick random instance" sid="9524804638124944" type="System">
                                             <param id="0" name="Object">Icon</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" sid="1416112877125829" type="Icon">
+                                        <action id="4" name="Set animation" sid="7847919108031855" type="Icon">
+                                            <param id="0" name="Animation">&quot;A3&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="8636407042813966" type="Icon">
+                                            <param id="0" name="Instance variable">IsLosing</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="1597255420101044">
+                                    <conditions>
+                                        <condition id="-34" name="Pick by evaluate" sid="8849233185039" type="System">
+                                            <param id="0" name="Object">Icon</param>
+                                            <param id="1" name="Expression">Icon.IsLosing</param>
+                                        </condition>
+                                        <condition id="-16" name="Pick random instance" sid="3527176576492032" type="System">
+                                            <param id="0" name="Object">Icon</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="8227800620606366" type="Icon">
                                             <param id="0" name="Animation">&quot;A2&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
@@ -251,100 +113,51 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="3839896679655702">
+                        <event-block sid="1343020146169768">
                             <conditions>
-                                <condition id="-22" name="Else" sid="8281128913031716" type="System" />
+                                <condition id="-22" name="Else" sid="647444914279096" type="System" />
+                                <condition id="-16" name="Pick random instance" sid="8667668634096665" type="System">
+                                    <param id="0" name="Object">Icon</param>
+                                </condition>
                             </conditions>
                             <actions>
-                                <action id="-2" name="Go to layout" sid="223266448401214" type="System">
-                                    <param id="0" name="Layout">retry</param>
+                                <action id="4" name="Set animation" sid="9264113178135592" type="Icon">
+                                    <param id="0" name="Animation">&quot;A2&quot;</param>
+                                    <param id="1" name="From">1</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="7368578369776454">
+                <event-block sid="334995381475025">
                     <conditions>
-                        <condition id="1" name="On item get" sid="7949561608599035" type="LocalStorage">
-                            <param id="0" name="Key">&quot;GameData&quot;</param>
-                        </condition>
+                        <condition id="-22" name="Else" sid="8007558640906749" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="3800982451924347" type="System">
-                            <param id="0" name="Variable">InitState</param>
-                            <param id="1" name="Value">-2</param>
-                        </action>
-                        <action id="4" name="Load" sid="8732823985438816" type="Dictionary">
-                            <param id="0" name="JSON">LocalStorage.ItemValue</param>
+                        <action id="-2" name="Go to layout" sid="921211094619943" type="System">
+                            <param id="0" name="Layout">retry</param>
                         </action>
                     </actions>
-                    <sub-events>
-                        <event-block sid="3192677732987717">
-                            <conditions>
-                                <condition id="0" name="Compare value" sid="1122028533780798" type="Dictionary">
-                                    <param id="0" name="Key">&quot;HasWon&quot;</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-2" name="Go to layout" sid="3770410545576482" type="System">
-                                    <param id="0" name="Layout">campaign_over</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="2243634793154295">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="3688791344690111" type="System">
-                                    <param id="0" name="First value">Browser.QueryParam(&quot;Code&quot;)</param>
-                                    <param id="1" name="Comparison">1</param>
-                                    <param id="2" name="Second value">&quot;&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Add key" sid="4177584201517759" type="Dictionary">
-                                    <param id="0" name="Key">&quot;HasWon&quot;</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="0" name="Add key" sid="2435080504750561" type="Dictionary">
-                                    <param id="0" name="Key">&quot;Code&quot;</param>
-                                    <param id="1" name="Value">Browser.QueryParam(&quot;Code&quot;)</param>
-                                </action>
-                                <action id="-2" name="Go to layout" sid="3007936010812643" type="System">
-                                    <param id="0" name="Layout">campaign_over</param>
-                                </action>
-                                <action id="0" name="Set item" sid="9704313794423594" type="LocalStorage">
-                                    <param id="0" name="Key">&quot;GameData&quot;</param>
-                                    <param id="1" name="Value">Dictionary.AsJSON</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                </event-block>
+                <event-block disabled="1" sid="4063429376875727">
+                    <conditions />
+                    <actions />
                 </event-block>
             </sub-events>
-        </event-group>
+        </event-block>
         <event-group description="" sid="2460555805912128" title="game">
             <sub-events>
-                <event-block sid="2906716232014056">
-                    <conditions>
-                        <condition behavior="Fade" id="0" name="On fade-out finished" sid="6040497869541631" type="loadingBG" />
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="3453765067588478" type="loadingBG">
-                            <param id="0" name="Instance variable">Loaded</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="252413573179065">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="1370411280643206" type="loadingBG">
-                            <param id="0" name="Instance variable">Loaded</param>
-                        </condition>
                         <condition id="7" name="Compare touch speed" sid="7344706586713858" type="Touch">
                             <param id="0" name="Touch index">0</param>
                             <param id="1" name="Comparison">4</param>
                             <param id="2" name="Speed">5</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6709765616376385" type="System">
+                            <param id="0" name="Variable">InitState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>

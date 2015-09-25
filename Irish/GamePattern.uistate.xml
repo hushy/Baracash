@@ -10,12 +10,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="5">game</layout>
+        <layout active="1" order="5">loader</layout>
         <event-sheet order="0">ev_campaign_over</event-sheet>
         <event-sheet order="1">ev_game</event-sheet>
         <event-sheet order="2">ev_result_lose</event-sheet>
         <event-sheet order="3">ev_result_win</event-sheet>
         <event-sheet order="4">ev_retry</event-sheet>
+        <event-sheet order="6">loader_ev</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -42,5 +43,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/WinBG/" />
         <folder expanded="1" path="animation-folder/Icon/" />
         <folder expanded="1" path="animation-folder/SubmitButton/" />
+        <folder expanded="1" path="animation-folder/loading/" />
+        <folder expanded="1" path="animation-folder/BallonChargement/" />
+        <folder expanded="1" path="animation-folder/head/" />
     </folders-expanded>
 </c2uistate>
