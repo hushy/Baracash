@@ -3,13 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ev_game</name>
     <events>
-        <variable constant="0" name="prizeId" sid="9286106039802726" static="0" type="text">&quot;NONE&quot;</variable>
         <variable constant="0" name="IsWinningTicket" sid="4925112843137334" static="0" type="number">0</variable>
         <variable constant="0" name="GiftDescription" sid="8147449008232663" static="0" type="text"></variable>
         <variable constant="0" name="GiftValue" sid="7357975800208961" static="0" type="number">0</variable>
         <variable constant="0" name="Debug" sid="4100423820922422" static="0" type="text"></variable>
         <variable constant="0" name="getPrizePath" sid="9834580253533465" static="0" type="text">api/prizes/random/</variable>
-        <variable constant="0" name="LastGameTimerInSeconds" sid="1843762542549096" static="0" type="number">10</variable>
+        <variable constant="0" name="LastGameTimerInSeconds" sid="1843762542549096" static="0" type="number">45</variable>
         <variable constant="0" name="InitState" sid="7953206043994739" static="0" type="number">0</variable>
         <variable constant="0" name="scratchSize" sid="9052999839548576" static="0" type="number">18</variable>
         <variable constant="0" name="Y" sid="6213800150554527" static="0" type="number">-1</variable>
@@ -26,7 +25,6 @@
                 <condition id="-2" name="On start of layout" sid="2858403442491599" type="System" />
             </conditions>
             <actions>
-                <action id="-21" name="Reset global variables" sid="7866071125031686" type="System" />
                 <action id="1" name="Set rate" sid="9244821433944269" type="Particles">
                     <param id="0" name="Rate">0</param>
                 </action>
@@ -62,7 +60,7 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block bookmark="1" breakpoint="1" sid="2157373280082888">
+        <event-block bookmark="1" sid="2157373280082888">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="242456401074445" type="System">
                     <param id="0" name="Variable">InitState</param>
@@ -123,7 +121,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="4" name="Set animation" sid="7847919108031855" type="Icon">
-                                            <param id="0" name="Animation">&quot;A3&quot;</param>
+                                            <param id="0" name="Animation">&quot;Win&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
                                         <action id="-13" name="Set boolean" sid="8636407042813966" type="Icon">
@@ -144,7 +142,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="4" name="Set animation" sid="8227800620606366" type="Icon">
-                                            <param id="0" name="Animation">&quot;A2&quot;</param>
+                                            <param id="0" name="Animation">&quot;A3&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
                                     </actions>
@@ -154,13 +152,19 @@
                         <event-block sid="1343020146169768">
                             <conditions>
                                 <condition id="-22" name="Else" sid="647444914279096" type="System" />
-                                <condition id="-16" name="Pick random instance" sid="8667668634096665" type="System">
+                                <condition id="-24" name="For Each (ordered)" sid="2376290280597692" type="System">
                                     <param id="0" name="Object">Icon</param>
+                                    <param id="1" name="Expression">random(icon.Count)</param>
+                                    <param id="2" name="Order">0</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="9264113178135592" type="Icon">
-                                    <param id="0" name="Animation">&quot;A2&quot;</param>
+                                    <param id="0" name="Animation">&quot;A&quot;&amp;loopindex</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action disabled="1" id="4" name="Set animation" sid="4857661628463357" type="Icon">
+                                    <param id="0" name="Animation">&quot;win&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -422,10 +426,40 @@
                             <param id="0" name="Category">&quot;Rugby01&quot;</param>
                             <param id="1" name="Name">&quot;EndScratch&quot;</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="8276861373147883" type="System">
-                            <param id="0" name="Layout">result_win</param>
+                        <action id="1" name="Start timer" sid="8160736229562948" type="TimeAwayL">
+                            <param id="0" name="Key">&quot;LastGame&quot;</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="3375195104090039">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="46490230014867" type="System">
+                                    <param id="0" name="Variable">IsWinningTicket</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="8276861373147883" type="System">
+                                    <param id="0" name="Layout">result_lose</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8694422595060045">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="5233703842706474" type="System">
+                                    <param id="0" name="Variable">IsWinningTicket</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="3242367906598289" type="System">
+                                    <param id="0" name="Layout">result_win</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

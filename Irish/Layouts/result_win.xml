@@ -29,13 +29,28 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="WinBG" uid="9">
+                <instance type="loadingBG" uid="9">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Loaded>false</Loaded>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>1</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Timer" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -78,51 +93,26 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="facebookShare" uid="43">
+                <instance type="bgalpha" uid="46">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <innerhtml> &lt;div class=&quot;fb-share-button&quot; data-href=&quot;http://baracash.azurewebsites.net/fbr.html&quot; data-layout=&quot;button_count&quot;&gt;&lt;/div&gt;&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt;    &lt;script&gt;    (function (d, s, id) {      var js, fjs = d.getElementsByTagName(s)[0];        if (d.getElementById(id)) return;        js = d.createElement(s); js.id = id;        js.src = &quot;//connect.facebook.net/fr_FR/sdk.js#xfbml=1&amp;version=v2.4&amp;appId=1736591459889631&quot;; fjs.parentNode.insertBefore(js, fjs);    }(document, &apos;script&apos;, &apos;facebook-jssdk&apos;));        &lt;/script&gt;</innerhtml>
-                        <style></style>
-                        <html-tag-id>my_div</html-tag-id>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>575</x>
-                        <y>-92</y>
+                        <x>630</x>
+                        <y>328.5</y>
                         <z>0</z>
-                        <width>150</width>
-                        <height>22</height>
+                        <width>588</width>
+                        <height>181</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                    </world>
-                </instance>
-                <instance type="bri" uid="5">
-                    <properties>
-                        <text>****-****-****-****</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>No</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>378</x>
-                        <y>-93</y>
-                        <z>0</z>
-                        <width>150</width>
-                        <height>22</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="MailBox" uid="10">
@@ -141,10 +131,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>370</x>
+                        <x>346</x>
                         <y>375</y>
                         <z>0</z>
-                        <width>328</width>
+                        <width>352</width>
                         <height>37</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -177,32 +167,32 @@
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial Black,-32,900,0</font>
+                        <font>Arial Black,-24,900,0</font>
                         <color>0,18,128</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
+                        <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>353</x>
-                        <y>260</y>
+                        <x>630</x>
+                        <y>281</y>
                         <z>0</z>
                         <width>554</width>
                         <height>67</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="mailTxt2" uid="25">
                     <properties>
-                        <text>Saisis ton email pour recevoir ton code</text>
+                        <text>SAISI TON EMAIL ET TRANSFORME L&apos;ESSAI</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial Black,-24,900,0</font>
                         <color>43,50,120</color>
@@ -215,14 +205,102 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>625</x>
-                        <y>347</y>
+                        <x>616.818481445</x>
+                        <y>331.545440674</y>
                         <z>0</z>
-                        <width>598</width>
-                        <height>39</height>
+                        <width>571.636962891</width>
+                        <height>69.909118652</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="brvo" uid="45">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>630</x>
+                        <y>95.26890564</y>
+                        <z>0</z>
+                        <width>416</width>
+                        <height>141</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="wintext" uid="47">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>627</x>
+                        <y>214</y>
+                        <z>0</z>
+                        <width>382</width>
+                        <height>37</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.513513505</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="windude" uid="50">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>148</x>
+                        <y>274</y>
+                        <z>0</z>
+                        <width>297</width>
+                        <height>375</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501683474</hotspotX>
+                        <hotspotY>0.501333356</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="title" uid="51">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1091.545898438</x>
+                        <y>321.906555176</y>
+                        <z>0</z>
+                        <width>300.909667969</width>
+                        <height>167.272857666</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501792133</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

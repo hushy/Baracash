@@ -58,6 +58,9 @@
                 <action id="-16" name="Set opacity" sid="2238978915651673" type="SubmitButton">
                     <param id="0" name="Opacity">40</param>
                 </action>
+                <action id="-2" name="Go to layout" sid="1746124034767494" type="System">
+                    <param id="0" name="Layout">retry</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="8838335261310887">
@@ -158,6 +161,20 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="8221921921060835">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2779001639766651" type="System">
+                    <param id="0" name="Variable">subscribeCall</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1471971411686993" type="System">
+                    <param id="0" name="Layout">retry</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

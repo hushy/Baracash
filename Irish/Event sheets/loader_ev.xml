@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>loader_ev</name>
     <events>
+        <variable constant="0" name="prizeId" sid="9286106039802726" static="0" type="text">&quot;NONE&quot;</variable>
         <variable constant="0" name="campaignId" sid="1552601337797602" static="0" type="number">47182</variable>
         <variable constant="0" name="debugEndpoint" sid="899216139316483" static="0" type="text">http://localhost:8080/</variable>
         <variable constant="0" name="endpoint" sid="2180184633429476" static="0" type="text">http://baracashapi-test.elasticbeanstalk.com/</variable>
@@ -11,6 +12,7 @@
                 <condition id="-2" name="On start of layout" sid="2844140143776469" type="System" />
             </conditions>
             <actions>
+                <action id="-21" name="Reset global variables" sid="1237163859403764" type="System" />
                 <action id="0" name="Request URL" sid="5530091900294059" type="WSCaller">
                     <param id="0" name="Tag">&quot;getRandomPrize&quot;</param>
                     <param id="1" name="URL">debugEndpoint &amp; getPrizePath &amp; campaignId &amp;&quot;?fp=&quot; &amp; BaracashAPI.GetFingerPrint</param>
@@ -128,16 +130,6 @@
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="3995443263806593">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="1433999157757797" type="System" />
-            </conditions>
-            <actions>
-                <action id="-18" name="Rotate clockwise" sid="6841540958525659" type="loading">
-                    <param id="0" name="Degrees">180*dt</param>
-                </action>
-            </actions>
         </event-block>
     </events>
 </c2eventsheet>

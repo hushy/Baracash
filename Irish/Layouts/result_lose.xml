@@ -29,23 +29,27 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="LoseBG" uid="34">
+                <instance type="loadingBG" uid="5">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Lose</initial-animation>
+                        <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <collisions>Disabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Loaded>false</Loaded>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Fade">
                             <properties>
                                 <active-at-start>No</active-at-start>
-                                <fade-in-time>1</fade-in-time>
-                                <wait-time>0.5</wait-time>
-                                <fade-out-time>0</fade-out-time>
-                                <destroy>After fade out</destroy>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>1</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>No</destroy>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -59,7 +63,51 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>0.949999988</opacity>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="title" uid="23">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>161</x>
+                        <y>276</y>
+                        <z>0</z>
+                        <width>300.909667969</width>
+                        <height>167.272857666</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501792133</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="bgalpha" uid="32">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>630</x>
+                        <y>287</y>
+                        <z>0</z>
+                        <width>588</width>
+                        <height>119</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="MailBox" uid="37">
@@ -78,35 +126,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>370</x>
-                        <y>423</y>
+                        <x>371</x>
+                        <y>302</y>
                         <z>0</z>
                         <width>328</width>
                         <height>37</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="facebookShare" uid="32">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <innerhtml> &lt;div class=&quot;fb-share-button&quot; data-href=&quot;http://baracash.azurewebsites.net/fbr.html&quot; data-layout=&quot;button_count&quot;&gt;&lt;/div&gt;&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt;    &lt;script&gt;    (function (d, s, id) {      var js, fjs = d.getElementsByTagName(s)[0];        if (d.getElementById(id)) return;        js = d.createElement(s); js.id = id;        js.src = &quot;//connect.facebook.net/fr_FR/sdk.js#xfbml=1&amp;version=v2.4&amp;appId=1736591459889631&quot;; fjs.parentNode.insertBefore(js, fjs);    }(document, &apos;script&apos;, &apos;facebook-jssdk&apos;));        &lt;/script&gt;</innerhtml>
-                        <style></style>
-                        <html-tag-id>my_div</html-tag-id>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>335</x>
-                        <y>-145</y>
-                        <z>0</z>
-                        <width>83</width>
-                        <height>22</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
                     </world>
                 </instance>
                 <instance type="SubmitButton" uid="8">
@@ -119,8 +146,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>810</x>
-                        <y>440</y>
+                        <x>811</x>
+                        <y>319</y>
                         <z>0</z>
                         <width>183</width>
                         <height>51</height>
@@ -133,7 +160,7 @@
                 </instance>
                 <instance type="mailTxt" uid="1">
                     <properties>
-                        <text>Saisis ton email :</text>
+                        <text>Saisis ton email et participe au tirage au sort:</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial Black,-24,900,0</font>
                         <color>43,50,120</color>
@@ -146,14 +173,36 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>490.5</x>
-                        <y>401.5</y>
+                        <x>624</x>
+                        <y>271</y>
                         <z>0</z>
-                        <width>373</width>
-                        <height>39</height>
+                        <width>532</width>
+                        <height>72</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="banner" uid="22">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1088.5</x>
+                        <y>231.253997803</y>
+                        <z>0</z>
+                        <width>243</width>
+                        <height>461</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501039505</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
