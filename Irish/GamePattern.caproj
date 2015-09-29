@@ -24,6 +24,7 @@
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="R0J0hound" id="c2canvas" version="2">Canvas</plugin>
+        <plugin author="HMMG" id="hmmg_layoutTransition" version="1.200000048">Layout Transition</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
@@ -41,13 +42,13 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>result_win</first-layout>
+    <first-layout>loader</first-layout>
     <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
         <prop name="Downscaling">Medium quality</prop>
         <prop name="Enable WebGL">On</prop>
-        <prop name="Fullscreen in browser">Crop</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
         <prop name="Loader style">Percentage text</prop>
         <prop name="Orientations">Any</prop>
@@ -101,6 +102,11 @@
             </object-type>
             <object-type name="ScratchZone" sid="5334967479662794">
                 <plugin id="c2canvas" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="224954905652505">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
                 <container>
                     <type>ScratchZone</type>
                     <type>Icon</type>
@@ -544,6 +550,12 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="LayoutTransition" sid="7883049335754122">
+            <plugin id="hmmg_layoutTransition" />
+        </object-type>
+        <object-type name="d" sid="987180108002067">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -577,6 +589,7 @@
             </properties>
         </global-instance>
         <global-instance type="Browser" uid="29" />
+        <global-instance type="LayoutTransition" uid="57" />
     </global-instances>
     <sounds-folder />
     <music-folder />

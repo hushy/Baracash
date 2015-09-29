@@ -23,6 +23,11 @@
                     <param id="0" name="Variable">subscribeCall</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="0" name="Entrance Transition" sid="8953535690414324" type="LayoutTransition">
+                    <param id="0" name="Transition">5</param>
+                    <param id="1" name="Duration">0.5</param>
+                    <param id="2" name="Delay">0</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="5991167484933874">
@@ -101,6 +106,10 @@
                         <action id="0" name="Add key" sid="8590299834728761" type="Dictionary">
                             <param id="0" name="Key">&quot;Subscribed&quot;</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Add key" sid="1548961268969069" type="Dictionary">
+                            <param id="0" name="Key">&quot;Description&quot;</param>
+                            <param id="1" name="Value">BaracashAPI.GetPrizeDescription</param>
                         </action>
                         <action id="0" name="Set item" sid="1054223520281311" type="LocalStorage">
                             <param id="0" name="Key">&quot;GameData&quot;</param>

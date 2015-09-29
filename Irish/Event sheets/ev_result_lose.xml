@@ -14,6 +14,11 @@
                     <param id="0" name="Variable">subscribeCall</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="0" name="Entrance Transition" sid="5213895267661112" type="LayoutTransition">
+                    <param id="0" name="Transition">5</param>
+                    <param id="1" name="Duration">0.5</param>
+                    <param id="2" name="Delay">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="698227279357925">

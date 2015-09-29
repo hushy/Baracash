@@ -40,6 +40,14 @@
                     <param id="0" name="Variable">TestRadius</param>
                     <param id="1" name="Value">scratchSize/2-1</param>
                 </action>
+                <action id="0" name="Entrance Transition" sid="235893721968302" type="LayoutTransition">
+                    <param id="0" name="Transition">5</param>
+                    <param id="1" name="Duration">0.5</param>
+                    <param id="2" name="Delay">0</param>
+                </action>
+                <action id="11" name="Get elapsed time" sid="442884790020466" type="TimeAwayL">
+                    <param id="0" name="Key">&quot;LastGame&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="6214531473431517">
@@ -62,17 +70,16 @@
         </event-block>
         <event-block bookmark="1" sid="2157373280082888">
             <conditions>
+                <condition id="11" name="On elapsed time get" sid="6843112570030896" type="TimeAwayL">
+                    <param id="0" name="Key">&quot;LastGame&quot;</param>
+                </condition>
                 <condition id="-14" name="Compare variable" sid="242456401074445" type="System">
                     <param id="0" name="Variable">InitState</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="11" name="Get elapsed time" sid="442884790020466" type="TimeAwayL">
-                    <param id="0" name="Key">&quot;LastGame&quot;</param>
-                </action>
-            </actions>
+            <actions />
             <sub-events>
                 <event-block any="1" sid="7333742684557365">
                     <conditions>
@@ -142,7 +149,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="4" name="Set animation" sid="8227800620606366" type="Icon">
-                                            <param id="0" name="Animation">&quot;A3&quot;</param>
+                                            <param id="0" name="Animation">&quot;A2&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
                                     </actions>
@@ -429,39 +436,61 @@
                         <action id="1" name="Start timer" sid="8160736229562948" type="TimeAwayL">
                             <param id="0" name="Key">&quot;LastGame&quot;</param>
                         </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="7775776548825707" type="ScratchZone" />
                     </actions>
-                    <sub-events>
-                        <event-block sid="3375195104090039">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="46490230014867" type="System">
-                                    <param id="0" name="Variable">IsWinningTicket</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-2" name="Go to layout" sid="8276861373147883" type="System">
-                                    <param id="0" name="Layout">result_lose</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="8694422595060045">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="5233703842706474" type="System">
-                                    <param id="0" name="Variable">IsWinningTicket</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-2" name="Go to layout" sid="3242367906598289" type="System">
-                                    <param id="0" name="Layout">result_win</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="2367429268158305">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="8036092884231268" type="ScratchZone" />
+            </conditions>
+            <actions>
+                <action id="1" name="Exit Transition" sid="267178071809132" type="LayoutTransition">
+                    <param id="0" name="Transition">5</param>
+                    <param id="1" name="Duration">0.5</param>
+                    <param id="2" name="Delay">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7495440909974413">
+            <conditions>
+                <condition id="0" name="Is Transition ended" sid="3950203534019764" type="LayoutTransition" />
+                <condition id="1" name="Is finished transition Name" sid="3980586447109524" type="LayoutTransition">
+                    <param id="0" name="Transition">19</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="2305000002261247">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5644400154736216" type="System">
+                            <param id="0" name="Variable">IsWinningTicket</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="9914958406529516" type="System">
+                            <param id="0" name="Layout">result_lose</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7329945427748954">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8755469912748665" type="System">
+                            <param id="0" name="Variable">IsWinningTicket</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="2273106398820123" type="System">
+                            <param id="0" name="Layout">result_win</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
