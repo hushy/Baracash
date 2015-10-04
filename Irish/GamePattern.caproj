@@ -111,12 +111,15 @@
                     <type>ScratchZone</type>
                     <type>Icon</type>
                 </container>
-                <texture original-source="C:\Users\lverd_000\Desktop\New folder\PastilleGratte.png" />
+                <texture original-source="C:\Users\Fabien\Documents\Baracash\scratchzone.png" />
             </object-type>
             <object-type name="nameTxt" sid="3738157919394658">
                 <plugin id="Text" />
             </object-type>
             <object-type name="mailTxt2" sid="6124582333808036">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="tirageTxt" sid="2123573220643959">
                 <plugin id="Text" />
             </object-type>
         </object-folder>
@@ -362,7 +365,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4858463976477728" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501792" original-source="C:\Users\lverd_000\Desktop\step1\title.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Fabien\Documents\Baracash\gagne.png">
                         <collision-poly>
                             <point x="0.19877" y="0.34767" />
                             <point x="0.5" y="0.0896057" />
@@ -522,15 +525,15 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1439169555508518" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" original-source="C:\Users\lverd_000\Desktop\step1\wintext.png">
+                    <frame duration="1" hotspotX="0.513761" hotspotY="0.504951" original-source="C:\Users\Fabien\Documents\Baracash\récompense.png">
                         <collision-poly>
-                            <point x="0.0078534" y="0.0810811" />
-                            <point x="0.5" y="0.135135" />
-                            <point x="0.97644" y="0.243243" />
-                            <point x="0.997382" y="0.486486" />
-                            <point x="0.989529" y="0.891892" />
-                            <point x="0.5" y="0.972973" />
-                            <point x="0.0078534" y="0.918919" />
+                            <point x="0.0810811" y="0.992147" />
+                            <point x="0.135135" y="0.5" />
+                            <point x="0.243243" y="0.02356" />
+                            <point x="0.486486" y="0.00261801" />
+                            <point x="0.891892" y="0.010471" />
+                            <point x="0.972973" y="0.5" />
+                            <point x="0.918919" y="0.992147" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -540,16 +543,16 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="588598024816387" speed="5">
-                    <frame duration="1" hotspotX="0.501683" hotspotY="0.501333" original-source="C:\Users\lverd_000\Desktop\step1\win-dude.png">
+                    <frame duration="1" hotspotX="0.501683" hotspotY="0.498392" original-source="C:\Users\Fabien\Documents\Baracash\windude.png">
                         <collision-poly>
-                            <point x="0.343434" y="0.272" />
-                            <point x="0.498316" y="0.0666667" />
-                            <point x="0.915825" y="0.0666667" />
-                            <point x="0.93266" y="0.498667" />
-                            <point x="0.774411" y="0.821333" />
-                            <point x="0.498316" y="0.962667" />
-                            <point x="0.141414" y="0.888" />
-                            <point x="0.016835" y="0.498667" />
+                            <point x="0.272" y="0.656566" />
+                            <point x="0.0666667" y="0.501684" />
+                            <point x="0.0666667" y="0.084175" />
+                            <point x="0.498667" y="0.06734" />
+                            <point x="0.821333" y="0.225589" />
+                            <point x="0.962667" y="0.501684" />
+                            <point x="0.888" y="0.858586" />
+                            <point x="0.498667" y="0.983165" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -564,6 +567,86 @@
         <object-type name="hearts" sid="4697552672358323">
             <plugin id="Particles" />
             <texture original-source="C:\Users\lverd_000\Desktop\100px-Recover_heart.png" />
+        </object-type>
+        <object-type name="FacebookMultiplier" sid="2067205857690692">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3314559442953085" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Fabien\Documents\Baracash\recap.png">
+                        <collision-poly>
+                            <point x="0.046875" y="0.798507" />
+                            <point x="0.0017361" y="0.5" />
+                            <point x="0.046875" y="0.201493" />
+                            <point x="0.5" y="0" />
+                            <point x="0.953125" y="0.201493" />
+                            <point x="0.998264" y="0.5" />
+                            <point x="0.953125" y="0.798507" />
+                            <point x="0.5" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TimerBox" sid="1065617836336743">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2097899849532769" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Fabien\Documents\Baracash\compteur.png">
+                        <collision-poly>
+                            <point x="0.126667" y="0.126667" />
+                            <point x="0.873333" y="0.126667" />
+                            <point x="0.973333" y="0.5" />
+                            <point x="0.88" y="0.88" />
+                            <point x="0.12" y="0.88" />
+                            <point x="0.0266667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="emailForTirage" sid="2744919902082172">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8497794415650201" speed="5">
+                    <frame duration="1" hotspotX="0.501085" hotspotY="0.5" original-source="C:\Users\Fabien\Documents\Baracash\tirage.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Dommage" sid="7052502504030843">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6505164848271008" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Fabien\Documents\Baracash\dommage.png">
+                        <collision-poly>
+                            <point x="0.286667" y="0.43" />
+                            <point x="0.5" y="0.345" />
+                            <point x="0.83" y="0.255" />
+                            <point x="0.913333" y="0.5" />
+                            <point x="0.5" y="0.595" />
+                            <point x="0.24" y="0.64" />
+                            <point x="0.06" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="JustWin" sid="2946840043261453">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4586140059063447" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" original-source="C:\Users\Fabien\Documents\Baracash\000.png">
+                        <collision-poly>
+                            <point x="0.0078534" y="0.0810811" />
+                            <point x="0.5" y="0.135135" />
+                            <point x="0.97644" y="0.243243" />
+                            <point x="0.997382" y="0.486486" />
+                            <point x="0.989529" y="0.891892" />
+                            <point x="0.5" y="0.972973" />
+                            <point x="0.0078534" y="0.918919" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

@@ -132,7 +132,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>346</x>
-                        <y>375</y>
+                        <y>366</y>
                         <z>0</z>
                         <width>352</width>
                         <height>37</height>
@@ -178,38 +178,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>630</x>
-                        <y>281</y>
+                        <x>797.271728516</x>
+                        <y>286.817962646</y>
                         <z>0</z>
-                        <width>554</width>
+                        <width>248.546630859</width>
                         <height>67</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="mailTxt2" uid="25">
-                    <properties>
-                        <text>SAISI TON EMAIL ET TRANSFORME L&apos;ESSAI</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial Black,-24,900,0</font>
-                        <color>43,50,120</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>616.818481445</x>
-                        <y>331.545440674</y>
-                        <z>0</z>
-                        <width>571.636962891</width>
-                        <height>69.909118652</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -250,28 +223,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="wintext" uid="47">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>627</x>
-                        <y>214</y>
-                        <z>0</z>
-                        <width>382</width>
-                        <height>37</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.513513505</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="windude" uid="50">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -283,13 +234,13 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>148</x>
-                        <y>274</y>
+                        <y>305</y>
                         <z>0</z>
                         <width>297</width>
-                        <height>375</height>
+                        <height>311</height>
                         <depth>0</depth>
                         <hotspotX>0.501683474</hotspotX>
-                        <hotspotY>0.501333356</hotspotY>
+                        <hotspotY>0.498392284</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -307,11 +258,60 @@
                         <x>1091.545898438</x>
                         <y>321.906555176</y>
                         <z>0</z>
-                        <width>300.909667969</width>
-                        <height>167.272857666</height>
+                        <width>249.113739014</width>
+                        <height>155.881515503</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501792133</hotspotY>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="JustWin" uid="47">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>508.416259766</x>
+                        <y>270.982818604</y>
+                        <z>0</z>
+                        <width>313.432830811</width>
+                        <height>30.35867691</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.513513505</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="tirageTxt" uid="25">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Passion One,-44,400,0</font>
+                        <color>0,18,128</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>354.512390137</x>
+                        <y>303.302032471</y>
+                        <z>0</z>
+                        <width>554.546936035</width>
+                        <height>58.182037354</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

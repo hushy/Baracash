@@ -62,6 +62,9 @@
                         <action id="0" name="Set text" sid="7730592265831775" type="nameTxt">
                             <param id="0" name="Text">BaracashAPI.GetPrizeName</param>
                         </action>
+                        <action id="0" name="Set text" sid="548292846601915" type="tirageTxt">
+                            <param id="0" name="Text">&quot;TRANSFORME L&apos;ESSAI EN PARTICIPANT AU TIRAGE&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
