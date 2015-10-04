@@ -32,7 +32,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="1086045326130614">
+                <event-block disabled="1" sid="1086045326130614">
                     <conditions>
                         <condition id="-22" name="Else" sid="6730108139343503" type="System" />
                     </conditions>

@@ -488,6 +488,11 @@
         </object-type>
         <object-type name="brvo" sid="6931978368712796">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="6786275842671409">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2471547035097918" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\step1\brvo.png">
@@ -555,6 +560,10 @@
         </object-type>
         <object-type name="d" sid="987180108002067">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="hearts" sid="4697552672358323">
+            <plugin id="Particles" />
+            <texture original-source="C:\Users\lverd_000\Desktop\100px-Recover_heart.png" />
         </object-type>
     </object-folder>
     <families />

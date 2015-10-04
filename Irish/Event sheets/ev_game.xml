@@ -8,7 +8,7 @@
         <variable constant="0" name="GiftValue" sid="7357975800208961" static="0" type="number">0</variable>
         <variable constant="0" name="Debug" sid="4100423820922422" static="0" type="text"></variable>
         <variable constant="0" name="getPrizePath" sid="9834580253533465" static="0" type="text">api/prizes/random/</variable>
-        <variable constant="0" name="LastGameTimerInSeconds" sid="1843762542549096" static="0" type="number">45</variable>
+        <variable constant="0" name="LastGameTimerInSeconds" sid="1843762542549096" static="0" type="number">5</variable>
         <variable constant="0" name="InitState" sid="7953206043994739" static="0" type="number">0</variable>
         <variable constant="0" name="scratchSize" sid="9052999839548576" static="0" type="number">18</variable>
         <variable constant="0" name="Y" sid="6213800150554527" static="0" type="number">-1</variable>
@@ -19,181 +19,180 @@
         <variable constant="0" name="cos45" sid="5212342653531882" static="0" type="number">1</variable>
         <variable constant="0" name="sin45" sid="7222429959322995" static="0" type="number">1</variable>
         <variable constant="0" name="IsGameOver" sid="7777748381604351" static="0" type="number">0</variable>
-        <event-group description="" sid="3029858108535978" title="Start" />
-        <event-block sid="227202214083764">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="2858403442491599" type="System" />
-            </conditions>
-            <actions>
-                <action id="1" name="Set rate" sid="9244821433944269" type="Particles">
-                    <param id="0" name="Rate">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="6715573565998037" type="System">
-                    <param id="0" name="Variable">cos45</param>
-                    <param id="1" name="Value">cos(45)</param>
-                </action>
-                <action id="-9" name="Set value" sid="7091944344433683" type="System">
-                    <param id="0" name="Variable">sin45</param>
-                    <param id="1" name="Value">sin45</param>
-                </action>
-                <action id="-9" name="Set value" sid="3718239899940406" type="System">
-                    <param id="0" name="Variable">TestRadius</param>
-                    <param id="1" name="Value">scratchSize/2-1</param>
-                </action>
-                <action id="0" name="Entrance Transition" sid="235893721968302" type="LayoutTransition">
-                    <param id="0" name="Transition">5</param>
-                    <param id="1" name="Duration">0.5</param>
-                    <param id="2" name="Delay">0</param>
-                </action>
-                <action id="11" name="Get elapsed time" sid="442884790020466" type="TimeAwayL">
-                    <param id="0" name="Key">&quot;LastGame&quot;</param>
-                </action>
-            </actions>
+        <event-group description="" sid="3029858108535978" title="Start">
             <sub-events>
-                <event-block sid="6214531473431517">
+                <event-block sid="227202214083764">
                     <conditions>
-                        <condition id="-19" name="Pick all" sid="848539450119061" type="System">
-                            <param id="0" name="Object">ScratchZone</param>
-                        </condition>
+                        <condition id="-2" name="On start of layout" sid="2858403442491599" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="1743255756351325" type="Icon">
-                            <param id="0" name="X">ScratchZone.X + ScratchZone.Width/2</param>
-                            <param id="1" name="Y">ScratchZone.Y + ScratchZone.Height/2</param>
+                        <action id="1" name="Set rate" sid="9244821433944269" type="Particles">
+                            <param id="0" name="Rate">0</param>
                         </action>
-                        <action id="-26" name="Move to layer" sid="7010836261410884" type="Icon">
-                            <param id="0" name="Layer">&quot;item&quot;</param>
+                        <action id="-9" name="Set value" sid="6715573565998037" type="System">
+                            <param id="0" name="Variable">cos45</param>
+                            <param id="1" name="Value">cos(45)</param>
                         </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block bookmark="1" sid="2157373280082888">
-            <conditions>
-                <condition id="11" name="On elapsed time get" sid="6843112570030896" type="TimeAwayL">
-                    <param id="0" name="Key">&quot;LastGame&quot;</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="242456401074445" type="System">
-                    <param id="0" name="Variable">InitState</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block any="1" sid="7333742684557365">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="3083264322180623" type="System">
-                            <param id="0" name="First value">TimeAwayL.ElapsedTime</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Second value">LastGameTimerInSeconds</param>
-                        </condition>
-                        <condition id="-8" name="Compare two values" sid="9194228453248354" type="System">
-                            <param id="0" name="First value">TimeAwayL.ElapsedTime</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Second value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="9748600667927448" type="System">
-                            <param id="0" name="Variable">InitState</param>
-                            <param id="1" name="Value">1</param>
+                        <action id="-9" name="Set value" sid="7091944344433683" type="System">
+                            <param id="0" name="Variable">sin45</param>
+                            <param id="1" name="Value">sin45</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3718239899940406" type="System">
+                            <param id="0" name="Variable">TestRadius</param>
+                            <param id="1" name="Value">scratchSize/2-1</param>
+                        </action>
+                        <action id="0" name="Entrance Transition" sid="235893721968302" type="LayoutTransition">
+                            <param id="0" name="Transition">5</param>
+                            <param id="1" name="Duration">0.5</param>
+                            <param id="2" name="Delay">0</param>
+                        </action>
+                        <action id="11" name="Get elapsed time" sid="442884790020466" type="TimeAwayL">
+                            <param id="0" name="Key">&quot;LastGame&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="7918210142266995">
+                        <event-block sid="6214531473431517">
                             <conditions>
-                                <condition id="-14" name="Compare variable" sid="2336114294485387" type="System">
-                                    <param id="0" name="Variable">IsWinningTicket</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
+                                <condition id="-19" name="Pick all" sid="848539450119061" type="System">
+                                    <param id="0" name="Object">ScratchZone</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="-3" name="Set position" sid="1743255756351325" type="Icon">
+                                    <param id="0" name="X">ScratchZone.X + ScratchZone.Width/2</param>
+                                    <param id="1" name="Y">ScratchZone.Y + ScratchZone.Height/2</param>
+                                </action>
+                                <action id="-26" name="Move to layer" sid="7010836261410884" type="Icon">
+                                    <param id="0" name="Layer">&quot;item&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block bookmark="1" sid="2157373280082888">
+                    <conditions>
+                        <condition id="11" name="On elapsed time get" sid="6843112570030896" type="TimeAwayL">
+                            <param id="0" name="Key">&quot;LastGame&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="242456401074445" type="System">
+                            <param id="0" name="Variable">InitState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="7333742684557365">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="3083264322180623" type="System">
+                                    <param id="0" name="First value">TimeAwayL.ElapsedTime</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">LastGameTimerInSeconds</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="9194228453248354" type="System">
+                                    <param id="0" name="First value">TimeAwayL.ElapsedTime</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="9748600667927448" type="System">
+                                    <param id="0" name="Variable">InitState</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
                             <sub-events>
-                                <event-block sid="4202571431964027">
+                                <event-block sid="7918210142266995">
                                     <conditions>
-                                        <condition id="-10" name="For" sid="3385592819096736" type="System">
-                                            <param id="0" name="Name">&quot;&quot;</param>
-                                            <param id="1" name="Start index">1</param>
-                                            <param id="2" name="End index">RequiredSimilarItem</param>
+                                        <condition id="-14" name="Compare variable" sid="2336114294485387" type="System">
+                                            <param id="0" name="Variable">IsWinningTicket</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
                                         </condition>
-                                        <condition id="-34" name="Pick by evaluate" sid="2374404632860699" type="System">
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="4202571431964027">
+                                            <conditions>
+                                                <condition id="-10" name="For" sid="3385592819096736" type="System">
+                                                    <param id="0" name="Name">&quot;&quot;</param>
+                                                    <param id="1" name="Start index">1</param>
+                                                    <param id="2" name="End index">RequiredSimilarItem</param>
+                                                </condition>
+                                                <condition id="-34" name="Pick by evaluate" sid="2374404632860699" type="System">
+                                                    <param id="0" name="Object">Icon</param>
+                                                    <param id="1" name="Expression">Icon.IsLosing</param>
+                                                </condition>
+                                                <condition id="-16" name="Pick random instance" sid="9524804638124944" type="System">
+                                                    <param id="0" name="Object">Icon</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="7847919108031855" type="Icon">
+                                                    <param id="0" name="Animation">&quot;Win&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-13" name="Set boolean" sid="8636407042813966" type="Icon">
+                                                    <param id="0" name="Instance variable">IsLosing</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="1597255420101044">
+                                            <conditions>
+                                                <condition id="-34" name="Pick by evaluate" sid="8849233185039" type="System">
+                                                    <param id="0" name="Object">Icon</param>
+                                                    <param id="1" name="Expression">Icon.IsLosing</param>
+                                                </condition>
+                                                <condition id="-16" name="Pick random instance" sid="3527176576492032" type="System">
+                                                    <param id="0" name="Object">Icon</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="8227800620606366" type="Icon">
+                                                    <param id="0" name="Animation">&quot;A2&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="1343020146169768">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="647444914279096" type="System" />
+                                        <condition id="-24" name="For Each (ordered)" sid="2376290280597692" type="System">
                                             <param id="0" name="Object">Icon</param>
-                                            <param id="1" name="Expression">Icon.IsLosing</param>
-                                        </condition>
-                                        <condition id="-16" name="Pick random instance" sid="9524804638124944" type="System">
-                                            <param id="0" name="Object">Icon</param>
+                                            <param id="1" name="Expression">random(icon.Count)</param>
+                                            <param id="2" name="Order">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" sid="7847919108031855" type="Icon">
-                                            <param id="0" name="Animation">&quot;Win&quot;</param>
+                                        <action id="4" name="Set animation" sid="9264113178135592" type="Icon">
+                                            <param id="0" name="Animation">&quot;A&quot;&amp;loopindex</param>
                                             <param id="1" name="From">1</param>
                                         </action>
-                                        <action id="-13" name="Set boolean" sid="8636407042813966" type="Icon">
-                                            <param id="0" name="Instance variable">IsLosing</param>
-                                            <param id="1" name="Value">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="1597255420101044">
-                                    <conditions>
-                                        <condition id="-34" name="Pick by evaluate" sid="8849233185039" type="System">
-                                            <param id="0" name="Object">Icon</param>
-                                            <param id="1" name="Expression">Icon.IsLosing</param>
-                                        </condition>
-                                        <condition id="-16" name="Pick random instance" sid="3527176576492032" type="System">
-                                            <param id="0" name="Object">Icon</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="4" name="Set animation" sid="8227800620606366" type="Icon">
-                                            <param id="0" name="Animation">&quot;A2&quot;</param>
+                                        <action disabled="1" id="4" name="Set animation" sid="4857661628463357" type="Icon">
+                                            <param id="0" name="Animation">&quot;win&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="1343020146169768">
+                        <event-block sid="334995381475025">
                             <conditions>
-                                <condition id="-22" name="Else" sid="647444914279096" type="System" />
-                                <condition id="-24" name="For Each (ordered)" sid="2376290280597692" type="System">
-                                    <param id="0" name="Object">Icon</param>
-                                    <param id="1" name="Expression">random(icon.Count)</param>
-                                    <param id="2" name="Order">0</param>
-                                </condition>
+                                <condition id="-22" name="Else" sid="8007558640906749" type="System" />
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="9264113178135592" type="Icon">
-                                    <param id="0" name="Animation">&quot;A&quot;&amp;loopindex</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action disabled="1" id="4" name="Set animation" sid="4857661628463357" type="Icon">
-                                    <param id="0" name="Animation">&quot;win&quot;</param>
-                                    <param id="1" name="From">1</param>
+                                <action id="-2" name="Go to layout" sid="921211094619943" type="System">
+                                    <param id="0" name="Layout">retry</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="334995381475025">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="8007558640906749" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="921211094619943" type="System">
-                            <param id="0" name="Layout">retry</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="4063429376875727">
-                    <conditions />
-                    <actions />
-                </event-block>
             </sub-events>
-        </event-block>
+        </event-group>
         <event-group description="" sid="2460555805912128" title="game">
             <sub-events>
                 <event-block sid="252413573179065">
@@ -236,42 +235,50 @@
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="8794121118285082" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) + TestRadius</param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y)</param>
-                                            <param id="2" name="alpha">0.5</param>
+                                            <param id="2" name="radius">0.5</param>
+                                            <param id="3" name="alpha">0</param>
                                         </condition>
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="339443076405255" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) - TestRadius</param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y)</param>
-                                            <param id="2" name="alpha">0.5</param>
+                                            <param id="2" name="radius">0.5</param>
+                                            <param id="3" name="alpha">0</param>
                                         </condition>
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="7290703091784553" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) </param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y) + TestRadius</param>
-                                            <param id="2" name="alpha">0.5</param>
+                                            <param id="2" name="radius">0.5</param>
+                                            <param id="3" name="alpha">0</param>
                                         </condition>
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="6118628103121778" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) </param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y) - TestRadius</param>
-                                            <param id="2" name="alpha">0.5</param>
+                                            <param id="2" name="radius">0.5</param>
+                                            <param id="3" name="alpha">0</param>
                                         </condition>
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="7189029344328546" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) + TestRadius*cos45</param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y) + TestRadius*sin45</param>
-                                            <param id="2" name="alpha">0.5</param>
+                                            <param id="2" name="radius">0.5</param>
+                                            <param id="3" name="alpha">0</param>
                                         </condition>
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="749771351514114" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) - TestRadius*cos45</param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y) - TestRadius*sin45</param>
-                                            <param id="2" name="alpha">0.5</param>
+                                            <param id="2" name="radius">0.5</param>
+                                            <param id="3" name="alpha">0</param>
                                         </condition>
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="3630916594763228" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) - TestRadius*cos45</param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y) + TestRadius*sin45</param>
-                                            <param id="2" name="alpha">0.5</param>
+                                            <param id="2" name="radius">0.5</param>
+                                            <param id="3" name="alpha">0</param>
                                         </condition>
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="7039797127954297" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) + TestRadius*cos45</param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y) - TestRadius*sin45</param>
-                                            <param id="2" name="alpha">0.5</param>
+                                            <param id="2" name="radius">0.5</param>
+                                            <param id="3" name="alpha">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -382,33 +389,17 @@
                         <condition id="0" name="Is alpha less than" sid="6718464204383552" type="ScratchZone">
                             <param id="0" name="x">Icon.X - scratchZone.X</param>
                             <param id="1" name="y">Icon.Y - scratchZone.Y</param>
-                            <param id="2" name="alpha">0.1</param>
-                        </condition>
-                        <condition id="0" name="Is alpha less than" sid="662633407696289" type="ScratchZone">
-                            <param id="0" name="x">Icon.X - scratchZone.X</param>
-                            <param id="1" name="y">Icon.Y - scratchZone.Y</param>
-                            <param id="2" name="alpha">0.1</param>
-                        </condition>
-                        <condition id="0" name="Is alpha less than" sid="2387650625576108" type="ScratchZone">
-                            <param id="0" name="x">Icon.X - scratchZone.X - TestRadius</param>
-                            <param id="1" name="y">Icon.Y - scratchZone.Y</param>
-                            <param id="2" name="alpha">0.1</param>
-                        </condition>
-                        <condition id="0" name="Is alpha less than" sid="904296501576604" type="ScratchZone">
-                            <param id="0" name="x">Icon.X - scratchZone.X </param>
-                            <param id="1" name="y">Icon.Y - scratchZone.Y + TestRadius</param>
-                            <param id="2" name="alpha">0.1</param>
-                        </condition>
-                        <condition id="0" name="Is alpha less than" sid="4329384944750243" type="ScratchZone">
-                            <param id="0" name="x">Icon.X - scratchZone.X</param>
-                            <param id="1" name="y">Icon.Y - scratchZone.Y - TestRadius</param>
-                            <param id="2" name="alpha">0.1</param>
+                            <param id="2" name="radius">50</param>
+                            <param id="3" name="alpha">100</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-13" name="Set boolean" sid="138446690054135" type="Icon">
                             <param id="0" name="Instance variable">IsOnTop</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="3676160615666136" type="ScratchZone">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -418,7 +409,7 @@
             <sub-events>
                 <event-block sid="1082746071745186">
                     <conditions>
-                        <condition id="1" name="On any touch end" sid="9513258022800599" type="Touch" />
+                        <condition disabled="1" id="1" name="On any touch end" sid="9513258022800599" type="Touch" />
                         <condition id="-8" name="Is boolean instance variable set" sid="2720108840218678" type="Icon">
                             <param id="0" name="Instance variable">IsOnTop</param>
                         </condition>
@@ -438,6 +429,36 @@
                         </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="7775776548825707" type="ScratchZone" />
                     </actions>
+                    <sub-events>
+                        <event-block sid="1972159805764762">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="1316563995973038" type="System">
+                                    <param id="0" name="Variable">IsWinningTicket</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-33" name="Pick by comparison" sid="5530982792185162" type="System">
+                                    <param id="0" name="Object">Icon</param>
+                                    <param id="1" name="Expression">Icon.IsLosing</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="983980162484808" type="brvo">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="48157390203009" type="brvo" />
+                                <action id="1" name="Set rate" sid="6391695791465046" type="hearts">
+                                    <param id="0" name="Rate">2</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="5854368777087729" type="hearts">
+                                    <param id="0" name="X">icon.X</param>
+                                    <param id="1" name="Y">icon.Y-icon.Height/2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -449,7 +470,10 @@
                 <action id="1" name="Exit Transition" sid="267178071809132" type="LayoutTransition">
                     <param id="0" name="Transition">5</param>
                     <param id="1" name="Duration">0.5</param>
-                    <param id="2" name="Delay">0</param>
+                    <param id="2" name="Delay">3</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6037767345201341" type="ScratchZone">
+                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>

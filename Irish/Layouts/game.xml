@@ -250,6 +250,45 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="hearts" uid="35">
+                    <properties>
+                        <rate>0</rate>
+                        <spray-cone>60</spray-cone>
+                        <type>Continuous spray</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>60</speed>
+                        <size>30</size>
+                        <opacity>100</opacity>
+                        <grow-rate>6</grow-rate>
+                        <x-randomiser>20</x-randomiser>
+                        <y-randomiser>0</y-randomiser>
+                        <speed-randomiser->10</speed-randomiser->
+                        <size-randomiser>20</size-randomiser>
+                        <grow-rate-randomiser>10</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>0</acceleration>
+                        <gravity>0</gravity>
+                        <angle-randomiser>0</angle-randomiser>
+                        <speed-randomiser>800</speed-randomiser>
+                        <opacity-randomiser>0</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>3</timeout>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>628</x>
+                        <y>165</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>-1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -326,7 +365,7 @@
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>0</fade-in-time>
                                 <wait-time>0</wait-time>
-                                <fade-out-time>2</fade-out-time>
+                                <fade-out-time>1</fade-out-time>
                                 <destroy>No</destroy>
                             </properties>
                         </behavior-instance>
@@ -358,7 +397,7 @@
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>0</fade-in-time>
                                 <wait-time>0</wait-time>
-                                <fade-out-time>2</fade-out-time>
+                                <fade-out-time>1</fade-out-time>
                                 <destroy>No</destroy>
                             </properties>
                         </behavior-instance>
@@ -390,7 +429,7 @@
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>0</fade-in-time>
                                 <wait-time>0</wait-time>
-                                <fade-out-time>2</fade-out-time>
+                                <fade-out-time>1</fade-out-time>
                                 <destroy>No</destroy>
                             </properties>
                         </behavior-instance>
@@ -450,6 +489,39 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>1.570795774</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="brvo" uid="33">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0.25</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>630.5</x>
+                        <y>402.5</y>
+                        <z>0</z>
+                        <width>409</width>
+                        <height>94</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
             </instances>

@@ -11,13 +11,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">game</layout>
-        <layout order="2">loader</layout>
+        <layout order="3">loader</layout>
         <layout order="5">result_win</layout>
         <layout order="6">result_lose</layout>
         <layout order="7">campaign_over</layout>
         <layout order="9">retry</layout>
-        <event-sheet active="1" order="1">loader_ev</event-sheet>
-        <event-sheet order="3">ev_game</event-sheet>
+        <event-sheet order="1">ev_game</event-sheet>
+        <event-sheet active="1" order="2">loader_ev</event-sheet>
         <event-sheet order="4">ev_result_win</event-sheet>
         <event-sheet order="8">ev_campaign_over</event-sheet>
         <event-sheet order="10">ev_retry</event-sheet>
@@ -34,7 +34,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/gui/" />
         <folder expanded="1" path="object-folder/sprite/" />
-        <folder expanded="0" path="object-folder/object/" />
+        <folder expanded="1" path="object-folder/object/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />

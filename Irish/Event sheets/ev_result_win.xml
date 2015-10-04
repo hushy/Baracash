@@ -5,7 +5,7 @@
     <events>
         <variable constant="0" name="resultState" sid="8539054646063116" static="0" type="number">0</variable>
         <variable constant="0" name="captchaRoot" sid="2839952603027862" static="0" type="text">g-recaptcha-response</variable>
-        <variable constant="0" name="discoverAPIRoot" sid="2266390881598362" static="0" type="text">/api/giftCodes/discover/</variable>
+        <variable constant="0" name="discoverAPIRoot" sid="2266390881598362" static="0" type="text">api/giftCodes/discover/</variable>
         <variable constant="0" name="tickCountKey" sid="129234097537225" static="0" type="text">cnt</variable>
         <variable constant="0" name="keyRoot" sid="8998144862457183" static="0" type="text">key</variable>
         <variable constant="0" name="behaviorCounter" sid="6241871095929083" static="0" type="number">0</variable>
@@ -26,7 +26,7 @@
                 <action id="0" name="Entrance Transition" sid="8953535690414324" type="LayoutTransition">
                     <param id="0" name="Transition">5</param>
                     <param id="1" name="Duration">0.5</param>
-                    <param id="2" name="Delay">0</param>
+                    <param id="2" name="Delay">0.5</param>
                 </action>
             </actions>
             <sub-events>
