@@ -19,7 +19,7 @@
                     <param id="1" name="Duration">0.5</param>
                     <param id="2" name="Delay">0</param>
                 </action>
-                <action id="0" name="Set text" sid="5989339965275479" type="tirageTxt">
+                <action id="0" name="Set text" sid="5989339965275479" type="resultTxt">
                     <param id="0" name="Text">&quot;TENTE TA CHANCE EN PARTICIPANT AU TIRAGE&quot;</param>
                 </action>
             </actions>

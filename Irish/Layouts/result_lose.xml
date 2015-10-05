@@ -66,28 +66,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="title" uid="23">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>161</x>
-                        <y>276</y>
-                        <z>0</z>
-                        <width>249.113739014</width>
-                        <height>155.881515503</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="bgalpha" uid="32">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -112,7 +90,7 @@
                 </instance>
                 <instance type="MailBox" uid="37">
                     <properties>
-                        <text></text>
+                        <text>Saisi ton email pour participer!</text>
                         <placeholder></placeholder>
                         <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
@@ -180,28 +158,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TimerBox" uid="52">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1088.501342773</x>
-                        <y>301.501342773</y>
-                        <z>0</z>
-                        <width>186.997329712</width>
-                        <height>186.997329712</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Dommage" uid="59">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -224,14 +180,14 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tirageTxt" uid="1">
+                <instance type="resultTxt" uid="1">
                     <properties>
-                        <text>Text</text>
+                        <text>TENTE TA CHANCE EN PARTICIPANT AU TIRAGE</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Passion One,-48,400,0</font>
+                        <font>Passion One,-24,400,0</font>
                         <color>0,18,128</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
@@ -239,14 +195,36 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>360.7734375</x>
-                        <y>246</y>
+                        <x>344.7734375</x>
+                        <y>235</y>
                         <z>0</z>
-                        <width>555</width>
-                        <height>79</height>
+                        <width>571</width>
+                        <height>61</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="windude" uid="23">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>161</x>
+                        <y>305</y>
+                        <z>0</z>
+                        <width>297</width>
+                        <height>311</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501683474</hotspotX>
+                        <hotspotY>0.498392284</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

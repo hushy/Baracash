@@ -27,9 +27,6 @@
                         <action id="0" name="Set text" sid="6940465883983325" type="bri">
                             <param id="0" name="Text">Dictionary.Get(&quot;Code&quot;)</param>
                         </action>
-                        <action id="0" name="Set text" sid="8319494157548921" type="resultTxt">
-                            <param id="0" name="Text">Dictionary.Get(&quot;Description&quot;)</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block disabled="1" sid="1086045326130614">

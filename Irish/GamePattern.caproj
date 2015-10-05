@@ -82,9 +82,6 @@
             <object-type name="nextTicketTxt" sid="7879459438414942">
                 <plugin id="Text" />
             </object-type>
-            <object-type name="resultTxt" sid="6955635820826348">
-                <plugin id="Text" />
-            </object-type>
             <object-type name="scratchText" sid="2548154056693645">
                 <plugin id="Text" />
             </object-type>
@@ -119,7 +116,7 @@
             <object-type name="mailTxt2" sid="6124582333808036">
                 <plugin id="Text" />
             </object-type>
-            <object-type name="tirageTxt" sid="2123573220643959">
+            <object-type name="resultTxt" sid="2123573220643959">
                 <plugin id="Text" />
             </object-type>
         </object-folder>

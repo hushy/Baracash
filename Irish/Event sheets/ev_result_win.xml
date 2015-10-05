@@ -49,9 +49,6 @@
                         <condition id="-22" name="Else" sid="4887129934685162" type="System" />
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="9501348283258097" type="resultTxt">
-                            <param id="0" name="Text">&quot;Bravo ! Tu as gagné &quot; &amp; BaracashAPI.GetPrizeDescription</param>
-                        </action>
                         <action id="0" name="Track Event" sid="9029982457418098" type="GoogleAnalytics">
                             <param id="0" name="Category">&quot;Rugby01&quot;</param>
                             <param id="1" name="Name">&quot;Win&quot;</param>
@@ -61,9 +58,6 @@
                         </action>
                         <action id="0" name="Set text" sid="7730592265831775" type="nameTxt">
                             <param id="0" name="Text">BaracashAPI.GetPrizeName</param>
-                        </action>
-                        <action id="0" name="Set text" sid="548292846601915" type="tirageTxt">
-                            <param id="0" name="Text">&quot;TRANSFORME L&apos;ESSAI EN PARTICIPANT AU TIRAGE&quot;</param>
                         </action>
                     </actions>
                 </event-block>

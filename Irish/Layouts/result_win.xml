@@ -104,85 +104,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>630</x>
-                        <y>328.5</y>
+                        <y>284.86340332</y>
                         <z>0</z>
                         <width>588</width>
-                        <height>181</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="MailBox" uid="10">
-                    <properties>
-                        <text></text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Email</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>346</x>
-                        <y>366</y>
-                        <z>0</z>
-                        <width>352</width>
-                        <height>37</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="SubmitButton" uid="11">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>810</x>
-                        <y>392</y>
-                        <z>0</z>
-                        <width>183</width>
-                        <height>51</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501805067</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>0.400000006</opacity>
-                    </world>
-                </instance>
-                <instance type="resultTxt" uid="24">
-                    <properties>
-                        <text>Text</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial Black,-24,900,0</font>
-                        <color>0,18,128</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>797.271728516</x>
-                        <y>286.817962646</y>
-                        <z>0</z>
-                        <width>248.546630859</width>
-                        <height>67</height>
+                        <height>93.726837158</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -245,28 +170,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="title" uid="51">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1091.545898438</x>
-                        <y>321.906555176</y>
-                        <z>0</z>
-                        <width>249.113739014</width>
-                        <height>155.881515503</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="JustWin" uid="47">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -277,8 +180,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>508.416259766</x>
-                        <y>270.982818604</y>
+                        <x>638.415161133</x>
+                        <y>218.255371094</y>
                         <z>0</z>
                         <width>313.432830811</width>
                         <height>30.35867691</height>
@@ -289,14 +192,84 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tirageTxt" uid="25">
+                <instance type="bgalpha" uid="24">
                     <properties>
-                        <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Passion One,-44,400,0</font>
-                        <color>0,18,128</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>629.062438965</x>
+                        <y>399.791900635</y>
+                        <z>0</z>
+                        <width>588</width>
+                        <height>118.272247314</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="MailBox" uid="10">
+                    <properties>
+                        <text>Saisi ton email et reçoit ton code promo!</text>
+                        <placeholder></placeholder>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <read-only>No</read-only>
+                        <spell-check>No</spell-check>
+                        <type>Email</type>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>346</x>
+                        <y>409.978424072</y>
+                        <z>0</z>
+                        <width>352</width>
+                        <height>37</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="SubmitButton" uid="11">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>810</x>
+                        <y>429.359832764</y>
+                        <z>0</z>
+                        <width>183</width>
+                        <height>51</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501805067</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.400000006</opacity>
+                    </world>
+                </instance>
+                <instance type="resultTxt" uid="25">
+                    <properties>
+                        <text>TRANSFORME L&apos;ESSAI EN PARTICIPANT AU TIRAGE</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Passion One,-21,900,1</font>
+                        <color>50,54,126</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
@@ -304,14 +277,63 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>354.512390137</x>
-                        <y>303.302032471</y>
+                        <x>336.876403809</x>
+                        <y>351.932556152</y>
                         <z>0</z>
-                        <width>554.546936035</width>
-                        <height>58.182037354</height>
+                        <width>582.728942871</width>
+                        <height>52.72644043</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="resultTxt" uid="60">
+                    <properties>
+                        <text>UN BON D&apos;ACHAT DE XX EUROS</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Passion One,-32,900,1</font>
+                        <color>50,54,126</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>339.063842773</x>
+                        <y>243.029724121</y>
+                        <z>0</z>
+                        <width>579.999023438</width>
+                        <height>83.635528564</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="banner" uid="51">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1066.931030273</x>
+                        <y>230.302963257</y>
+                        <z>0</z>
+                        <width>243</width>
+                        <height>460.998626709</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501039505</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
