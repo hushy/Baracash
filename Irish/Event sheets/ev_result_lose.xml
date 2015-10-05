@@ -124,7 +124,7 @@
                 </action>
                 <action id="2" name="Post to URL" sid="1601103803934225" type="WSCaller">
                     <param id="0" name="Tag">&quot;subscribe&quot;</param>
-                    <param id="1" name="URL">debugEndpoint &amp; subscribeAPIRoot &amp; campaignId &amp; &quot;?fp=&quot; &amp;BaracashAPI.GetFingerPrint &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount</param>
+                    <param id="1" name="URL">debugEndpoint &amp; subscribeAPIRoot &amp; campaignId &amp; &quot;?fp=&quot; &amp;BaracashAPI.GetFingerPrint &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount &amp; &quot;&amp;email=&quot;&amp;MailBox.Text</param>
                     <param id="2" name="Data">&quot;&quot;</param>
                     <param id="3" name="Method">&quot;POST&quot;</param>
                 </action>

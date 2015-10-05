@@ -611,6 +611,11 @@
         </object-type>
         <object-type name="Dommage" sid="7052502504030843">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="2678405973427545">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6505164848271008" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Fabien\Documents\Baracash\dommage.png">

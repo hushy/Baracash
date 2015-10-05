@@ -458,6 +458,18 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="9417829225512704">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="2018476656777377" type="System">
+                                    <param id="0" name="Variable">IsWinningTicket</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Fade" id="1" name="Start fade" sid="3031200467128041" type="Dommage" />
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
