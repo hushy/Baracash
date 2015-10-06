@@ -66,33 +66,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GiftCode" uid="14">
-                    <properties>
-                        <text></text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>316</x>
-                        <y>241</y>
-                        <z>0</z>
-                        <width>200</width>
-                        <height>30</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="bgalpha" uid="46">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -104,7 +77,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>630</x>
-                        <y>275.77255249</y>
+                        <y>215.698867798</y>
                         <z>0</z>
                         <width>588</width>
                         <height>93.726837158</height>
@@ -137,10 +110,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>630</x>
-                        <y>95.26890564</y>
+                        <y>64.544998169</y>
                         <z>0</z>
-                        <width>416</width>
-                        <height>141</height>
+                        <width>374.527038574</width>
+                        <height>126.943061829</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -158,8 +131,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>148</x>
-                        <y>305</y>
+                        <x>162</x>
+                        <y>294</y>
                         <z>0</z>
                         <width>297</width>
                         <height>311</height>
@@ -181,7 +154,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>638.415161133</x>
-                        <y>207.34552002</y>
+                        <y>149.270507813</y>
                         <z>0</z>
                         <width>313.432830811</width>
                         <height>30.35867691</height>
@@ -203,7 +176,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>629.062438965</x>
-                        <y>407.064453125</y>
+                        <y>331.429534912</y>
                         <z>0</z>
                         <width>588</width>
                         <height>103.727203369</height>
@@ -230,8 +203,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>364.181640625</x>
-                        <y>407.251312256</y>
+                        <x>357.816467285</x>
+                        <y>337.980102539</y>
                         <z>0</z>
                         <width>352</width>
                         <height>37</height>
@@ -250,8 +223,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>828.181640625</x>
-                        <y>426.632720947</y>
+                        <x>821.816467285</x>
+                        <y>357.36151123</y>
                         <z>0</z>
                         <width>183</width>
                         <height>51</height>
@@ -266,7 +239,7 @@
                     <properties>
                         <text>UN BON D&apos;ACHAT DE XX EUROS</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Passion One,-32,900,1</font>
+                        <font>Passion One,-32,900,0</font>
                         <color>50,54,126</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -278,7 +251,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>339.063842773</x>
-                        <y>233.938873291</y>
+                        <y>173.865188599</y>
                         <z>0</z>
                         <width>579.999023438</width>
                         <height>83.635528564</height>
@@ -300,10 +273,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1066.931030273</x>
-                        <y>230.302963257</y>
+                        <y>226.295333862</y>
                         <z>0</z>
                         <width>243</width>
-                        <height>460.998626709</height>
+                        <height>453</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.501039505</hotspotY>
@@ -315,7 +288,7 @@
                     <properties>
                         <text>TRANSFORME L&apos;ESSAI EN PARTICIPANT AU TIRAGE</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Passion One,-21,900,1</font>
+                        <font>Passion One,-24,900,0</font>
                         <color>50,54,126</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -327,7 +300,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>340.532958984</x>
-                        <y>344.846557617</y>
+                        <y>276.978057861</y>
                         <z>0</z>
                         <width>579.090881348</width>
                         <height>68.180969238</height>

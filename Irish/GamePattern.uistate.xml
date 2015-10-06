@@ -10,9 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">game</layout>
+        <layout active="1" order="0">game</layout>
         <layout order="1">result_win</layout>
-        <layout active="1" order="2">result_lose</layout>
+        <layout order="2">result_lose</layout>
         <layout order="3">retry</layout>
         <layout order="4">loader</layout>
         <layout order="5">campaign_over</layout>
@@ -20,6 +20,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="7">ev_result_win</event-sheet>
         <event-sheet order="8">ev_result_lose</event-sheet>
         <event-sheet order="9">ev_game</event-sheet>
+        <event-sheet order="10">ev_campaign_over</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -62,5 +63,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/emailForTirage/" />
         <folder expanded="1" path="animation-folder/Dommage/" />
         <folder expanded="1" path="animation-folder/JustWin/" />
+        <folder expanded="1" path="animation-folder/fb/" />
     </folders-expanded>
 </c2uistate>

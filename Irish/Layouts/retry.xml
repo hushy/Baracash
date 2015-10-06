@@ -70,8 +70,8 @@
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial Black,-48,900,0</font>
-                        <color>0,18,255</color>
+                        <font>Passion One,-37,900,0</font>
+                        <color>0,18,128</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Center</hotspot>
@@ -82,10 +82,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>623</x>
-                        <y>149</y>
+                        <y>183</y>
                         <z>0</z>
                         <width>700</width>
-                        <height>226</height>
+                        <height>139</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
