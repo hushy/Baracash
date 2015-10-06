@@ -4,8 +4,8 @@
     <sid>5187597954176255</sid>
     <event-sheet>loader_ev</event-sheet>
     <size>
-        <width>1708</width>
-        <height>960</height>
+        <width>1080</width>
+        <height>1920</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -54,11 +54,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>630</x>
-                        <y>250</y>
+                        <x>540</x>
+                        <y>960</y>
                         <z>0</z>
-                        <width>1260</width>
-                        <height>500</height>
+                        <width>1080</width>
+                        <height>1920</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -91,11 +91,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>630</x>
-                        <y>267.5</y>
+                        <x>540</x>
+                        <y>712</y>
                         <z>0</z>
-                        <width>97</width>
-                        <height>94</height>
+                        <width>265.101043701</width>
+                        <height>256.902038574</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -134,11 +134,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>623</x>
-                        <y>275</y>
+                        <x>540</x>
+                        <y>700</y>
                         <z>0</z>
-                        <width>123</width>
-                        <height>89</height>
+                        <width>403.184326172</width>
+                        <height>291.735015869</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -156,11 +156,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>373</x>
-                        <y>346</y>
+                        <x>540</x>
+                        <y>1554.637939453</y>
                         <z>0</z>
-                        <width>205</width>
-                        <height>286</height>
+                        <width>714.284240723</width>
+                        <height>996.513671875</height>
                         <depth>0</depth>
                         <hotspotX>0.502439022</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -178,41 +178,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>634</x>
-                        <y>133</y>
+                        <x>540</x>
+                        <y>304</y>
                         <z>0</z>
-                        <width>277</width>
-                        <height>81</height>
+                        <width>889.767700195</width>
+                        <height>260.184783936</height>
                         <depth>0</depth>
                         <hotspotX>0.501805067</hotspotX>
                         <hotspotY>0.506172836</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="d" uid="58">
-                    <properties>
-                        <text>Text</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-48,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>122</x>
-                        <y>317</y>
-                        <z>0</z>
-                        <width>1083</width>
-                        <height>124</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

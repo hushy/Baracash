@@ -8,9 +8,9 @@
         <variable constant="0" name="GiftValue" sid="7357975800208961" static="0" type="number">0</variable>
         <variable constant="0" name="Debug" sid="4100423820922422" static="0" type="text"></variable>
         <variable constant="0" name="getPrizePath" sid="9834580253533465" static="0" type="text">api/prizes/random/</variable>
-        <variable constant="0" name="LastGameTimerInSeconds" sid="1843762542549096" static="0" type="number">45</variable>
+        <variable constant="0" name="LastGameTimerInSeconds" sid="1843762542549096" static="0" type="number">5</variable>
         <variable constant="0" name="InitState" sid="7953206043994739" static="0" type="number">0</variable>
-        <variable constant="0" name="scratchSize" sid="9052999839548576" static="0" type="number">18</variable>
+        <variable constant="0" name="scratchSize" sid="9052999839548576" static="0" type="number">80</variable>
         <variable constant="0" name="Y" sid="6213800150554527" static="0" type="number">-1</variable>
         <variable constant="0" name="X" sid="677297388789187" static="0" type="number">-1</variable>
         <variable constant="0" name="RequiredSimilarItem" sid="8452282829456966" static="0" type="number">1</variable>

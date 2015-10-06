@@ -37,8 +37,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>1260</width>
-        <height>500</height>
+        <width>1080</width>
+        <height>1920</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -145,7 +145,7 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Loading" pingpong="0" repeatcount="1" repeatto="0" sid="8306111746877408" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas.verdonk\Downloads\fond-slide-1920x500_151006074154.jpg">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\img-mob\center.png">
                             <collision-poly>
                                 <point x="0" y="0" />
                                 <point x="1" y="0" />
@@ -731,5 +731,7 @@
     </global-instances>
     <sounds-folder />
     <music-folder />
-    <files-folder />
+    <files-folder>
+        <file-folder name="Icons" />
+    </files-folder>
 </c2project>
