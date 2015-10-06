@@ -54,8 +54,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>540</x>
-                        <y>960</y>
+                        <x>541</x>
+                        <y>961</y>
                         <z>0</z>
                         <width>1080</width>
                         <height>1920</height>
@@ -76,11 +76,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>542</x>
-                        <y>1532</y>
+                        <x>530.127563477</x>
+                        <y>1532.045898438</y>
                         <z>0</z>
-                        <width>1105</width>
-                        <height>789</height>
+                        <width>1128.744873047</width>
+                        <height>805.954467773</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.502702713</hotspotY>
@@ -124,14 +124,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>553</x>
-                        <y>315</y>
+                        <x>540</x>
+                        <y>310.394012451</y>
                         <z>0</z>
-                        <width>972.881408691</width>
-                        <height>173.913299561</height>
+                        <width>696.635986328</width>
+                        <height>520.443969727</height>
                         <depth>0</depth>
-                        <hotspotX>0.50088495</hotspotX>
-                        <hotspotY>0.504950523</hotspotY>
+                        <hotspotX>0.501945496</hotspotX>
+                        <hotspotY>0.505208313</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -172,6 +172,28 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>-1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="croix_fermeture_compte" uid="12">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>60</x>
+                        <y>63</y>
+                        <z>0</z>
+                        <width>113.366661072</width>
+                        <height>113.366661072</height>
+                        <depth>0</depth>
+                        <hotspotX>0.518518507</hotspotX>
+                        <hotspotY>0.518518507</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -241,48 +263,6 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Particles" uid="16">
-                    <properties>
-                        <rate>100</rate>
-                        <spray-cone>120</spray-cone>
-                        <type>Continuous spray</type>
-                        <initial-particle-properties></initial-particle-properties>
-                        <speed>16</speed>
-                        <size>10</size>
-                        <opacity>90</opacity>
-                        <grow-rate>0</grow-rate>
-                        <x-randomiser>2</x-randomiser>
-                        <y-randomiser>2</y-randomiser>
-                        <speed-randomiser->10</speed-randomiser->
-                        <size-randomiser>4</size-randomiser>
-                        <grow-rate-randomiser>0</grow-rate-randomiser>
-                        <particle-lifetime-properties></particle-lifetime-properties>
-                        <acceleration>10</acceleration>
-                        <gravity>50</gravity>
-                        <angle-randomiser>0</angle-randomiser>
-                        <speed-randomiser>0</speed-randomiser>
-                        <opacity-randomiser>0</opacity-randomiser>
-                        <destroy-mode>Fade to invisible</destroy-mode>
-                        <timeout>5</timeout>
-                    </properties>
-                    <instance-variables>
-                        <DefaultRate>100</DefaultRate>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>522</x>
-                        <y>-185</y>
-                        <z>0</z>
-                        <width>128</width>
-                        <height>128</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>1.570795774</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>

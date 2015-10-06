@@ -4,8 +4,8 @@
     <sid>7911960160017091</sid>
     <event-sheet>ev_campaign_over</event-sheet>
     <size>
-        <width>1260</width>
-        <height>500</height>
+        <width>1080</width>
+        <height>1920</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -54,8 +54,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>630</x>
-                        <y>250</y>
+                        <x>541</x>
+                        <y>961</y>
                         <z>0</z>
                         <width>1080</width>
                         <height>1920</height>
@@ -76,11 +76,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>630</x>
-                        <y>151.091094971</y>
+                        <x>540</x>
+                        <y>489</y>
                         <z>0</z>
-                        <width>588</width>
-                        <height>208.182250977</height>
+                        <width>936.760498047</width>
+                        <height>507.785095215</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -98,11 +98,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>630</x>
-                        <y>194.831573486</y>
+                        <x>540</x>
+                        <y>645</y>
                         <z>0</z>
-                        <width>588</width>
-                        <height>101</height>
+                        <width>945</width>
+                        <height>190</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -126,11 +126,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>479</x>
-                        <y>194.831573486</y>
+                        <x>300</x>
+                        <y>659.249145508</y>
                         <z>0</z>
-                        <width>202.72869873</width>
-                        <height>43</height>
+                        <width>567</width>
+                        <height>72</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -139,44 +139,22 @@
                 <instance type="facebookShare" uid="28">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <innerhtml> &lt;div class=&quot;fb-share-button&quot; data-href=&quot;http://baracash.azurewebsites.net/fbr.html&quot; data-layout=&quot;button_count&quot;&gt;&lt;/div&gt;&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt;    &lt;script&gt;    (function (d, s, id) {      var js, fjs = d.getElementsByTagName(s)[0];        if (d.getElementById(id)) return;        js = d.createElement(s); js.id = id;        js.src = &quot;//connect.facebook.net/fr_FR/sdk.js#xfbml=1&amp;version=v2.4&amp;appId=1736591459889631&quot;; fjs.parentNode.insertBefore(js, fjs);    }(document, &apos;script&apos;, &apos;facebook-jssdk&apos;));        &lt;/script&gt;&lt;style&gt;  .fb-share-button{transform: scale(2);-ms-transform: scale(2);-webkit-transform: scale(2);-o-transform: scale(2);-moz-transform: scale(2);transform-origin: top left;-ms-transform-origin: top left;-webkit-transform-origin: top left;-moz-transform-origin: top left;-webkit-transform-origin: top left;}  &lt;/style&gt;</innerhtml>
+                        <innerhtml> &lt;div class=&quot;fb-share-button&quot; data-href=&quot;http://baracash.azurewebsites.net/fbr.html&quot; data-layout=&quot;button_count&quot;&gt;&lt;/div&gt;&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt;    &lt;script&gt;    (function (d, s, id) {      var js, fjs = d.getElementsByTagName(s)[0];        if (d.getElementById(id)) return;        js = d.createElement(s); js.id = id;        js.src = &quot;//connect.facebook.net/fr_FR/sdk.js#xfbml=1&amp;version=v2.4&amp;appId=1736591459889631&quot;; fjs.parentNode.insertBefore(js, fjs);    }(document, &apos;script&apos;, &apos;facebook-jssdk&apos;));        &lt;/script&gt;&lt;style&gt;  .fb-share-button{transform: scale(6);-ms-transform: scale(6);-webkit-transform: scale(6);-o-transform: scale(6);-moz-transform: scale(6);transform-origin: top left;-ms-transform-origin: top left;-webkit-transform-origin: top left;-moz-transform-origin: top left;-webkit-transform-origin: top left;}  &lt;/style&gt;</innerhtml>
                         <style></style>
                         <html-tag-id>my_div</html-tag-id>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>569</x>
-                        <y>393.811950684</y>
+                        <x>396</x>
+                        <y>1644</y>
                         <z>0</z>
-                        <width>122</width>
-                        <height>28</height>
+                        <width>441.676361084</width>
+                        <height>101.368339539</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
-                    </world>
-                </instance>
-                <instance type="wintext" uid="53">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>630</x>
-                        <y>190.626998901</y>
-                        <z>0</z>
-                        <width>500.070770264</width>
-                        <height>92.673667908</height>
-                        <depth>0</depth>
-                        <hotspotX>0.513761461</hotspotX>
-                        <hotspotY>0.504950523</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="FacebookMultiplier" uid="36">
@@ -189,41 +167,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>623</x>
-                        <y>320.811950684</y>
+                        <x>540.883972168</x>
+                        <y>1206</y>
                         <z>0</z>
-                        <width>540.137268066</width>
-                        <height>125.656944275</height>
+                        <width>1089</width>
+                        <height>823</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.501333356</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="error" uid="14">
-                    <properties>
-                        <text>Pas si vite, tu as déja gagné! Retrouve vite ton code dans ta boite mail.</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Passion One,-29,400,0</font>
-                        <color>50,54,126</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>358.089782715</x>
-                        <y>153.831573486</y>
-                        <z>0</z>
-                        <width>531.912353516</width>
-                        <height>82</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -238,11 +189,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>630</x>
-                        <y>28</y>
+                        <x>540</x>
+                        <y>167</y>
                         <z>0</z>
-                        <width>313.432830811</width>
-                        <height>30.35867691</height>
+                        <width>950.581665039</width>
+                        <height>92.072044373</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.513513505</hotspotY>
@@ -254,7 +205,7 @@
                     <properties>
                         <text>UN BON D&apos;ACHAT DE XX EUROS</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Passion One,-29,900,0</font>
+                        <font>Passion One,-48,900,0</font>
                         <color>50,54,126</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -265,11 +216,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>630</x>
-                        <y>77.470504761</y>
+                        <x>540</x>
+                        <y>301</y>
                         <z>0</z>
-                        <width>580</width>
-                        <height>42</height>
+                        <width>879</width>
+                        <height>160</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -281,7 +232,7 @@
                     <properties>
                         <text>VALABLE JUSQU&apos;A DIMANCHE 22H00!</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Passion One,-29,400,0</font>
+                        <font>Passion One,-48,900,0</font>
                         <color>50,54,126</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -292,14 +243,85 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>630</x>
-                        <y>119.765899658</y>
+                        <x>540</x>
+                        <y>397</y>
                         <z>0</z>
-                        <width>571</width>
-                        <height>82</height>
+                        <width>869.608154297</width>
+                        <height>103.62336731</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="wintext" uid="53">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>540</x>
+                        <y>663</y>
+                        <z>0</z>
+                        <width>897.760559082</width>
+                        <height>166.37399292</height>
+                        <depth>0</depth>
+                        <hotspotX>0.513761461</hotspotX>
+                        <hotspotY>0.504950523</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="error" uid="14">
+                    <properties>
+                        <text>Pas si vite, tu as déja gagné! Retrouve vite ton code dans ta boite mail.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Passion One,-48,400,0</font>
+                        <color>50,54,126</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>518</x>
+                        <y>678</y>
+                        <z>0</z>
+                        <width>907</width>
+                        <height>281</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="croix_fermeture_compte" uid="23">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>61</x>
+                        <y>60</y>
+                        <z>0</z>
+                        <width>113.366661072</width>
+                        <height>113.366661072</height>
+                        <depth>0</depth>
+                        <hotspotX>0.518518507</hotspotX>
+                        <hotspotY>0.518518507</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

@@ -145,7 +145,7 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Loading" pingpong="0" repeatcount="1" repeatto="0" sid="8306111746877408" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\img-mob\center.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\images-m\loadingbg-sheet0.png">
                             <collision-poly>
                                 <point x="0" y="0" />
                                 <point x="1" y="0" />
@@ -367,61 +367,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="title" sid="3061135874366086">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4858463976477728" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Fabien\Documents\Baracash\gagne.png">
-                        <collision-poly>
-                            <point x="0.19877" y="0.34767" />
-                            <point x="0.5" y="0.0896057" />
-                            <point x="0.85041" y="0.261649" />
-                            <point x="0.973361" y="0.498208" />
-                            <point x="0.922131" y="0.863799" />
-                            <point x="0.5" y="0.935484" />
-                            <point x="0.110656" y="0.806452" />
-                            <point x="0.0922131" y="0.498208" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="banner" sid="8415258554626898">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="563723487858186" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.50104" original-source="C:\Users\lverd_000\Desktop\step1\banner2.png">
-                        <collision-poly>
-                            <point x="0.00393701" y="0.002079" />
-                            <point x="0.996063" y="0.002079" />
-                            <point x="0.996063" y="0.49896" />
-                            <point x="0.80315" y="0.89605" />
-                            <point x="0.5" y="0.997921" />
-                            <point x="0.19685" y="0.89605" />
-                            <point x="0.00393701" y="0.49896" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="banner2" sid="5829371267311068">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9656551093472359" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.50104" original-source="C:\Users\lverd_000\Desktop\step1\title.png">
-                        <collision-poly>
-                            <point x="0.00393701" y="0.002079" />
-                            <point x="0.996063" y="0.002079" />
-                            <point x="0.996063" y="0.49896" />
-                            <point x="0.80315" y="0.89605" />
-                            <point x="0.5" y="0.997921" />
-                            <point x="0.19685" y="0.89605" />
-                            <point x="0.00393701" y="0.49896" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="bodyleft" sid="1587109811463132">
             <plugin id="Sprite" />
             <animation-folder>
@@ -480,7 +425,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5158044716946578" speed="5">
-                    <frame duration="1" hotspotX="0.500885" hotspotY="0.504951" original-source="C:\Users\lverd_000\Desktop\step1\instruction.png">
+                    <frame duration="1" hotspotX="0.501945" hotspotY="0.505208" original-source="C:\Users\lverd_000\Desktop\img-mob\gratte.png">
                         <collision-poly>
                             <point x="0.0141593" y="0.0792079" />
                             <point x="0.499115" y="0" />
@@ -578,7 +523,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3314559442953085" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Fabien\Documents\Baracash\recap.png">
+                    <frame duration="1" hotspotX="0.501333" hotspotY="0.5" original-source="C:\Users\lverd_000\Desktop\img-mob\bannermob.png">
                         <collision-poly>
                             <point x="0.046875" y="0.798507" />
                             <point x="0.0017361" y="0.5" />
@@ -588,23 +533,6 @@
                             <point x="0.998264" y="0.5" />
                             <point x="0.953125" y="0.798507" />
                             <point x="0.5" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TimerBox" sid="1065617836336743">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2097899849532769" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Fabien\Documents\Baracash\compteur.png">
-                        <collision-poly>
-                            <point x="0.126667" y="0.126667" />
-                            <point x="0.873333" y="0.126667" />
-                            <point x="0.973333" y="0.5" />
-                            <point x="0.88" y="0.88" />
-                            <point x="0.12" y="0.88" />
-                            <point x="0.0266667" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -659,14 +587,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="fb" sid="3081536868831334">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8323164902421729" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas.verdonk\Desktop\fb.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="bgalpha2" sid="4537845141517622">
             <plugin id="Sprite" />
             <animation-folder>
@@ -689,6 +609,25 @@
                             <point x="0.5" y="0.912791" />
                             <point x="0.0682731" y="0.802326" />
                             <point x="0.134538" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="croix_fermeture_compte" sid="1009488523407124">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="668880131957166" speed="5">
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" original-source="C:\Users\lverd_000\Desktop\croix_fermeture_compte.png">
+                        <collision-poly>
+                            <point x="0.148148" y="0.148148" />
+                            <point x="0.481481" y="0" />
+                            <point x="0.851852" y="0.148148" />
+                            <point x="1" y="0.481481" />
+                            <point x="0.851852" y="0.851852" />
+                            <point x="0.481481" y="1" />
+                            <point x="0.148148" y="0.851852" />
+                            <point x="0" y="0.481481" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -732,6 +671,13 @@
     <sounds-folder />
     <music-folder />
     <files-folder>
-        <file-folder name="Icons" />
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
     </files-folder>
 </c2project>

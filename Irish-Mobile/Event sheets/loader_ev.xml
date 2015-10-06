@@ -5,7 +5,7 @@
     <events>
         <variable constant="0" name="prizeId" sid="9286106039802726" static="0" type="text">&quot;NONE&quot;</variable>
         <variable constant="0" name="campaignId" sid="1552601337797602" static="0" type="number">47182</variable>
-        <variable constant="0" name="debugEndpoint" sid="899216139316483" static="0" type="text">http://localhost:8080/</variable>
+        <variable constant="0" name="debugEndpoint" sid="899216139316483" static="0" type="text">http://baracashapi-test.elasticbeanstalk.com/</variable>
         <variable constant="0" name="endpoint" sid="2180184633429476" static="0" type="text">http://baracashapi-test.elasticbeanstalk.com/</variable>
         <event-block sid="6068202155640539">
             <conditions>
@@ -198,6 +198,19 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="269777178227677">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9413431185406925" type="Touch">
+                    <param id="0" name="Object">croix_fermeture_compte</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Go to URL" sid="4772788420582056" type="Browser">
+                    <param id="0" name="URL">&quot;http://www.cdiscount.com&quot;</param>
+                    <param id="1" name="Target">0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

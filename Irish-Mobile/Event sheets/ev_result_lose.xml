@@ -22,6 +22,10 @@
                 <action id="0" name="Set text" sid="5989339965275479" type="resultTxt">
                     <param id="0" name="Text">&quot;TENTE TA CHANCE EN PARTICIPANT AU TIRAGE&quot;</param>
                 </action>
+                <action id="7" name="Set CSS style" sid="4011098629589583" type="MailBox">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;20px&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="698227279357925">
@@ -181,6 +185,43 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="1471971411686993" type="System">
                     <param id="0" name="Layout">retry</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4987602008786119">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6269527562329133" type="Touch">
+                    <param id="0" name="Object">croix_fermeture_compte</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Go to URL" sid="6214895161746431" type="Browser">
+                    <param id="0" name="URL">&quot;http://www.cdiscount.com&quot;</param>
+                    <param id="1" name="Target">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8402495410294187">
+            <conditions>
+                <condition id="3" name="On double-clicked" sid="1090652496189391" type="MailBox" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3017561141226124" type="MailBox">
+                    <param id="0" name="Text">&quot;@&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1705574225385123">
+            <conditions>
+                <condition id="2" name="On clicked" sid="978330679208544" type="MailBox" />
+                <condition id="0" name="Compare text" sid="3294064592475251" type="MailBox">
+                    <param id="0" name="Text">&quot;Saisi ton email pour participer!&quot;</param>
+                    <param id="1" name="Case">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3975751697583124" type="MailBox">
+                    <param id="0" name="Text">&quot;@&quot;</param>
                 </action>
             </actions>
         </event-block>

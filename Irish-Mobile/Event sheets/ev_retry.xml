@@ -110,5 +110,18 @@
                 <action id="-21" name="Reset global variables" sid="8446927038142427" type="System" />
             </actions>
         </event-block>
+        <event-block sid="9619318830894219">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8343972115798744" type="Touch">
+                    <param id="0" name="Object">croix_fermeture_compte</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Go to URL" sid="8880707662512022" type="Browser">
+                    <param id="0" name="URL">&quot;http://www.cdiscount.com&quot;</param>
+                    <param id="1" name="Target">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

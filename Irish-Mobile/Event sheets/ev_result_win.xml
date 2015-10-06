@@ -28,6 +28,10 @@
                     <param id="1" name="Duration">0.25</param>
                     <param id="2" name="Delay">0</param>
                 </action>
+                <action id="7" name="Set CSS style" sid="6257263127739416" type="MailBox">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;20px&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="5991167484933874">
@@ -54,7 +58,7 @@
                             <param id="1" name="Name">&quot;Win&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="7909078131263679" type="resultTxt">
-                            <param id="0" name="Text">BaracashAPI.GetPrizeDescription</param>
+                            <param id="0" name="Text">uppercase(BaracashAPI.GetPrizeDescription)</param>
                         </action>
                         <action id="0" name="Set text" sid="7730592265831775" type="nameTxt">
                             <param id="0" name="Text">BaracashAPI.GetPrizeName</param>
@@ -235,11 +239,42 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="2032065997509053">
+        <event-block sid="4111787278435068">
             <conditions>
-                <condition id="2" name="On clicked" sid="8222710616016544" type="MailBox" />
+                <condition id="3" name="On touched object" sid="5705081108737259" type="Touch">
+                    <param id="0" name="Object">croix_fermeture_compte</param>
+                </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="7" name="Go to URL" sid="8297155163131788" type="Browser">
+                    <param id="0" name="URL">&quot;http://www.cdiscount.com&quot;</param>
+                    <param id="1" name="Target">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3031816706893881">
+            <conditions>
+                <condition id="3" name="On double-clicked" sid="8875796803752331" type="MailBox" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="7008754040337313" type="MailBox">
+                    <param id="0" name="Text">&quot;@&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9321073279283362">
+            <conditions>
+                <condition id="2" name="On clicked" sid="332127709414987" type="MailBox" />
+                <condition id="0" name="Compare text" sid="7963462461098493" type="MailBox">
+                    <param id="0" name="Text">&quot;Saisi ton email pour participer!&quot;</param>
+                    <param id="1" name="Case">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="7012898416651078" type="MailBox">
+                    <param id="0" name="Text">&quot;@&quot;</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

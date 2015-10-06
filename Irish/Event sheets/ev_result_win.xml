@@ -54,7 +54,7 @@
                             <param id="1" name="Name">&quot;Win&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="7909078131263679" type="resultTxt">
-                            <param id="0" name="Text">BaracashAPI.GetPrizeDescription</param>
+                            <param id="0" name="Text">uppercase(BaracashAPI.GetPrizeDescription)</param>
                         </action>
                         <action id="0" name="Set text" sid="7730592265831775" type="nameTxt">
                             <param id="0" name="Text">BaracashAPI.GetPrizeName</param>

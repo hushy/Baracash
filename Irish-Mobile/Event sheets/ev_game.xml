@@ -8,7 +8,7 @@
         <variable constant="0" name="GiftValue" sid="7357975800208961" static="0" type="number">0</variable>
         <variable constant="0" name="Debug" sid="4100423820922422" static="0" type="text"></variable>
         <variable constant="0" name="getPrizePath" sid="9834580253533465" static="0" type="text">api/prizes/random/</variable>
-        <variable constant="0" name="LastGameTimerInSeconds" sid="1843762542549096" static="0" type="number">5</variable>
+        <variable constant="0" name="LastGameTimerInSeconds" sid="1843762542549096" static="0" type="number">30</variable>
         <variable constant="0" name="InitState" sid="7953206043994739" static="0" type="number">0</variable>
         <variable constant="0" name="scratchSize" sid="9052999839548576" static="0" type="number">80</variable>
         <variable constant="0" name="Y" sid="6213800150554527" static="0" type="number">-1</variable>
@@ -389,17 +389,14 @@
                         <condition id="0" name="Is alpha less than" sid="6718464204383552" type="ScratchZone">
                             <param id="0" name="x">Icon.X - scratchZone.X</param>
                             <param id="1" name="y">Icon.Y - scratchZone.Y</param>
-                            <param id="2" name="radius">50</param>
-                            <param id="3" name="alpha">100</param>
+                            <param id="2" name="radius">100</param>
+                            <param id="3" name="alpha">155</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-13" name="Set boolean" sid="138446690054135" type="Icon">
                             <param id="0" name="Instance variable">IsOnTop</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action disabled="1" id="-15" name="Set visible" sid="3676160615666136" type="ScratchZone">
-                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -527,6 +524,19 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="3448470743266088">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9115386019851641" type="Touch">
+                    <param id="0" name="Object">croix_fermeture_compte</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Go to URL" sid="8472775455746538" type="Browser">
+                    <param id="0" name="URL">&quot;http://www.cdiscount.com&quot;</param>
+                    <param id="1" name="Target">0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

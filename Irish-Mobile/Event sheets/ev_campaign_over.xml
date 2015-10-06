@@ -13,6 +13,10 @@
                     <param id="1" name="Duration">1.5</param>
                     <param id="2" name="Delay">0.5</param>
                 </action>
+                <action id="7" name="Set CSS style" sid="8208508518300478" type="bri">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;20px&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="43471627394885">
@@ -68,6 +72,19 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="7211235352492069">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4449903926055347" type="Touch">
+                    <param id="0" name="Object">croix_fermeture_compte</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Go to URL" sid="2681798277513218" type="Browser">
+                    <param id="0" name="URL">&quot;http://www.cdiscount.com&quot;</param>
+                    <param id="1" name="Target">0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
