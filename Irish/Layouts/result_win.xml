@@ -104,7 +104,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>630</x>
-                        <y>284.86340332</y>
+                        <y>275.77255249</y>
                         <z>0</z>
                         <width>588</width>
                         <height>93.726837158</height>
@@ -181,7 +181,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>638.415161133</x>
-                        <y>218.255371094</y>
+                        <y>207.34552002</y>
                         <z>0</z>
                         <width>313.432830811</width>
                         <height>30.35867691</height>
@@ -203,10 +203,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>629.062438965</x>
-                        <y>399.791900635</y>
+                        <y>407.064453125</y>
                         <z>0</z>
                         <width>588</width>
-                        <height>118.272247314</height>
+                        <height>103.727203369</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -230,8 +230,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>346</x>
-                        <y>409.978424072</y>
+                        <x>364.181640625</x>
+                        <y>407.251312256</y>
                         <z>0</z>
                         <width>352</width>
                         <height>37</height>
@@ -250,8 +250,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>810</x>
-                        <y>429.359832764</y>
+                        <x>828.181640625</x>
+                        <y>426.632720947</y>
                         <z>0</z>
                         <width>183</width>
                         <height>51</height>
@@ -260,33 +260,6 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>0.400000006</opacity>
-                    </world>
-                </instance>
-                <instance type="resultTxt" uid="25">
-                    <properties>
-                        <text>TRANSFORME L&apos;ESSAI EN PARTICIPANT AU TIRAGE</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Passion One,-21,900,1</font>
-                        <color>50,54,126</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>336.876403809</x>
-                        <y>351.932556152</y>
-                        <z>0</z>
-                        <width>582.728942871</width>
-                        <height>52.72644043</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="resultTxt" uid="60">
@@ -305,7 +278,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>339.063842773</x>
-                        <y>243.029724121</y>
+                        <y>233.938873291</y>
                         <z>0</z>
                         <width>579.999023438</width>
                         <height>83.635528564</height>
@@ -334,6 +307,33 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.501039505</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="resultTxt2" uid="61">
+                    <properties>
+                        <text>TRANSFORME L&apos;ESSAI EN PARTICIPANT AU TIRAGE</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Passion One,-21,900,1</font>
+                        <color>50,54,126</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>340.532958984</x>
+                        <y>344.846557617</y>
+                        <z>0</z>
+                        <width>579.090881348</width>
+                        <height>68.180969238</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

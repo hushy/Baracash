@@ -119,6 +119,9 @@
             <object-type name="resultTxt" sid="2123573220643959">
                 <plugin id="Text" />
             </object-type>
+            <object-type name="resultTxt2" sid="440697955068643">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-folder name="sprite">
             <object-type name="loadingBG" sid="4322587657949782">
