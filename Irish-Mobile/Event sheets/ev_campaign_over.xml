@@ -82,5 +82,18 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="7634920005719713">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6720493720213103" type="Touch">
+                    <param id="0" name="Object">ShareFB</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="6588855662766779" type="Browser">
+                    <param id="0" name="URL">&quot;https://www.facebook.com/sharer/sharer.php?u=http%3A//www.jeucdiscount.fr/fbr.html&quot;</param>
+                    <param id="1" name="Tag">&quot;FacebookShare&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
