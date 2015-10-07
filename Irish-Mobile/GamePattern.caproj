@@ -11,6 +11,7 @@
     <saved-with-version>21202</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Pinco, Scirra" id="AdvTextBox" version="1.700000048">Advanced Text box</plugin>
         <plugin author="lverdonk-hush" id="BaracashAPI" version="1">BaracashAPI</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
@@ -632,6 +633,15 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="MailBox2" sid="7897799317838868">
+            <plugin id="AdvTextBox" />
+        </object-type>
+        <object-type name="MailBox3" sid="9100218063766113">
+            <plugin id="AdvTextBox" />
+        </object-type>
+        <object-type name="AdvancedBri" sid="8148728764861826">
+            <plugin id="AdvTextBox" />
         </object-type>
     </object-folder>
     <families />

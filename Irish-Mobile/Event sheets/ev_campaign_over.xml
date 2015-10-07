@@ -13,10 +13,6 @@
                     <param id="1" name="Duration">1.5</param>
                     <param id="2" name="Delay">0.5</param>
                 </action>
-                <action id="7" name="Set CSS style" sid="8208508518300478" type="bri">
-                    <param id="0" name="Property name">&quot;font-size&quot;</param>
-                    <param id="1" name="Value">&quot;20px&quot;</param>
-                </action>
             </actions>
             <sub-events>
                 <event-block sid="43471627394885">
@@ -28,7 +24,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="6940465883983325" type="bri">
+                        <action id="0" name="Set text" sid="6940465883983325" type="AdvancedBri">
                             <param id="0" name="Text">Dictionary.Get(&quot;Code&quot;)</param>
                         </action>
                         <action id="0" name="Set text" sid="2986663705181967" type="resultTxt">
@@ -48,7 +44,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="3" name="Set visible" sid="9545049374640216" type="bri">
+                        <action id="3" name="Set visible" sid="9545049374640216" type="AdvancedBri">
                             <param id="0" name="Visibility">0</param>
                         </action>
                         <action id="-15" name="Set visible" sid="285229790643816" type="wintext">

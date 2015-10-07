@@ -28,10 +28,6 @@
                     <param id="1" name="Duration">0.25</param>
                     <param id="2" name="Delay">0</param>
                 </action>
-                <action id="7" name="Set CSS style" sid="6257263127739416" type="MailBox">
-                    <param id="0" name="Property name">&quot;font-size&quot;</param>
-                    <param id="1" name="Value">&quot;20px&quot;</param>
-                </action>
             </actions>
             <sub-events>
                 <event-block sid="5991167484933874">
@@ -102,7 +98,7 @@
                         </action>
                         <action id="0" name="Add key" sid="3158964629422955" type="Dictionary">
                             <param id="0" name="Key">&quot;Email&quot;</param>
-                            <param id="1" name="Value">MailBox.Text</param>
+                            <param id="1" name="Value">MailBox2.Text</param>
                         </action>
                         <action id="0" name="Add key" sid="8590299834728761" type="Dictionary">
                             <param id="0" name="Key">&quot;Subscribed&quot;</param>
@@ -135,7 +131,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="3387163603254179" type="System">
+                <action disabled="1" id="-2" name="Go to layout" sid="3387163603254179" type="System">
                     <param id="0" name="Layout">campaign_over</param>
                 </action>
             </actions>
@@ -254,7 +250,7 @@
         </event-block>
         <event-block sid="3031816706893881">
             <conditions>
-                <condition id="3" name="On double-clicked" sid="8875796803752331" type="MailBox" />
+                <condition disabled="1" id="3" name="On double-clicked" sid="8875796803752331" type="MailBox" />
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="7008754040337313" type="MailBox">
@@ -264,8 +260,8 @@
         </event-block>
         <event-block sid="9321073279283362">
             <conditions>
-                <condition id="2" name="On clicked" sid="332127709414987" type="MailBox" />
-                <condition id="0" name="Compare text" sid="7963462461098493" type="MailBox">
+                <condition disabled="1" id="2" name="On clicked" sid="332127709414987" type="MailBox" />
+                <condition disabled="1" id="0" name="Compare text" sid="7963462461098493" type="MailBox">
                     <param id="0" name="Text">&quot;Saisi ton email pour participer!&quot;</param>
                     <param id="1" name="Case">0</param>
                 </condition>

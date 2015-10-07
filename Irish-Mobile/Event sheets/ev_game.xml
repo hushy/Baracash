@@ -235,50 +235,42 @@
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="8794121118285082" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) + TestRadius</param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y)</param>
-                                            <param id="2" name="radius">0.5</param>
-                                            <param id="3" name="alpha">0</param>
+                                            <param id="2" name="alpha">0.5</param>
                                         </condition>
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="339443076405255" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) - TestRadius</param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y)</param>
-                                            <param id="2" name="radius">0.5</param>
-                                            <param id="3" name="alpha">0</param>
+                                            <param id="2" name="alpha">0.5</param>
                                         </condition>
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="7290703091784553" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) </param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y) + TestRadius</param>
-                                            <param id="2" name="radius">0.5</param>
-                                            <param id="3" name="alpha">0</param>
+                                            <param id="2" name="alpha">0.5</param>
                                         </condition>
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="6118628103121778" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) </param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y) - TestRadius</param>
-                                            <param id="2" name="radius">0.5</param>
-                                            <param id="3" name="alpha">0</param>
+                                            <param id="2" name="alpha">0.5</param>
                                         </condition>
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="7189029344328546" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) + TestRadius*cos45</param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y) + TestRadius*sin45</param>
-                                            <param id="2" name="radius">0.5</param>
-                                            <param id="3" name="alpha">0</param>
+                                            <param id="2" name="alpha">0.5</param>
                                         </condition>
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="749771351514114" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) - TestRadius*cos45</param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y) - TestRadius*sin45</param>
-                                            <param id="2" name="radius">0.5</param>
-                                            <param id="3" name="alpha">0</param>
+                                            <param id="2" name="alpha">0.5</param>
                                         </condition>
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="3630916594763228" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) - TestRadius*cos45</param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y) + TestRadius*sin45</param>
-                                            <param id="2" name="radius">0.5</param>
-                                            <param id="3" name="alpha">0</param>
+                                            <param id="2" name="alpha">0.5</param>
                                         </condition>
                                         <condition id="0" inverted="1" name="Is alpha less than" sid="7039797127954297" type="ScratchZone">
                                             <param id="0" name="x">(Touch.X - ScratchZone.X) + TestRadius*cos45</param>
                                             <param id="1" name="y">(Touch.Y - ScratchZone.Y) - TestRadius*sin45</param>
-                                            <param id="2" name="radius">0.5</param>
-                                            <param id="3" name="alpha">0</param>
+                                            <param id="2" name="alpha">0.5</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -389,8 +381,7 @@
                         <condition id="0" name="Is alpha less than" sid="6718464204383552" type="ScratchZone">
                             <param id="0" name="x">Icon.X - scratchZone.X</param>
                             <param id="1" name="y">Icon.Y - scratchZone.Y</param>
-                            <param id="2" name="radius">100</param>
-                            <param id="3" name="alpha">155</param>
+                            <param id="2" name="alpha">100</param>
                         </condition>
                     </conditions>
                     <actions>

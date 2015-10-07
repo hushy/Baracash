@@ -11,13 +11,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">loader</layout>
-        <layout active="1" order="1">game</layout>
+        <layout order="1">game</layout>
         <layout order="2">result_win</layout>
         <layout order="3">result_lose</layout>
         <layout order="4">campaign_over</layout>
         <layout order="5">retry</layout>
         <event-sheet order="6">loader_ev</event-sheet>
-        <event-sheet order="7">ev_result_win</event-sheet>
+        <event-sheet active="1" order="7">ev_result_win</event-sheet>
         <event-sheet order="8">ev_result_lose</event-sheet>
         <event-sheet order="9">ev_game</event-sheet>
         <event-sheet order="10">ev_campaign_over</event-sheet>
