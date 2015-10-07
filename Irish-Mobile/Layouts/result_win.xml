@@ -109,11 +109,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>540</x>
-                        <y>1473</y>
+                        <x>554</x>
+                        <y>1521</y>
                         <z>0</z>
-                        <width>851.25</width>
-                        <height>891.376281738</height>
+                        <width>760.580932617</width>
+                        <height>796.433288574</height>
                         <depth>0</depth>
                         <hotspotX>0.501683474</hotspotX>
                         <hotspotY>0.498392284</hotspotY>
@@ -154,41 +154,15 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>540</x>
-                        <y>784</y>
+                        <y>854.330322266</y>
                         <z>0</z>
-                        <width>1029.400756836</width>
-                        <height>229.339263916</height>
+                        <width>1029</width>
+                        <height>426</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="MailBox" uid="10">
-                    <properties>
-                        <text>Saisi ton email et reçoit ton code promo!</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Email</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>52</x>
-                        <y>819</y>
-                        <z>0</z>
-                        <width>656</width>
-                        <height>65</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
                     </world>
                 </instance>
                 <instance type="SubmitButton" uid="11">
@@ -201,11 +175,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>869</x>
-                        <y>853</y>
+                        <x>565</x>
+                        <y>995</y>
                         <z>0</z>
-                        <width>268</width>
-                        <height>70</height>
+                        <width>457.945220947</width>
+                        <height>119.612556458</height>
                         <depth>0</depth>
                         <hotspotX>0.501805067</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -309,6 +283,44 @@
                         <hotspotY>0.518518507</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="MailBox2" uid="16">
+                    <properties>
+                        <text>Saisis ton email et reçois ton code promo!</text>
+                        <placeholder></placeholder>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <read-only>No</read-only>
+                        <spell-check>No</spell-check>
+                        <type>Text</type>
+                        <auto-font-size>No</auto-font-size>
+                        <id-optional></id-optional>
+                        <customizations></customizations>
+                        <background-color>255,255,255</background-color>
+                        <transparent-background>No</transparent-background>
+                        <font>Passion One,-16,400,0</font>
+                        <font-color>0,0,102</font-color>
+                        <borders>Yes</borders>
+                        <top-margin>0</top-margin>
+                        <bottom-margin>0</bottom-margin>
+                        <left-margin>0</left-margin>
+                        <right-margin>0</right-margin>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <select-all-on-focus>Yes</select-all-on-focus>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>137</x>
+                        <y>789</y>
+                        <z>0</z>
+                        <width>810</width>
+                        <height>122</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                     </world>
                 </instance>
             </instances>

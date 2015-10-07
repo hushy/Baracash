@@ -45,7 +45,7 @@
                 </action>
                 <action id="0" name="Add key" sid="6812658346180267" type="Dictionary">
                     <param id="0" name="Key">&quot;Email&quot;</param>
-                    <param id="1" name="Value">MailBox.Text</param>
+                    <param id="1" name="Value">MailBox3.Text</param>
                 </action>
                 <action id="0" name="Set item" sid="6834323401879659" type="LocalStorage">
                     <param id="0" name="Key">&quot;GameData&quot;</param>
@@ -60,7 +60,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set enabled" sid="8933769395832698" type="MailBox">
+                <action id="4" name="Set enabled" sid="8933769395832698" type="MailBox3">
                     <param id="0" name="Mode">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="9236079184867725" type="System">
@@ -128,7 +128,7 @@
                 </action>
                 <action id="2" name="Post to URL" sid="1601103803934225" type="WSCaller">
                     <param id="0" name="Tag">&quot;subscribe&quot;</param>
-                    <param id="1" name="URL">debugEndpoint &amp; subscribeAPIRoot &amp; campaignId &amp; &quot;?fp=&quot; &amp;BaracashAPI.GetFingerPrint &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount &amp; &quot;&amp;email=&quot;&amp;MailBox.Text</param>
+                    <param id="1" name="URL">debugEndpoint &amp; subscribeAPIRoot &amp; campaignId &amp; &quot;?fp=&quot; &amp;BaracashAPI.GetFingerPrint &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount &amp; &quot;&amp;email=&quot;&amp;MailBox3.Text</param>
                     <param id="2" name="Data">&quot;&quot;</param>
                     <param id="3" name="Method">&quot;POST&quot;</param>
                 </action>
@@ -203,7 +203,7 @@
         </event-block>
         <event-block sid="8402495410294187">
             <conditions>
-                <condition id="3" name="On double-clicked" sid="1090652496189391" type="MailBox" />
+                <condition disabled="1" id="3" name="On double-clicked" sid="1090652496189391" type="MailBox" />
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="3017561141226124" type="MailBox">
@@ -213,8 +213,8 @@
         </event-block>
         <event-block sid="1705574225385123">
             <conditions>
-                <condition id="2" name="On clicked" sid="978330679208544" type="MailBox" />
-                <condition id="0" name="Compare text" sid="3294064592475251" type="MailBox">
+                <condition disabled="1" id="2" name="On clicked" sid="978330679208544" type="MailBox" />
+                <condition disabled="1" id="0" name="Compare text" sid="3294064592475251" type="MailBox">
                     <param id="0" name="Text">&quot;Saisi ton email pour participer!&quot;</param>
                     <param id="1" name="Case">0</param>
                 </condition>

@@ -77,41 +77,15 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>540</x>
-                        <y>760</y>
+                        <y>834.5</y>
                         <z>0</z>
                         <width>1009</width>
-                        <height>397</height>
+                        <height>480</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="MailBox" uid="37">
-                    <properties>
-                        <text>Saisi ton email pour participer!</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Email</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>44</x>
-                        <y>841</y>
-                        <z>0</z>
-                        <width>698.324829102</width>
-                        <height>80.99382782</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
                     </world>
                 </instance>
                 <instance type="SubmitButton" uid="8">
@@ -124,11 +98,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>911</x>
-                        <y>879</y>
+                        <x>568</x>
+                        <y>970</y>
                         <z>0</z>
-                        <width>312.714385986</width>
-                        <height>83.3412323</height>
+                        <width>460</width>
+                        <height>120</height>
                         <depth>0</depth>
                         <hotspotX>0.501805067</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -152,7 +126,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>540</x>
-                        <y>728</y>
+                        <y>675</y>
                         <z>0</z>
                         <width>1055.076904297</width>
                         <height>208.782073975</height>
@@ -195,11 +169,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>540</x>
-                        <y>1557</y>
+                        <x>545</x>
+                        <y>1559</y>
                         <z>0</z>
-                        <width>714.284240723</width>
-                        <height>996.513671875</height>
+                        <width>711.562561035</width>
+                        <height>992.71661377</height>
                         <depth>0</depth>
                         <hotspotX>0.502439022</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -227,6 +201,44 @@
                         <hotspotY>0.518518507</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="MailBox3" uid="10">
+                    <properties>
+                        <text>Saisis ton email !</text>
+                        <placeholder></placeholder>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <read-only>No</read-only>
+                        <spell-check>No</spell-check>
+                        <type>Text</type>
+                        <auto-font-size>No</auto-font-size>
+                        <id-optional></id-optional>
+                        <customizations></customizations>
+                        <background-color>255,255,255</background-color>
+                        <transparent-background>No</transparent-background>
+                        <font>Passion One,-16,400,0</font>
+                        <font-color>0,0,102</font-color>
+                        <borders>Yes</borders>
+                        <top-margin>0</top-margin>
+                        <bottom-margin>0</bottom-margin>
+                        <left-margin>0</left-margin>
+                        <right-margin>0</right-margin>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <select-all-on-focus>Yes</select-all-on-focus>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>147</x>
+                        <y>751</y>
+                        <z>0</z>
+                        <width>801</width>
+                        <height>122</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                     </world>
                 </instance>
             </instances>
