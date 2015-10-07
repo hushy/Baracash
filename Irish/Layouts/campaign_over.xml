@@ -76,11 +76,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>630</x>
-                        <y>151.091094971</y>
+                        <x>638.180053711</x>
+                        <y>136.909561157</y>
                         <z>0</z>
-                        <width>588</width>
-                        <height>208.182250977</height>
+                        <width>771.635803223</width>
+                        <height>185.45513916</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -99,10 +99,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>630</x>
-                        <y>194.831573486</y>
+                        <y>174.376998901</y>
                         <z>0</z>
                         <width>588</width>
-                        <height>101</height>
+                        <height>110.09085083</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -127,7 +127,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>479</x>
-                        <y>194.831573486</y>
+                        <y>179.831573486</y>
                         <z>0</z>
                         <width>202.72869873</width>
                         <height>43</height>
@@ -146,8 +146,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>569</x>
-                        <y>393.811950684</y>
+                        <x>553.181030273</x>
+                        <y>366.62991333</y>
                         <z>0</z>
                         <width>122</width>
                         <height>28</height>
@@ -168,7 +168,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>630</x>
-                        <y>190.626998901</y>
+                        <y>173.626998901</y>
                         <z>0</z>
                         <width>500.070770264</width>
                         <height>92.673667908</height>
@@ -190,7 +190,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>623</x>
-                        <y>320.811950684</y>
+                        <y>299.811950684</y>
                         <z>0</z>
                         <width>540.137268066</width>
                         <height>125.656944275</height>
@@ -203,7 +203,7 @@
                 </instance>
                 <instance type="error" uid="14">
                     <properties>
-                        <text>Pas si vite, tu as déja gagné! Retrouve vite ton code dans ta boite mail.</text>
+                        <text>PAS SI VITE, TU AS DEJA GAGNE! RETROUVE VITE TON CODE DANS TA BOITE MAIL.</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Passion One,-29,400,0</font>
                         <color>50,54,126</color>
@@ -216,11 +216,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>358.089782715</x>
-                        <y>153.831573486</y>
+                        <x>357.178894043</x>
+                        <y>114.649887085</y>
                         <z>0</z>
                         <width>531.912353516</width>
-                        <height>82</height>
+                        <height>126.546096802</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -239,7 +239,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>630</x>
-                        <y>28</y>
+                        <y>21</y>
                         <z>0</z>
                         <width>313.432830811</width>
                         <height>30.35867691</height>
@@ -266,7 +266,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>630</x>
-                        <y>77.470504761</y>
+                        <y>68.470504761</y>
                         <z>0</z>
                         <width>580</width>
                         <height>42</height>
@@ -279,7 +279,7 @@
                 </instance>
                 <instance type="hour" uid="65">
                     <properties>
-                        <text>VALABLE JUSQU&apos;A DIMANCHE 22H00!</text>
+                        <text>VALABLE JUSQU&apos;AU DIMANCHE 11 OCTOBRE 22H00 !</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Passion One,-29,400,0</font>
                         <color>50,54,126</color>
@@ -292,10 +292,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>630</x>
-                        <y>119.765899658</y>
+                        <x>630.001403809</x>
+                        <y>109.311325073</y>
                         <z>0</z>
-                        <width>571</width>
+                        <width>763.728027344</width>
                         <height>82</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
