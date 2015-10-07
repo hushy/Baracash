@@ -5,7 +5,7 @@
     <events>
         <variable constant="0" name="prizeId" sid="9286106039802726" static="0" type="text">&quot;NONE&quot;</variable>
         <variable constant="0" name="campaignId" sid="1552601337797602" static="0" type="number">47182</variable>
-        <variable constant="0" name="debugEndpoint" sid="899216139316483" static="0" type="text">http://baracashapi-test.elasticbeanstalk.com/</variable>
+        <variable constant="0" name="debugEndpoint" sid="899216139316483" static="0" type="text">http://localhost:8080/</variable>
         <variable constant="0" name="endpoint" sid="2180184633429476" static="0" type="text">http://baracashapi-test.elasticbeanstalk.com/</variable>
         <event-block sid="6068202155640539">
             <conditions>

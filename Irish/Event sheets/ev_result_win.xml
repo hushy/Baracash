@@ -235,11 +235,5 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="2032065997509053">
-            <conditions>
-                <condition id="2" name="On clicked" sid="8222710616016544" type="MailBox" />
-            </conditions>
-            <actions />
-        </event-block>
     </events>
 </c2eventsheet>

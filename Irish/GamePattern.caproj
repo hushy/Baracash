@@ -11,6 +11,7 @@
     <saved-with-version>21202</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Pinco, Scirra" id="AdvTextBox" version="1.700000048">Advanced Text box</plugin>
         <plugin author="lverdonk-hush" id="BaracashAPI" version="1">BaracashAPI</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
@@ -21,7 +22,6 @@
         <plugin author="Rex.Rainbow" id="Rex_TimeAwayL" version="0.100000001">Time away L</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="R0J0hound" id="c2canvas" version="2">Canvas</plugin>
         <plugin author="HMMG" id="hmmg_layoutTransition" version="1.200000048">Layout Transition</plugin>
@@ -61,9 +61,6 @@
     </configuration-settings>
     <object-folder>
         <object-folder name="gui">
-            <object-type name="bri" sid="9275239667439587">
-                <plugin id="TextBox" />
-            </object-type>
             <object-type name="GiftCode" sid="5434317318988145">
                 <plugin id="Text" />
             </object-type>
@@ -72,9 +69,6 @@
             </object-type>
             <object-type name="facebookShare" sid="6886935405052998">
                 <plugin id="HTML_Div_Pode" />
-            </object-type>
-            <object-type name="MailBox" sid="216507672055013">
-                <plugin id="TextBox" />
             </object-type>
             <object-type name="mailTxt" sid="6526420321877978">
                 <plugin id="Text" />
@@ -693,6 +687,12 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="MailBox" sid="7590271322504505">
+            <plugin id="AdvTextBox" />
+        </object-type>
+        <object-type name="BRI2" sid="1633608708081436">
+            <plugin id="AdvTextBox" />
         </object-type>
     </object-folder>
     <families />
