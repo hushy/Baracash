@@ -7,13 +7,7 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="3128110107553608" type="System" />
             </conditions>
-            <actions>
-                <action id="0" name="Entrance Transition" sid="546161769421443" type="LayoutTransition">
-                    <param id="0" name="Transition">5</param>
-                    <param id="1" name="Duration">1.5</param>
-                    <param id="2" name="Delay">0.5</param>
-                </action>
-            </actions>
+            <actions />
             <sub-events>
                 <event-block sid="43471627394885">
                     <conditions>
@@ -54,9 +48,6 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-15" name="Set visible" sid="7937698186408804" type="resultTxt">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="8734506277941619" type="bgalpha">
                             <param id="0" name="Visibility">0</param>
                         </action>
                         <action id="-15" name="Set visible" sid="641277742926779" type="JustWin">
