@@ -301,17 +301,17 @@
                         <bottom-margin>0</bottom-margin>
                         <left-margin>0</left-margin>
                         <right-margin>0</right-margin>
-                        <horizontal-alignment>Left</horizontal-alignment>
+                        <horizontal-alignment>Center</horizontal-alignment>
                         <select-all-on-focus>Yes</select-all-on-focus>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>296</x>
-                        <y>639</y>
+                        <x>271.053283691</x>
+                        <y>639.245727539</y>
                         <z>0</z>
-                        <width>642</width>
-                        <height>84</height>
+                        <width>725.893432617</width>
+                        <height>105.233078003</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

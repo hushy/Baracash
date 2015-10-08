@@ -109,11 +109,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>534.435302734</x>
-                        <y>1541.483764648</y>
+                        <x>548</x>
+                        <y>1581</y>
                         <z>0</z>
-                        <width>721.583007813</width>
-                        <height>755.597045898</height>
+                        <width>645.706115723</width>
+                        <height>676.143493652</height>
                         <depth>0</depth>
                         <hotspotX>0.501683474</hotspotX>
                         <hotspotY>0.498392284</hotspotY>
@@ -175,11 +175,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>565</x>
-                        <y>995</y>
+                        <x>582</x>
+                        <y>1031</y>
                         <z>0</z>
-                        <width>457.945220947</width>
-                        <height>119.612556458</height>
+                        <width>671.854614258</width>
+                        <height>175.484405518</height>
                         <depth>0</depth>
                         <hotspotX>0.501805067</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -313,11 +313,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>137</x>
+                        <x>59.965576172</x>
                         <y>789</y>
                         <z>0</z>
-                        <width>810</width>
-                        <height>122</height>
+                        <width>964.030822754</width>
+                        <height>145.199707031</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
