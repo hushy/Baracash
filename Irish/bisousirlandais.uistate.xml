@@ -10,17 +10,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">game</layout>
-        <layout order="1">result_win</layout>
-        <layout order="2">result_lose</layout>
-        <layout order="3">retry</layout>
-        <layout order="4">loader</layout>
-        <layout order="5">campaign_over</layout>
-        <event-sheet active="1" order="6">loader_ev</event-sheet>
-        <event-sheet order="7">ev_result_win</event-sheet>
-        <event-sheet order="8">ev_result_lose</event-sheet>
-        <event-sheet order="9">ev_game</event-sheet>
-        <event-sheet order="10">ev_campaign_over</event-sheet>
+        <layout order="1">game</layout>
+        <layout order="2">result_win</layout>
+        <layout order="3">result_lose</layout>
+        <layout order="4">retry</layout>
+        <layout order="5">loader</layout>
+        <layout order="6">campaign_over</layout>
+        <event-sheet order="7">loader_ev</event-sheet>
+        <event-sheet active="1" order="8">ev_result_win</event-sheet>
+        <event-sheet order="9">ev_result_lose</event-sheet>
+        <event-sheet order="10">ev_game</event-sheet>
+        <event-sheet order="11">ev_campaign_over</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

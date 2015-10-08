@@ -694,6 +694,9 @@
         <object-type name="BRI2" sid="1633608708081436">
             <plugin id="AdvTextBox" />
         </object-type>
+        <object-type name="MailBox2" sid="970203734315472">
+            <plugin id="AdvTextBox" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

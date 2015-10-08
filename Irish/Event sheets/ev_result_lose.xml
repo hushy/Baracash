@@ -56,7 +56,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set enabled" sid="8933769395832698" type="MailBox">
+                <action id="4" name="Set enabled" sid="8933769395832698" type="MailBox2">
                     <param id="0" name="Mode">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="9236079184867725" type="System">
@@ -73,13 +73,13 @@
         </event-block>
         <event-block sid="8838335261310887">
             <conditions>
-                <condition id="1" name="On text changed" sid="6669193194221741" type="MailBox" />
+                <condition id="1" name="On text changed" sid="6669193194221741" type="MailBox2" />
             </conditions>
             <actions />
             <sub-events>
                 <event-block sid="938477136938479">
                     <conditions>
-                        <condition id="0" inverted="1" name="Compare text" sid="9603679654927149" type="MailBox">
+                        <condition id="0" inverted="1" name="Compare text" sid="9603679654927149" type="MailBox2">
                             <param id="0" name="Text">&quot;&quot;</param>
                             <param id="1" name="Case">0</param>
                         </condition>
