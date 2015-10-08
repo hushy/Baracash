@@ -83,7 +83,7 @@
             <sub-events>
                 <event-block sid="938477136938479">
                     <conditions>
-                        <condition id="0" inverted="1" name="Compare text" sid="9603679654927149" type="MailBox2">
+                        <condition id="0" inverted="1" name="Compare text" sid="9603679654927149" type="MailBox3">
                             <param id="0" name="Text">&quot;&quot;</param>
                             <param id="1" name="Case">0</param>
                         </condition>
