@@ -77,13 +77,13 @@
         </event-block>
         <event-block sid="8838335261310887">
             <conditions>
-                <condition id="1" name="On text changed" sid="6669193194221741" type="MailBox" />
+                <condition id="1" name="On text changed" sid="6669193194221741" type="MailBox3" />
             </conditions>
             <actions />
             <sub-events>
                 <event-block sid="938477136938479">
                     <conditions>
-                        <condition id="0" inverted="1" name="Compare text" sid="9603679654927149" type="MailBox">
+                        <condition id="0" inverted="1" name="Compare text" sid="9603679654927149" type="MailBox2">
                             <param id="0" name="Text">&quot;&quot;</param>
                             <param id="1" name="Case">0</param>
                         </condition>
@@ -198,30 +198,6 @@
                 <action id="7" name="Go to URL" sid="6214895161746431" type="Browser">
                     <param id="0" name="URL">&quot;http://www.cdiscount.com&quot;</param>
                     <param id="1" name="Target">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8402495410294187">
-            <conditions>
-                <condition disabled="1" id="3" name="On double-clicked" sid="1090652496189391" type="MailBox" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="3017561141226124" type="MailBox">
-                    <param id="0" name="Text">&quot;@&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="1705574225385123">
-            <conditions>
-                <condition disabled="1" id="2" name="On clicked" sid="978330679208544" type="MailBox" />
-                <condition disabled="1" id="0" name="Compare text" sid="3294064592475251" type="MailBox">
-                    <param id="0" name="Text">&quot;Saisi ton email pour participer!&quot;</param>
-                    <param id="1" name="Case">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="3975751697583124" type="MailBox">
-                    <param id="0" name="Text">&quot;@&quot;</param>
                 </action>
             </actions>
         </event-block>

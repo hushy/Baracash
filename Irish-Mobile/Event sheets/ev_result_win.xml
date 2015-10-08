@@ -138,13 +138,13 @@
         </event-block>
         <event-block sid="521957073435544">
             <conditions>
-                <condition id="1" name="On text changed" sid="2301607708069971" type="MailBox" />
+                <condition id="1" name="On text changed" sid="2301607708069971" type="MailBox2" />
             </conditions>
             <actions />
             <sub-events>
                 <event-block sid="4151823345557046">
                     <conditions>
-                        <condition id="0" inverted="1" name="Compare text" sid="3804358305238485" type="MailBox">
+                        <condition id="0" inverted="1" name="Compare text" sid="3804358305238485" type="MailBox2">
                             <param id="0" name="Text">&quot;&quot;</param>
                             <param id="1" name="Case">0</param>
                         </condition>
@@ -196,7 +196,7 @@
                 </action>
                 <action id="2" name="Post to URL" sid="8468402482153799" type="WSCaller">
                     <param id="0" name="Tag">&quot;discoverCode&quot;</param>
-                    <param id="1" name="URL">debugEndpoint &amp; discoverAPIRoot &amp; prizeId &amp; &quot;?&quot; &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount &amp; &quot;&amp;email=&quot;&amp;MailBox.Text &amp; &quot;&amp;fp=&quot;&amp;BaracashAPI.GetFingerPrint&amp;&quot;&amp;campaign=&quot;&amp;campaignId</param>
+                    <param id="1" name="URL">debugEndpoint &amp; discoverAPIRoot &amp; prizeId &amp; &quot;?&quot; &amp; keyRoot &amp; &quot;=&quot; &amp; (behaviorCounter+BaracashAPI.GetPrizeValue)*tickcount &amp; &quot;&amp;&quot; &amp; tickCountKey &amp; &quot;=&quot; &amp; tickcount &amp; &quot;&amp;email=&quot;&amp;MailBox2.Text &amp; &quot;&amp;fp=&quot;&amp;BaracashAPI.GetFingerPrint&amp;&quot;&amp;campaign=&quot;&amp;campaignId</param>
                     <param id="2" name="Data">&quot;&quot;</param>
                     <param id="3" name="Method">&quot;POST&quot;</param>
                 </action>
@@ -245,30 +245,6 @@
                 <action id="7" name="Go to URL" sid="8297155163131788" type="Browser">
                     <param id="0" name="URL">&quot;http://www.cdiscount.com&quot;</param>
                     <param id="1" name="Target">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="3031816706893881">
-            <conditions>
-                <condition disabled="1" id="3" name="On double-clicked" sid="8875796803752331" type="MailBox" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="7008754040337313" type="MailBox">
-                    <param id="0" name="Text">&quot;@&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="9321073279283362">
-            <conditions>
-                <condition disabled="1" id="2" name="On clicked" sid="332127709414987" type="MailBox" />
-                <condition disabled="1" id="0" name="Compare text" sid="7963462461098493" type="MailBox">
-                    <param id="0" name="Text">&quot;Saisi ton email pour participer!&quot;</param>
-                    <param id="1" name="Case">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="7012898416651078" type="MailBox">
-                    <param id="0" name="Text">&quot;@&quot;</param>
                 </action>
             </actions>
         </event-block>

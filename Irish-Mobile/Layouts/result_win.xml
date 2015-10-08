@@ -109,11 +109,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>554</x>
-                        <y>1521</y>
+                        <x>534.435302734</x>
+                        <y>1541.483764648</y>
                         <z>0</z>
-                        <width>760.580932617</width>
-                        <height>796.433288574</height>
+                        <width>721.583007813</width>
+                        <height>755.597045898</height>
                         <depth>0</depth>
                         <hotspotX>0.501683474</hotspotX>
                         <hotspotY>0.498392284</hotspotY>
@@ -287,14 +287,14 @@
                 </instance>
                 <instance type="MailBox2" uid="16">
                     <properties>
-                        <text>Saisis ton email et reçois ton code promo!</text>
-                        <placeholder></placeholder>
+                        <text></text>
+                        <placeholder>Saisis ton email et reçois ton code promo!</placeholder>
                         <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
                         <enabled>Yes</enabled>
                         <read-only>No</read-only>
                         <spell-check>No</spell-check>
-                        <type>Text</type>
+                        <type>Email</type>
                         <auto-font-size>No</auto-font-size>
                         <id-optional></id-optional>
                         <customizations></customizations>
