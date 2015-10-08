@@ -203,44 +203,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="MailBox" uid="10">
-                    <properties>
-                        <text></text>
-                        <placeholder>Saisis ton email et reçois ton code promo!</placeholder>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Email</type>
-                        <auto-font-size>No</auto-font-size>
-                        <id-optional></id-optional>
-                        <customizations></customizations>
-                        <background-color>255,255,255</background-color>
-                        <transparent-background>No</transparent-background>
-                        <font>Passion One,-21,400,0</font>
-                        <font-color>50,54,126</font-color>
-                        <borders>Yes</borders>
-                        <top-margin>0</top-margin>
-                        <bottom-margin>0</bottom-margin>
-                        <left-margin>0</left-margin>
-                        <right-margin>0</right-margin>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <select-all-on-focus>Yes</select-all-on-focus>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>349</x>
-                        <y>300</y>
-                        <z>0</z>
-                        <width>350.643035889</width>
-                        <height>37.605194092</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
                 <instance type="loading" uid="37">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -282,6 +244,44 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="MailBox2" uid="26">
+                    <properties>
+                        <text></text>
+                        <placeholder>Saisis ton email</placeholder>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <read-only>No</read-only>
+                        <spell-check>No</spell-check>
+                        <type>Text</type>
+                        <auto-font-size>No</auto-font-size>
+                        <id-optional></id-optional>
+                        <customizations></customizations>
+                        <background-color>255,255,255</background-color>
+                        <transparent-background>No</transparent-background>
+                        <font>Passion One,-22,400,0</font>
+                        <font-color>54,54,126</font-color>
+                        <borders>Yes</borders>
+                        <top-margin>0</top-margin>
+                        <bottom-margin>0</bottom-margin>
+                        <left-margin>0</left-margin>
+                        <right-margin>0</right-margin>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <select-all-on-focus>No</select-all-on-focus>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>356</x>
+                        <y>296</y>
+                        <z>0</z>
+                        <width>350</width>
+                        <height>37</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                     </world>
                 </instance>
             </instances>
